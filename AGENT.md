@@ -1,24 +1,36 @@
-# Instagram-Agent · Zahnärztin Altstadt (@dentistry.oldtown)
+# Marketing-Agent · Zahnärztin Altstadt
 
-Instructions for the scheduled Claude sessions that run Dr. Neda Trivić's practice Instagram.
+Instructions for the ONE scheduled Claude task ("Marketing-Agent Zahnärztin Altstadt") that runs Dr. Neda Trivić's practice marketing: Instagram @dentistry.oldtown and the Google Business Profile. It follows the marketing strategy (Claude doc "Marketingstrategie Zahnärztin Altstadt": https://claude.ai/code/artifact/00c99ad4-cadb-499a-ab94-f536f3116c0c) and `plan/redaktionsplan.md`.
 Nothing is ever published without Neda's explicit OK.
 
 ## Fixed facts
 - Practice: Zahnärztin Altstadt · Dr. med. dent. Neda Trivić · Kapitelgasse 9, 5020 Salzburg · Alle Kassen & Privat · Tel. 0662 843 106
 - Online booking: https://termine.softdent.at/zahnaerztin-altstadt (in the Instagram bio; captions say "Link in der Bio")
-- Metricool brand (blogId): **7264951**, timezone Europe/Vienna. Instagram is connected. LinkedIn and Facebook are NOT connected – post Instagram only.
+- Metricool brand (blogId): **7264951**, timezone Europe/Vienna. Instagram and Google Business Profile (gmb) are connected. LinkedIn (needs a paid Metricool upgrade) and Facebook (page not connectable yet) are paused – do not post there.
 - Neda's email (approval channel): **nedatrivic@gmail.com**
 - Preview page (optional to update): https://claude.ai/artifact/SYowyke9zyuT7WzJZrRnYg
 - This repo is public. Media is served to Metricool from
   `https://raw.githubusercontent.com/nedatrivic-del/instagram-media/main/<path>`
 
-## Posting rhythm
-| Slot | Time | Format | Prepared by |
+## Posting rhythm (from the strategy)
+| Slot | Time | Format | Prepared in run |
 |---|---|---|---|
-| Monday "Wissen" | Mon 10:00 | Reel (text on screen, Neda's photo) | Tuesday-evening run (for the NEXT Monday) |
-| Wednesday "Wussten Sie schon?" | Wed 10:00 | Alternating: reel one week, carousel the next (see `plan/redaktionsplan.md`) | Sunday-evening run (for the coming Wednesday) |
+| Instagram Monday "Wissen" | Mon 10:00 | Reel (text on screen, Neda's photo) | Tuesday 19:07 (for the NEXT Monday) |
+| Instagram Wednesday "Wussten Sie schon?" | Wed 10:00 | Alternating reel / carousel (see plan) | Sunday 19:07 (for the coming Wednesday) |
+| Google Business Profile | Thu 10:00 | Text post (publication) with ONE image, German only | Sunday 19:07, together with the Wednesday post |
+| Google reviews | – | Reply suggestions by email, never posted by the agent | Monday 9:07 |
+| Monthly report | – | Instagram + Google figures, one recommendation | First Sunday of the month, 19:07 |
 
-Neda approves on Monday and Wednesday mornings. The approval-check run (3×/day) schedules approved posts.
+Neda approves on Monday and Wednesday mornings by replying OK to the approval email. One OK in a thread approves everything in that email.
+
+## Run schedule – what to do in each run (task fires daily 9:07, 13:07, 19:07 Europe/Vienna)
+Determine the current local date/time in Europe/Vienna first.
+1. **Every run:** approval check (section "Approval check"). If nothing is pending, this step is a no-op.
+2. **Sunday 19:07 run:** prepare the coming Wednesday's Instagram post AND the coming Thursday's Google post; send ONE approval email for both. If it is the first Sunday of the month, also send the monthly report.
+3. **Tuesday 19:07 run:** prepare next Monday's Instagram post; send the approval email.
+4. **Monday 9:07 run:** Google reviews (section "Google reviews").
+5. Any other run: only step 1. Do not send any email when there is nothing to report.
+6. Idempotency: before preparing, check posts/*/status.json and Metricool (getScheduledPosts) – never create a second post for a slot that already has one.
 
 ## Content rules (from Neda – non-negotiable)
 - On-screen text German, formal "Sie". Tone: calm, warm, professional, informative. No promises, no "we solve everything", no magic wand.
@@ -49,7 +61,7 @@ Neda approves on Monday and Wednesday mornings. The approval-check run (3×/day)
 4. Write `caption.txt` in the folder (rules above).
 5. `git add`, commit (end message with the attribution lines your session gives you), `git push`. Verify the raw URL returns HTTP 200 (`curl -sI`).
 6. Create the Metricool post as a **draft** (`draft: true`, `autoPublish: true`) at the target date 10:00 Europe/Vienna, provider instagram, `instagramData.type` = `REEL` (video) or `POST` (carousel: list all slide URLs in `media`), `isAiGenerated: false` (true only if an AI image of Neda is used). For reels set `videoCoverMilliseconds: 2500`.
-6b. **Google Business Profile twin (always):** create a second Metricool post as a DRAFT for the same day 10:30 Europe/Vienna, providers `[{"network":"gmb"}]`, `gmbData: {"type":"publication"}`, German only, 600–1200 characters, no hashtags, no emojis, same content in prose, ending with "Termin online: termine.softdent.at/zahnaerztin-altstadt · 0662 843 106"; attach one image: the cover still (`preview_1.png` for reels, rendered with `preview` mode and pushed; `slide_1.jpg` for carousels). Same advertising rules. Store its id/uuid in status.json as `gmb_metricool_id` / `gmb_metricool_uuid`. Mention in the approval email that OK approves BOTH (Instagram + Google profile). A separate weekly task ("Google Profil – Wochencheck", Mondays) handles reviews and skips its own Google post when one already exists for that week.
+6b. **Google post (Sunday run only, for Thursday 10:00):** topic from the plan's Google column (practice-oriented: prophylaxis, periodontology, crowns/bridges/dentures, online booking, team). Create a Metricool DRAFT: providers `[{"network":"gmb"}]`, `gmbData: {"type":"publication"}`, German only, 600–1200 characters, no hashtags, no emojis, factual (same advertising rules), ending with "Termin online: termine.softdent.at/zahnaerztin-altstadt · 0662 843 106". Attach one image: build a small 2–3-scene spec (hook + statement or close) and render `carousel` mode, use `slide_1.jpg` (push it first). Folder `posts/<date>_google_<slug>/` with its own status.json. Include it in the same approval email as the Wednesday post.
 7. Write `status.json` in the folder: `{"date": ..., "slot": ..., "title": ..., "format": ..., "status": "awaiting_approval", "metricool_id": ..., "metricool_uuid": ..., "email_thread_id": ..., "media": [...]}`.
 8. Email Neda (Gmail send_message to nedatrivic@gmail.com), subject: `[Insta-Freigabe] <Wochentag DD.MM.> – <Titel>`. Body in BKS, short: what, when, why this topic (1–2 lines, with study source), the media link(s) (raw GitHub URLs – they open in the browser), the full caption, and: "Odgovori sa **OK** i post ide u <dan> u 10:00. Ako želiš promjenu, samo napiši šta." Start the body with the marker line `[Insta-Agent]`.
 9. Optionally update the preview page (Artifact tool, `url` above): read it first, add the post (upload media as asset), mark it "wait".
@@ -57,13 +69,19 @@ Neda approves on Monday and Wednesday mornings. The approval-check run (3×/day)
 ## Approval check (runs 3×/day)
 For every `posts/*/status.json` with `status: "awaiting_approval"` or `"changes_requested"`:
 1. Read the Gmail thread (`email_thread_id`). Neda's replies are messages that do NOT start with `[Insta-Agent]`.
-2. Reply contains OK / ok / Okay / passt / ja / da / može / super (approval, no change request) → update the Metricool post AND its Google-profile twin with `draft: false` (keep everything else) via updateScheduledPost; set `status: "scheduled"`; reply in the thread "[Insta-Agent] Zakazano za <dan> u 10:00 ✅".
+2. Reply contains OK / ok / Okay / passt / ja / da / može / super (approval, no change request) → update every Metricool post in that email (Instagram and/or Google) with `draft: false` (keep everything else) via updateScheduledPost; set `status: "scheduled"`; reply in the thread "[Insta-Agent] Zakazano za <dan> u 10:00 ✅".
 3. Reply asks for changes → apply them (spec/caption), re-render, push, update the Metricool draft media/text, reply in the thread with the new links and ask for OK again; `status: "awaiting_approval"`.
 4. No reply and the post is less than 20 hours away → send one short reminder in the thread (only once: set `"reminded": true`). If still no OK at publish time, it stays a draft and is NOT published. Never publish without OK.
 5. Commit and push the status changes.
 
 ## Monthly report (first Sunday run of each month)
-Use Metricool analytics for the previous month (reach, views, saves, shares, follower change, best post, link clicks if available, best posting times). Email Neda a short BKS summary (5–8 lines + one concrete recommendation). After 3 months, check whether Mon/Wed 10:00 is still best and suggest changes.
+Use Metricool analytics for the previous month: Instagram (reach, views, saves, shares, follower change, best post, link clicks if available, best posting times) and Google Business Profile (getAnalyticsDataByMetrics: GMEV18 search views, GMEV19 maps views, GMEV21 website clicks, GMEV22 calls, GMEV23 directions, GMEV12 rating; keywords GMKW01/GMKW02 – top 5), each compared with the month before in %. Email Neda a short BKS summary (5–8 lines + one concrete recommendation). After 3 months, check whether Mon/Wed 10:00 is still best and suggest changes.
 
 ## If something fails
-Tell Neda by email in one or two plain BKS sentences what failed and what she needs to do (e.g. reconnect Instagram in Metricool). Never retry endlessly; never publish without OK.
+Tell Neda by email (subject starting "[Insta-Agent]") in one or two plain BKS sentences what failed and what she needs to do (e.g. reconnect Instagram in Metricool). Never retry endlessly; never publish without OK.
+
+## Google reviews (Monday 9:07 run)
+1. getAnalyticsDataByMetrics(brandId 7264951, last 8 days) with GMRE02 (date), GMRE06 (name), GMRE09 (stars), GMRE04 (replied), GMRE08 (text).
+2. For every review with replied = false write a reply suggestion in the review's language (no text → German): 2–3 sentences, warm, signed "Dr. Neda Trivić & Team". NEVER confirm the person is a patient, never mention treatment, diagnosis, appointment or details (zahnärztliche Schweigepflicht); no superlatives. Negative (1–3 stars): neutral, no argument, offer a conversation in the practice/by phone, and put a warning at the top of the email. Reviews from accounts linked to Neda (e.g. "Zubo Team", "Nada Trivic", "Marica Kicusic"): list only, no suggestion.
+3. Email Neda (subject "Google profil – recenzije (D. M.)", BKS, ti-forma, plain text): name, stars, short quote, then "Prijedlog odgovora:" with copy-paste text; at the end: replies are published in Metricool → Inbox → Google Business Profile or directly on Google. No new reviews → no email.
+4. Never reply to reviews yourself, never change the profile, never delete posts.

@@ -1,18 +1,19 @@
 # Redaktionsplan Instagram – Zahnärztin Altstadt
 
-Monday = Reel "Wissen" · Wednesday = "Wussten Sie schon?" (new study), alternating reel / carousel.
+Monday = Reel "Wissen" · Wednesday = "Wussten Sie schon?" (new study), alternating reel / carousel · Thursday = Google-Profil text post with image.
+If the Google column says "Entwurf vorhanden", a draft already exists in Metricool – include it in the approval email instead of creating a new one.
 The Wednesday topic is a suggestion: research a fresh study and replace it if something better fits.
 
-| Woche | Mo 10:00 · Reel "Wissen" | Mi 10:00 · Wussten Sie schon? | Mi-Format | Status |
-|---|---|---|---|---|
-| 19.10.2026 | Warum blutet Ihr Zahnfleisch? | Naschen – wie oft zählt (Frontiers in Oral Health 2026) | Reel | geplant in Metricool |
-| 26.10.2026 | Zähne & Ernährung: Wo sich Zucker versteckt | Was Zähne nach dem Essen brauchen (Säure, Speichel, wann putzen) | Karussell | offen |
-| 02.11.2026 | Parodontitis und Diabetes – keine Einbahnstraße | Studie zu Parodontitis und Herz-Kreislauf | Reel | offen |
-| 09.11.2026 | Frauen 40+ (1/3): Was die Hormone im Mund verändern | Frauen 40+ (2/3): Trockener Mund und empfindliches Zahnfleisch | Karussell | offen |
-| 16.11.2026 | Gesunde Gewohnheiten: die 2-Minuten-Routine am Abend | Parodontitis und Demenz – was Studien zeigen | Reel | offen |
-| 23.11.2026 | Frauen 40+ (3/3): Knochen, Östrogen und Zahnhalt | Säure und Zahnschmelz (Erosion) | Karussell | offen |
-| 30.11.2026 | Zahnzwischenräume: Bürstchen oder Seide? | aktuelle Studie | Reel | offen |
-| 07.12.2026 | Zahnersatz verstehen: Krone, Brücke, Prothese | Mythos oder Wahrheit? Bei Zahnfleischbluten lieber nicht putzen? | Reel | offen |
+| Woche | Mo 10:00 · Reel "Wissen" | Mi 10:00 · Wussten Sie schon? | Mi-Format | Do 10:00 · Google-Profil (Text + Bild) | Status |
+|---|---|---|---|---|---|
+| 19.10.2026 | Warum blutet Ihr Zahnfleisch? | Naschen – wie oft zählt (Frontiers in Oral Health 2026) | Reel | Prophylaxe – warum sie sich lohnt (Entwurf vom Google-Wochencheck vorhanden, 20.10.) | geplant |
+| 26.10.2026 | Zähne & Ernährung: Wo sich Zucker versteckt | Was Zähne nach dem Essen brauchen (Säure, Speichel, wann putzen) | Karussell | Zahnfleischbluten? Nicht ignorieren (Entwurf vorhanden, 27.10.) | offen |
+| 02.11.2026 | Parodontitis und Diabetes – keine Einbahnstraße | Studie zu Parodontitis und Herz-Kreislauf | Reel | Prophylaxe in der Altstadt: Ablauf eines Termins | offen |
+| 09.11.2026 | Frauen 40+ (1/3): Was die Hormone im Mund verändern | Frauen 40+ (2/3): Trockener Mund und empfindliches Zahnfleisch | Karussell | Krone, Brücke oder Prothese? | offen |
+| 16.11.2026 | Gesunde Gewohnheiten: die 2-Minuten-Routine am Abend | Parodontitis und Demenz – was Studien zeigen | Reel | Online-Termin in 1 Minute | offen |
+| 23.11.2026 | Frauen 40+ (3/3): Knochen, Östrogen und Zahnhalt | Säure und Zahnschmelz (Erosion) | Karussell | Zahnersatz richtig pflegen | offen |
+| 30.11.2026 | Zahnzwischenräume: Bürstchen oder Seide? | aktuelle Studie | Reel | Unser Team stellt sich vor | offen |
+| 07.12.2026 | Zahnersatz verstehen: Krone, Brücke, Prothese | Mythos oder Wahrheit? Bei Zahnfleischbluten lieber nicht putzen? | Reel | Parodontitis-Behandlung: was passiert? | offen |
 
 Topic pillars for later weeks (rotate, no repeat within 4 weeks): gum health & general health (30 %), healthy habits & food (25 %), understanding prosthetics (20 %), women 40+ (15 %), practice & people (10 %, e.g. prophylaxis appointment, online booking). Children at most 1 in 8 posts.
 

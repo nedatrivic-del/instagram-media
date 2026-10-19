@@ -1,0 +1,20 @@
+{
+  "date": "2026-10-21",
+  "slot": "Mi · Wussten Sie schon?",
+  "format": "reel",
+  "title": "Naschen: Wie oft zählt mehr als gedacht",
+  "scenes": [
+    {"type": "hook", "lines": [{"text": "Wussten Sie", "size": 112}, {"text": "schon?", "size": 112, "bold": true, "red": true}],
+     "sub": "Für Kinderzähne zählt nicht nur, was genascht wird, sondern wie oft."},
+    {"type": "statement", "lines": [{"text": "815 Kinder", "size": 140, "bold": true, "red": true}, {"text": "im Alter von", "size": 120}, {"text": "4 bis 5 Jahren", "size": 120}],
+     "body": "Eine neue Studie (Frontiers in Oral Health, September 2026) hat ihre Naschgewohnheiten mit dem Zustand der Milchzähne verglichen."},
+    {"type": "statement", "kicker": "Das Ergebnis", "lines": [{"text": "Oft & unregelmäßig", "size": 104}, {"text": "= mehr Karies", "size": 104, "bold": true}],
+     "body": "Kinder, die 3-mal täglich oder öfter und zu wechselnden Zeiten naschten, hatten die stärkste Karies."},
+    {"type": "tips", "lines": [{"text": "So schützen Sie", "size": 110}, {"text": "Kinderzähne", "size": 110, "bold": true, "red": true}],
+     "items": [{"title": "Feste Zeiten für Süßes", "sub": "Am besten direkt nach einer Mahlzeit statt immer wieder zwischendurch."},
+               {"title": "Pausen für die Zähne", "sub": "Nach jedem Snack braucht der Speichel Zeit, um die Säure zu neutralisieren."},
+               {"title": "Wasser als Durstlöscher", "sub": "Keine süßen Getränke zwischendurch – und nachts erst recht nicht."}]},
+    {"type": "close", "lines": [{"text": "Es lohnt sich,", "size": 104}, {"text": "aufs Naschen zu achten.", "size": 104, "bold": true, "red": true, "maxw": 700}],
+     "body": "Kleine Gewohnheiten machen für Kinderzähne einen großen Unterschied."}
+  ]
+}

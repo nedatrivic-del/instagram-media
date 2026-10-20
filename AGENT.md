@@ -71,7 +71,7 @@ Idea from Neda (inspired by an orthodontist's "kinda chic to …" carousel – a
 - Photos: only Neda, team, hands, instruments, rooms, details. NEVER patients (WR-ÖZÄK). Never reuse the same photo two months in a row.
 - Neda still has to take the photos. If `photos/praxis/` has fewer than 5 photos, do NOT build the series: use a normal „Wussten Sie schon?“ post and add one line to the approval email reminding her to send practice photos.
 - Scene type `photo` exists: `{"type":"photo","photo":"photos/praxis/<file>.jpg","text":"wenn …","focus":[x,y],"shade":120}` (framed analog print, text on photo; "Ziemlich sympathisch," added automatically; optional "dy", "shade", "size"). Last slide: `close`. Neda's approved look: `drafts/_demo_sympathisch/` (5 photos + close).
-- Current photo pool (Oct 2026, decor only): wartezimmer, globus, voegel, blumen_1, blumen_2. The first post may reuse the demo; afterwards ask Neda (in the approval email) for new photos so the series does not look repetitive.
+- Episode 1 (02.12.2026) is done and scheduled and used all five current photos (wartezimmer, globus, voegel, blumen_1, blumen_2). From episode 2 (January) ask Neda (in the approval email) for new photos so the series does not look repetitive.
 
 ## How to build a post
 1. Pick the topic from `plan/redaktionsplan.md` (Wednesday: research a fresh study first; you may replace the planned topic if you find a better, recent, Austria-appropriate one).

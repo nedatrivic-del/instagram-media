@@ -24,10 +24,6 @@ def oswald(size, wght=300):
     f.set_variation_by_axes([wght]); return f
 
 
-def serif(size, italic=False, wght=500):
-    f = ImageFont.truetype(F + ("CormorantGaramond-Italic%5Bwght%5D.ttf" if italic else "CormorantGaramond%5Bwght%5D.ttf"), size)
-    f.set_variation_by_axes([wght]); return f
-
 
 def fira(size, style="Light"):
     return ImageFont.truetype(F + f"FiraSans-{style}.ttf", size)
@@ -211,38 +207,53 @@ class Builder:
         return img
 
     def photo(s, t, sc):
-        """Full-bleed practice photo + serif overlay (series "Ziemlich sympathisch, wenn ...")."""
-        from PIL import ImageOps
+        """Series "Ziemlich sympathisch, wenn ...": practice photo as an analog print (polaroid) on the brand background."""
+        from PIL import ImageOps, ImageEnhance
         H = s.H; key = sc["photo"]
         if not hasattr(s, "_ph"): s._ph = {}
         if key not in s._ph:
             s._ph[key] = ImageOps.exif_transpose(Image.open(os.path.join(HERE, "..", key))).convert("RGB")
-        im = s._ph[key]; z = 1.0 + 0.05 * min(t / 4.0, 1) if s.reel else 1.0
-        iw, ih = im.size; sc_ = max(W / iw, H / ih) * z
-        im2 = im.resize((int(iw * sc_) + 1, int(ih * sc_) + 1), Image.LANCZOS)
-        fx, fy = sc.get("focus", [0.5, 0.5])
-        x0 = int((im2.width - W) * fx); y0 = int((im2.height - H) * fy)
-        img = im2.crop((x0, y0, x0 + W, y0 + H)).convert("RGBA")
-        img = Image.alpha_composite(img, Image.new("RGBA", (W, H), (20, 22, 26, 105)))
-        d = ImageDraw.Draw(img); CRM = (246, 236, 205)
-        k1 = serif(92, True, 500); k2 = serif(84, False, 500)
-        lines = wrap(d, sc["text"], k2, W - 220)
-        hh = 110 + len(lines) * 92; y = (H - hh) // 2 + sc.get("dy", 0)
-        a = 255 if not s.reel else int(255 * ease((t - 0.1) / 0.4))
-        lay = Image.new("RGBA", (W, H), (0, 0, 0, 0)); ld = ImageDraw.Draw(lay)
+        im = s._ph[key]
+        pw, ph = 700, 660 if not s.reel else 820
+        iw, ih = im.size; k = max(pw / iw, ph / ih)
+        im2 = im.resize((int(iw * k) + 1, int(ih * k) + 1), Image.LANCZOS)
+        fx, fy = sc.get("focus", [0.5, 0.5]); x0 = int((im2.width - pw) * fx); y0 = int((im2.height - ph) * fy)
+        ph_img = im2.crop((x0, y0, x0 + pw, y0 + ph))
+        # analog look: faded contrast, warm tone, lifted blacks, grain, soft vignette
+        ph_img = ImageEnhance.Contrast(ph_img).enhance(0.86); ph_img = ImageEnhance.Color(ph_img).enhance(0.82)
+        r_, g_, b_ = ph_img.split()
+        ph_img = Image.merge("RGB", [r_.point(lambda v: int(18 + v * 0.93)), g_.point(lambda v: int(12 + v * 0.9)), b_.point(lambda v: int(6 + v * 0.82))])
+        grain = Image.effect_noise((pw, ph), 22).convert("L")
+        ph_img = Image.blend(ph_img, Image.merge("RGB", [grain] * 3), 0.06)
+        vig = Image.new("L", (pw, ph), 0); ImageDraw.Draw(vig).ellipse([-pw * .25, -ph * .25, pw * 1.25, ph * 1.25], fill=255)
+        vig = vig.filter(ImageFilter.GaussianBlur(90))
+        ph_img = Image.composite(ph_img, Image.blend(ph_img, Image.new("RGB", (pw, ph), (60, 45, 30)), 0.35), vig)
+        bx, bt, bb = 30, 30, 104
+        card = Image.new("RGBA", (pw + 2 * bx, ph + bt + bb), (251, 249, 242, 255))
+        card.paste(ph_img, (bx, bt)); cd = ImageDraw.Draw(card)
+        cap = "Zahnärztin Altstadt"; cf = fira(34, "LightItalic")
+        cd.text(((card.width - cd.textlength(cap, font=cf)) / 2, bt + ph + 32), cap, font=cf, fill=SLATE)
+        ang = sc.get("tilt", random.Random(key).choice([-2.4, -1.6, 1.4, 2.2]))
+        rc = card.rotate(ang, resample=Image.BICUBIC, expand=True)
+        img = s.bg.copy()
+        sh = Image.new("RGBA", img.size, (0, 0, 0, 0)); cx = (W - rc.width) // 2; cy = 58 if not s.reel else 200
+        sh.paste((40, 35, 30, 70), (cx + 10, cy + 16), rc.split()[3])
+        img.alpha_composite(sh.filter(ImageFilter.GaussianBlur(18))); img.alpha_composite(rc, (cx, cy))
+        # text in brand fonts
+        y = cy + rc.height + (34 if not s.reel else 80)
+        kf = fira(60, "LightItalic"); d = ImageDraw.Draw(img)
         kick = sc.get("kicker", "Ziemlich sympathisch,")
-        ld.text(((W - ld.textlength(kick, font=k1)) / 2, y), kick, font=k1, fill=CRM + (a,)); y += 118
-        for ln in lines:
-            ld.text(((W - ld.textlength(ln, font=k2)) / 2, y), ln, font=k2, fill=CRM + (a,)); y += 92
-        hf = fira(30, "Regular"); hd = "Zahnärztin Altstadt · Salzburg"
-        ld.text(((W - ld.textlength(hd, font=hf)) / 2, H - 110), hd, font=hf, fill=CRM + (int(a * .8),))
-        band = Image.new("RGBA", (W, H), (0, 0, 0, 0)); bd = ImageDraw.Draw(band)
-        top = (H - hh) // 2 + sc.get("dy", 0)
-        bd.rounded_rectangle([60, top - 70, W - 60, top + hh + 50], radius=200, fill=(15, 16, 20, int(sc.get("shade", 120) * a / 255)))
-        img.alpha_composite(band.filter(ImageFilter.GaussianBlur(60)))
-        shadow = lay.split()[3].filter(ImageFilter.GaussianBlur(6)).point(lambda v: int(v * .7))
-        img.alpha_composite(Image.merge("RGBA", [Image.new("L", (W, H), 0)] * 3 + [shadow]))
-        img.alpha_composite(lay); return img
+        d.text((90, y), kick, font=kf, fill=RED); y += 84
+        tf = oswald(sc.get("size", 78), 300)
+        for ln in wrap(d, sc["text"].upper(), tf, W - 180):
+            d.text((90, y), ln, font=tf, fill=SLATE); y += int(tf.size * 1.2)
+        bf = oswald(30, 400); brand = "ZAHNÄRZTIN ALTSTADT"
+        by = H - 70 if not s.reel else 1640
+        d.rectangle([90, by + 14, 150, by + 18], fill=SAGE)
+        d.text((168, by), brand, font=bf, fill=SLATE)
+        hf = fira(28, "Regular"); hd = "@dentistry.oldtown"
+        d.text((W - 90 - d.textlength(hd, font=hf), by + 4), hd, font=hf, fill=SLATE + (178,))
+        return img
 
     def scenes(s):
         durs = {"photo": 3.4, "hook": 3.2, "statement": 3.8, "tips": 5.4, "close": 4.2}

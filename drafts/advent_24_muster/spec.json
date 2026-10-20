@@ -1,6 +1,86 @@
-{"theme":"advent","door":24,"title":"Türchen 24 – Weihnachten, Neujahr, Urlaub (Muster)","scenes":[
- {"type":"hook","lines":[{"text":"Frohe","size":130},{"text":"Weihnachten!","size":130,"bold":true,"red":true}],"sub":"Danke fürs Mitöffnen."},
- {"type":"statement","kicker":"Danke","lines":[{"text":"für Ihr Vertrauen","size":104},{"text":"im Jahr 2026.","size":104,"bold":true,"red":true}],"body":"Wir wünschen Ihnen erholsame Feiertage und ein gesundes, gutes neues Jahr 2027."},
- {"type":"statement","kicker":"Wir machen kurz Pause","lines":[{"text":"24.12. – 10.01.","size":120,"bold":true,"red":true}],"body":"Ab Montag, 11. Jänner 2027 sind wir wieder für Sie da. Termine können Sie jederzeit online buchen."},
- {"type":"statement","kicker":"Zahnschmerzen an den Feiertagen?","lines":[{"text":"Zahnärztlicher","size":104},{"text":"Notdienst","size":104,"bold":true,"red":true}],"body":"Den diensthabenden Notdienst in Salzburg finden Sie auf zahnaerztekammer.at."},
- {"type":"close","lines":[{"text":"Bis bald","size":104},{"text":"im neuen Jahr!","size":104,"bold":true,"red":true}],"body":"Ihr Team der Zahnärztin Altstadt."}]}
+{
+ "theme": "advent",
+ "door": 24,
+ "title": "Türchen 24 – Weihnachten, Neujahr, Urlaub (Muster)",
+ "scenes": [
+  {
+   "type": "hook",
+   "lines": [
+    {
+     "text": "Frohe",
+     "size": 130
+    },
+    {
+     "text": "Weihnachten!",
+     "size": 130,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "sub": "Danke fürs Mitöffnen."
+  },
+  {
+   "type": "statement",
+   "kicker": "Danke",
+   "lines": [
+    {
+     "text": "für Ihr Vertrauen",
+     "size": 104
+    },
+    {
+     "text": "im Jahr 2026.",
+     "size": 104,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "body": "Wir wünschen Ihnen erholsame Feiertage und ein gesundes, gutes neues Jahr 2027."
+  },
+  {
+   "type": "statement",
+   "kicker": "Wir machen kurz Pause",
+   "lines": [
+    {
+     "text": "24.12. – 10.01.",
+     "size": 120,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "body": "Ab Montag, 11. Jänner 2027 sind wir wieder für Sie da. Termine können Sie jederzeit online buchen."
+  },
+  {
+   "type": "statement",
+   "kicker": "Zahnschmerzen an den Feiertagen?",
+   "lines": [
+    {
+     "text": "Zahnärztlicher",
+     "size": 104
+    },
+    {
+     "text": "Notdienst",
+     "size": 104,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "body": "Notdienstzentrum Salzburg: an Wochenenden und Feiertagen. Zeiten und Adresse auf ndz.at."
+  },
+  {
+   "type": "close",
+   "lines": [
+    {
+     "text": "Bis bald",
+     "size": 104
+    },
+    {
+     "text": "im neuen Jahr!",
+     "size": 104,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "body": "Ihr Team der Zahnärztin Altstadt."
+  }
+ ]
+}

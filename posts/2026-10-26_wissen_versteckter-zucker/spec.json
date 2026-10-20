@@ -19,7 +19,7 @@
     }
    ],
    "sub": "Ihre Zähne merken es.",
-   "duration": 3.6
+   "duration": 2.6
   },
   {
    "type": "statement",
@@ -41,7 +41,7 @@
     }
    ],
    "body": "Auch herzhafte und „gesunde“ Produkte enthalten oft viel Zucker.",
-   "duration": 4.6
+   "duration": 4.2
   },
   {
    "type": "tips",
@@ -88,7 +88,7 @@
     }
    ],
    "body": "Ein Blick aufs Etikett lohnt sich – Ihren Zähnen zuliebe.",
-   "duration": 4.8
+   "duration": 3.8
   }
  ]
 }

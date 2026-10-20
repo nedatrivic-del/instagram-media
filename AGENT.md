@@ -17,11 +17,14 @@ Nothing is ever published without Neda's explicit OK.
 |---|---|---|---|
 | Instagram Monday "Wissen" | Mon 10:00 | Reel (text on screen, Neda's photo) | Tuesday 19:07 (for the NEXT Monday) |
 | Instagram Wednesday "Wussten Sie schon?" | Wed 10:00 | Alternating reel / carousel (see plan) | Sunday 19:07 (for the coming Wednesday) |
-| Google Business Profile | Thu 10:00 | Text post (publication) with ONE image, German only | Sunday 19:07, together with the Wednesday post |
+| Google Business Profile (**PAUSED** – see below) | Thu 10:00 | Text post (publication) with ONE image, German only | Sunday 19:07, together with the Wednesday post |
 | Google reviews | – | Reply suggestions by email, never posted by the agent | Monday 9:07 |
 | Monthly report | – | Instagram + Google figures, one recommendation | First Sunday of the month, 19:07 |
 
 Neda approves on Monday and Wednesday mornings by replying OK to the approval email. One OK in a thread approves everything in that email.
+
+## Google posting PAUSED (since 20.10.2026)
+Google removed the post "Prophylaxe – warum sie sich lohnt" (20.10.2026) and turned off posting for the Business Profile. Until Neda writes that posting works again: do NOT prepare new Google posts, do NOT include Google drafts in approval emails, and do NOT switch any gmb draft to draft:false. Existing gmb drafts stay drafts. Instagram continues normally.
 
 ## Run schedule – what to do in each run (task fires daily 9:07, 13:07, 19:07 Europe/Vienna)
 Determine the current local date/time in Europe/Vienna first.
@@ -61,7 +64,7 @@ Determine the current local date/time in Europe/Vienna first.
 4. Write `caption.txt` in the folder (rules above).
 5. `git add`, commit (end message with the attribution lines your session gives you), `git push`. Verify the raw URL returns HTTP 200 (`curl -sI`).
 6. Create the Metricool post as a **draft** (`draft: true`, `autoPublish: true`) at the target date 10:00 Europe/Vienna, provider instagram, `instagramData.type` = `REEL` (video) or `POST` (carousel: list all slide URLs in `media`), `isAiGenerated: false` (true only if an AI image of Neda is used). For reels set `videoCoverMilliseconds: 2500`.
-6b. **Google post (Sunday run only, for Thursday 10:00):** topic from the plan's Google column (practice-oriented: prophylaxis, periodontology, crowns/bridges/dentures, online booking, team). Create a Metricool DRAFT: providers `[{"network":"gmb"}]`, `gmbData: {"type":"publication"}`, German only, 600–1200 characters, no hashtags, no emojis, factual (same advertising rules), ending with "Termin online: termine.softdent.at/zahnaerztin-altstadt · 0662 843 106". Attach one image: build a small 2–3-scene spec (hook + statement or close) and render `carousel` mode, use `slide_1.jpg` (push it first). Folder `posts/<date>_google_<slug>/` with its own status.json. Include it in the same approval email as the Wednesday post.
+6b. **Google post (Sunday run only, for Thursday 10:00):** topic from the plan's Google column (practice-oriented: prophylaxis, periodontology, crowns/bridges/dentures, online booking, team). Create a Metricool DRAFT: providers `[{"network":"gmb"}]`, `gmbData: {"type":"publication"}`, German only, 600–1200 characters, no hashtags, no emojis, factual (same advertising rules), ending with "Termin online: termine.softdent.at/zahnaerztin-altstadt". **Never put a phone number in Google post text** (Google removed the 20.10.2026 post and turned off posting for the profile; phone numbers in the post body are a known rejection reason – the profile already has a call button). Attach one image: build a small 2–3-scene spec (hook + statement or close) and render `carousel` mode, use `slide_1.jpg` (push it first). Folder `posts/<date>_google_<slug>/` with its own status.json. Include it in the same approval email as the Wednesday post.
 7. Write `status.json` in the folder: `{"date": ..., "slot": ..., "title": ..., "format": ..., "status": "awaiting_approval", "metricool_id": ..., "metricool_uuid": ..., "email_thread_id": ..., "media": [...]}`.
 8. Email Neda (Gmail send_message to nedatrivic@gmail.com), subject: `[Insta-Freigabe] <Wochentag DD.MM.> – <Titel>`. Body in BKS, short: what, when, why this topic (1–2 lines, with study source), the media link(s) (raw GitHub URLs – they open in the browser), the full caption, and: "Odgovori sa **OK** i post ide u <dan> u 10:00. Ako želiš promjenu, samo napiši šta." Start the body with the marker line `[Insta-Agent]`.
 9. Optionally update the preview page (Artifact tool, `url` above): read it first, add the post (upload media as asset), mark it "wait".

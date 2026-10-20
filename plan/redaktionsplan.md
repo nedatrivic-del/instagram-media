@@ -13,7 +13,7 @@ Read the section "Attention rules" before writing any spec.
 | 09.11.2026 | Frauen 40+ (1/3): Was die Hormone im Mund verändern | Frauen 40+ (2/3): Trockener Mund und empfindliches Zahnfleisch | Karussell | Krone, Brücke oder Prothese? | offen |
 | 16.11.2026 | Gesunde Gewohnheiten: die 2-Minuten-Routine am Abend | Parodontitis und Demenz – was Studien zeigen | Reel | Online-Termin in 1 Minute | offen |
 | 23.11.2026 | Frauen 40+ (3/3): Knochen, Östrogen und Zahnhalt | Säure und Zahnschmelz (Erosion) | Karussell | Zahnersatz richtig pflegen | offen |
-| 30.11.2026 | Zahnzwischenräume: Bürstchen oder Seide? | Serie „Ziemlich sympathisch, wenn …“ Folge 2 – nur wenn NEUE Praxisfotos in photos/praxis/ (nicht die 5 aus Folge 1), sonst aktuelle Studie | Karussell (Serie) / Reel (Studie) | Unser Team stellt sich vor | offen |
+| 30.11.2026 | Zahnzwischenräume: Bürstchen oder Seide? | Serie „Ziemlich sympathisch, wenn …“ Folge 2 – ADVENT-Ausgabe mit Neda's neuen Advent-Fotos aus der Praxis (photos/praxis/advent_*), Sätze passend zur Adventszeit; falls keine Fotos da, aktuelle Studie | Karussell (Serie) / Reel (Studie) | Unser Team stellt sich vor | offen |
 | 07.12.2026 | Zahnersatz verstehen: Krone, Brücke, Prothese | Mythos oder Wahrheit? Bei Zahnfleischbluten lieber nicht putzen? | Reel | Parodontitis-Behandlung: was passiert? | offen |
 
 Monthly series: episode 1 is an extra post on FRIDAY 30.10.2026 10:00 (already approved and scheduled in Metricool – do not create anything for it). From then on the FIRST Wednesday of every month (episode 2 on 02.12.2026) is the carousel series „Ziemlich sympathisch, wenn …“ – see AGENT.md section "Monthly series". It replaces that week's „Wussten Sie schon?“.

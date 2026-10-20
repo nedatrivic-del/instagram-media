@@ -297,6 +297,55 @@ class Builder:
         d.text((W - bx - 4 - d.textlength(hd, font=hf), by + 8), hd, font=hf, fill=FINK)
         return img
 
+    def polaroid(s, t, sc):
+        """Series "Ziemlich sympathisch, wenn ...": practice photo as an analog print (polaroid) on the brand background."""
+        from PIL import ImageOps, ImageEnhance
+        H = s.H; key = sc["photo"]
+        if not hasattr(s, "_ph"): s._ph = {}
+        if key not in s._ph:
+            s._ph[key] = ImageOps.exif_transpose(Image.open(os.path.join(HERE, "..", key))).convert("RGB")
+        im = s._ph[key]
+        pw, ph = 700, 660 if not s.reel else 820
+        iw, ih = im.size; k = max(pw / iw, ph / ih)
+        im2 = im.resize((int(iw * k) + 1, int(ih * k) + 1), Image.LANCZOS)
+        fx, fy = sc.get("focus", [0.5, 0.5]); x0 = int((im2.width - pw) * fx); y0 = int((im2.height - ph) * fy)
+        ph_img = im2.crop((x0, y0, x0 + pw, y0 + ph))
+        # analog look: faded contrast, warm tone, lifted blacks, grain, soft vignette
+        ph_img = ImageEnhance.Contrast(ph_img).enhance(0.86); ph_img = ImageEnhance.Color(ph_img).enhance(0.82)
+        r_, g_, b_ = ph_img.split()
+        ph_img = Image.merge("RGB", [r_.point(lambda v: int(18 + v * 0.93)), g_.point(lambda v: int(12 + v * 0.9)), b_.point(lambda v: int(6 + v * 0.82))])
+        grain = Image.effect_noise((pw, ph), 22).convert("L")
+        ph_img = Image.blend(ph_img, Image.merge("RGB", [grain] * 3), 0.06)
+        vig = Image.new("L", (pw, ph), 0); ImageDraw.Draw(vig).ellipse([-pw * .25, -ph * .25, pw * 1.25, ph * 1.25], fill=255)
+        vig = vig.filter(ImageFilter.GaussianBlur(90))
+        ph_img = Image.composite(ph_img, Image.blend(ph_img, Image.new("RGB", (pw, ph), (60, 45, 30)), 0.35), vig)
+        bx, bt, bb = 30, 30, 104
+        card = Image.new("RGBA", (pw + 2 * bx, ph + bt + bb), (251, 249, 242, 255))
+        card.paste(ph_img, (bx, bt)); cd = ImageDraw.Draw(card)
+        cap = "Zahnärztin Altstadt"; cf = fira(34, "LightItalic")
+        cd.text(((card.width - cd.textlength(cap, font=cf)) / 2, bt + ph + 32), cap, font=cf, fill=SLATE)
+        ang = sc.get("tilt", random.Random(key).choice([-2.4, -1.6, 1.4, 2.2]))
+        rc = card.rotate(ang, resample=Image.BICUBIC, expand=True)
+        img = s.bg.copy()
+        sh = Image.new("RGBA", img.size, (0, 0, 0, 0)); cx = (W - rc.width) // 2; cy = 58 if not s.reel else 200
+        sh.paste((40, 35, 30, 70), (cx + 10, cy + 16), rc.split()[3])
+        img.alpha_composite(sh.filter(ImageFilter.GaussianBlur(18))); img.alpha_composite(rc, (cx, cy))
+        # text in brand fonts
+        y = cy + rc.height + (34 if not s.reel else 80)
+        kf = fira(60, "LightItalic"); d = ImageDraw.Draw(img)
+        kick = sc.get("kicker", "Ziemlich sympathisch,")
+        d.text((90, y), kick, font=kf, fill=RED); y += 84
+        tf = oswald(sc.get("size", 78), 300)
+        for ln in wrap(d, sc["text"].upper(), tf, W - 180):
+            d.text((90, y), ln, font=tf, fill=SLATE); y += int(tf.size * 1.2)
+        bf = oswald(30, 400); brand = "ZAHNÄRZTIN ALTSTADT"
+        by = H - 70 if not s.reel else 1640
+        d.rectangle([90, by + 14, 150, by + 18], fill=SAGE)
+        d.text((168, by), brand, font=bf, fill=SLATE)
+        hf = fira(28, "Regular"); hd = "@dentistry.oldtown"
+        d.text((W - 90 - d.textlength(hd, font=hf), by + 4), hd, font=hf, fill=SLATE + (178,))
+        return img
+
     def framed(s, img):
         """Put any finished slide into the same analog paper frame as the photo series."""
         H = s.H; bx, bt, bb = 46, 46, 150; pw, ph = W - 2 * bx, H - bt - bb
@@ -314,7 +363,7 @@ class Builder:
         return out
 
     def scenes(s):
-        durs = {"photo": 3.4, "hook": 3.2, "statement": 3.8, "tips": 5.4, "close": 4.2}
+        durs = {"polaroid": 3.4, "photo": 3.4, "hook": 3.2, "statement": 3.8, "tips": 5.4, "close": 4.2}
         out = []
         for sc in s.spec["scenes"]:
             fn = getattr(s, sc["type"])

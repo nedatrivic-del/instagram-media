@@ -267,7 +267,8 @@ class Builder:
         p_ = p_.convert("RGBA")
         p_ = Image.alpha_composite(p_, Image.new("RGBA", (pw, ph), (20, 22, 26, 40)))
         # text on the photo (brand fonts), centred, with soft shade
-        CRM = (250, 242, 222)
+        CRM = (250, 242, 222); GOLD = s.spec.get("frame_ink") == "gold"
+        KCOL = (236, 204, 134) if GOLD else CRM; FINK = (156, 116, 44) if GOLD else SLATE
         kf = fira(62, "LightItalic"); tf = oswald(sc.get("size", 80), 300)
         d0 = ImageDraw.Draw(p_); lines = wrap(d0, sc["text"].upper(), tf, pw - 160)
         lh = int(tf.size * 1.18); hh = 86 + len(lines) * lh; y = (ph - hh) // 2 + sc.get("dy", 0)
@@ -276,7 +277,7 @@ class Builder:
         p_.alpha_composite(band.filter(ImageFilter.GaussianBlur(60)))
         lay = Image.new("RGBA", (pw, ph), (0, 0, 0, 0)); ld = ImageDraw.Draw(lay)
         kick = sc.get("kicker", "Ziemlich sympathisch,")
-        ld.text(((pw - ld.textlength(kick, font=kf)) / 2, y), kick, font=kf, fill=CRM); y += 86
+        ld.text(((pw - ld.textlength(kick, font=kf)) / 2, y), kick, font=kf, fill=KCOL); y += 86
         for ln in lines:
             ld.text(((pw - ld.textlength(ln, font=tf)) / 2, y), ln, font=tf, fill=CRM); y += lh
         shadow = lay.split()[3].filter(ImageFilter.GaussianBlur(6)).point(lambda v: int(v * .6))
@@ -291,9 +292,9 @@ class Builder:
         img.alpha_composite(p_, (bx, bt))
         d = ImageDraw.Draw(img); by = bt + ph + 50
         bf = oswald(40, 300); brand = "ZAHNÄRZTIN ALTSTADT"
-        d.text((bx + 4, by), brand, font=bf, fill=SLATE)
+        d.text((bx + 4, by), brand, font=bf, fill=FINK)
         hf = fira(30, "LightItalic"); hd = "@dentistry.oldtown"
-        d.text((W - bx - 4 - d.textlength(hd, font=hf), by + 8), hd, font=hf, fill=SLATE)
+        d.text((W - bx - 4 - d.textlength(hd, font=hf), by + 8), hd, font=hf, fill=FINK)
         return img
 
     def framed(s, img):
@@ -307,9 +308,9 @@ class Builder:
         ImageDraw.Draw(sh).rectangle([bx - 2, bt - 2, bx + pw + 2, bt + ph + 2], fill=(0, 0, 0, 60))
         out.alpha_composite(sh.filter(ImageFilter.GaussianBlur(3))); out.alpha_composite(inner, (bx, bt))
         d = ImageDraw.Draw(out); by = bt + ph + 50
-        d.text((bx + 4, by), "ZAHNÄRZTIN ALTSTADT", font=oswald(40, 300), fill=SLATE)
+        d.text((bx + 4, by), "ZAHNÄRZTIN ALTSTADT", font=oswald(40, 300), fill=((156, 116, 44) if s.spec.get("frame_ink") == "gold" else SLATE))
         hf = fira(30, "LightItalic"); hd = "@dentistry.oldtown"
-        d.text((W - bx - 4 - d.textlength(hd, font=hf), by + 8), hd, font=hf, fill=SLATE)
+        d.text((W - bx - 4 - d.textlength(hd, font=hf), by + 8), hd, font=hf, fill=((156, 116, 44) if s.spec.get("frame_ink") == "gold" else SLATE))
         return out
 
     def scenes(s):

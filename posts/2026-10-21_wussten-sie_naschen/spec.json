@@ -2,19 +2,17 @@
   "date": "2026-10-21",
   "slot": "Mi · Wussten Sie schon?",
   "format": "reel",
-  "title": "Naschen: Wie oft zählt mehr als gedacht",
+  "title": "Naschen: Nicht was, sondern wie oft",
   "scenes": [
-    {"type": "hook", "lines": [{"text": "Wussten Sie", "size": 112}, {"text": "schon?", "size": 112, "bold": true, "red": true}],
-     "sub": "Für Kinderzähne zählt nicht nur, was genascht wird, sondern wie oft."},
-    {"type": "statement", "lines": [{"text": "815 Kinder", "size": 140, "bold": true, "red": true}, {"text": "im Alter von", "size": 120}, {"text": "4 bis 5 Jahren", "size": 120}],
-     "body": "Eine neue Studie (Frontiers in Oral Health, September 2026) hat ihre Naschgewohnheiten mit dem Zustand der Milchzähne verglichen."},
-    {"type": "statement", "kicker": "Das Ergebnis", "lines": [{"text": "Oft & unregelmäßig", "size": 104}, {"text": "= mehr Karies", "size": 104, "bold": true}],
-     "body": "Kinder, die 3-mal täglich oder öfter und zu wechselnden Zeiten naschten, hatten die stärkste Karies."},
-    {"type": "tips", "lines": [{"text": "So schützen Sie", "size": 110}, {"text": "Kinderzähne", "size": 110, "bold": true, "red": true}],
-     "items": [{"title": "Feste Zeiten für Süßes", "sub": "Am besten direkt nach einer Mahlzeit statt immer wieder zwischendurch."},
-               {"title": "Pausen für die Zähne", "sub": "Nach jedem Snack braucht der Speichel Zeit, um die Säure zu neutralisieren."},
-               {"title": "Wasser als Durstlöscher", "sub": "Keine süßen Getränke zwischendurch – und nachts erst recht nicht."}]},
-    {"type": "close", "lines": [{"text": "Es lohnt sich,", "size": 104}, {"text": "aufs Naschen zu achten.", "size": 104, "bold": true, "red": true, "maxw": 700}],
-     "body": "Kleine Gewohnheiten machen für Kinderzähne einen großen Unterschied."}
+    {"type": "hook", "duration": 2.6, "lines": [{"text": "Nicht was –", "size": 120}, {"text": "sondern wie oft?", "size": 120, "bold": true, "red": true}],
+     "sub": "Naschen & Kinderzähne"},
+    {"type": "statement", "duration": 4.2, "kicker": "Neue Studie, 2026", "lines": [{"text": "3× täglich", "size": 130}, {"text": "oder öfter", "size": 130}, {"text": "= mehr Karies", "size": 130, "bold": true, "red": true}],
+     "body": "815 Kinder: Häufiges Naschen ging mit mehr Karies einher."},
+    {"type": "tips", "duration": 6.4, "lines": [{"text": "So schützen Sie", "size": 110}, {"text": "Kinderzähne", "size": 110, "bold": true, "red": true}],
+     "items": [{"title": "Feste Zeiten für Süßes", "sub": "Am besten direkt nach einer Mahlzeit."},
+               {"title": "Pausen für die Zähne", "sub": "Der Speichel braucht Zeit, um Säure zu neutralisieren."},
+               {"title": "Wasser als Durstlöscher", "sub": "Keine süßen Getränke zwischendurch oder nachts."}]},
+    {"type": "close", "duration": 3.8, "lines": [{"text": "Speichern Sie sich", "size": 104}, {"text": "diesen Tipp.", "size": 104, "bold": true, "red": true}],
+     "body": "Kleine Gewohnheiten, großer Unterschied."}
   ]
 }

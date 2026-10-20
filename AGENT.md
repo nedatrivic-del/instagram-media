@@ -70,7 +70,8 @@ Idea from Neda (inspired by an orthodontist's "kinda chic to …" carousel – a
 - Lines are from the patient's perspective (never self-praise). Examples Neda liked: "wenn sich jemand Zeit nimmt für noch eine Frage." · "wenn erst erklärt und dann behandelt wird." · "wenn Angst ernst genommen wird." · "wenn man in drei Sprachen zuhört." · "wenn Zahnfleisch genauso wichtig ist wie Zähne." Write new lines each month; no promises.
 - Photos: only Neda, team, hands, instruments, rooms, details. NEVER patients (WR-ÖZÄK). Never reuse the same photo two months in a row.
 - Neda still has to take the photos. If `photos/praxis/` has fewer than 5 photos, do NOT build the series: use a normal „Wussten Sie schon?“ post and add one line to the approval email reminding her to send practice photos.
-- The template has no full-bleed photo scene yet: before the first series post, add a `photo` scene type to make_media.py (photo cover-cropped, dark gradient, Oswald/serif italic overlay), check the stills, then build.
+- Scene type `photo` exists: `{"type":"photo","photo":"photos/praxis/<file>.jpg","text":"wenn …","focus":[x,y],"shade":120}` (serif overlay, "Ziemlich sympathisch," is added automatically). Last slide: `close`. Neda's approved look: `drafts/_demo_sympathisch/` (5 photos + close). Busy photos (flowers) need the default shade or higher.
+- Current photo pool (Oct 2026, decor only): wartezimmer, globus, voegel, blumen_1, blumen_2. The first post may reuse the demo; afterwards ask Neda (in the approval email) for new photos so the series does not look repetitive.
 
 ## How to build a post
 1. Pick the topic from `plan/redaktionsplan.md` (Wednesday: research a fresh study first; you may replace the planned topic if you find a better, recent, Austria-appropriate one).

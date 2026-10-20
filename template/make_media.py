@@ -24,6 +24,11 @@ def oswald(size, wght=300):
     f.set_variation_by_axes([wght]); return f
 
 
+def serif(size, italic=False, wght=500):
+    f = ImageFont.truetype(F + ("CormorantGaramond-Italic%5Bwght%5D.ttf" if italic else "CormorantGaramond%5Bwght%5D.ttf"), size)
+    f.set_variation_by_axes([wght]); return f
+
+
 def fira(size, style="Light"):
     return ImageFont.truetype(F + f"FiraSans-{style}.ttf", size)
 
@@ -128,7 +133,7 @@ class Builder:
         s.spec, s.H = spec, H
         s.reel = H == 1920
         s.bg = make_bg(H)
-        s.photo = Image.open(PHOTO).convert("RGB")
+        s.portrait = Image.open(PHOTO).convert("RGB")
         s.circ = None
         s.handle_y = 1600 if s.reel else H - 90
         s.zone = (260, 1520) if s.reel else (130, H - 140)
@@ -140,11 +145,11 @@ class Builder:
         img = s.bg.copy(); H = s.H
         ph_h = 1080 if s.reel else 760
         z = (1.0 + 0.12 * min(t / 3.0, 1)) if s.reel else 1.0
-        pw, phh = s.photo.size
+        pw, phh = s.portrait.size
         cw, ch = pw / z, pw / z * ph_h / W
         if ch > phh: ch = phh / z; cw = ch * W / ph_h
         cx0 = pw - cw - 10 * (1 - min(t, 4.5) / 4.5); cy0 = max(0, (phh - ch) * 0.25)
-        crop = s.photo.crop((int(cx0), int(cy0), int(cx0 + cw), int(cy0 + ch))).resize((W, ph_h), Image.LANCZOS).convert("RGBA")
+        crop = s.portrait.crop((int(cx0), int(cy0), int(cx0 + cw), int(cy0 + ch))).resize((W, ph_h), Image.LANCZOS).convert("RGBA")
         mask = Image.new("L", (W, ph_h), 255); md = ImageDraw.Draw(mask)
         for i in range(260):
             md.line([(0, ph_h - 260 + i), (W, ph_h - 260 + i)], fill=int(255 * (1 - i / 260)))
@@ -178,8 +183,8 @@ class Builder:
     def close(s, t, sc):
         img = s.bg.copy()
         if s.circ is None:
-            sz = 300; pw, _ = s.photo.size
-            c = s.photo.crop((int(pw * 0.50), 40, int(pw * 0.50) + 430, 470)).resize((sz, sz), Image.LANCZOS)
+            sz = 300; pw, _ = s.portrait.size
+            c = s.portrait.crop((int(pw * 0.50), 40, int(pw * 0.50) + 430, 470)).resize((sz, sz), Image.LANCZOS)
             m = Image.new("L", (sz * 4, sz * 4), 0); ImageDraw.Draw(m).ellipse([0, 0, sz * 4, sz * 4], fill=255)
             s.circ = (c.convert("RGBA"), m.resize((sz, sz), Image.LANCZOS))
         spec = headline_layers(sc["lines"], 0.1, 0.15, 50) + [(Layer(0.5, "text", text=sc["body"], font=fira(52, "Light"), color=SLATE, lh=1.32), 0)]
@@ -205,8 +210,42 @@ class Builder:
             img.alpha_composite(card)
         return img
 
+    def photo(s, t, sc):
+        """Full-bleed practice photo + serif overlay (series "Ziemlich sympathisch, wenn ...")."""
+        from PIL import ImageOps
+        H = s.H; key = sc["photo"]
+        if not hasattr(s, "_ph"): s._ph = {}
+        if key not in s._ph:
+            s._ph[key] = ImageOps.exif_transpose(Image.open(os.path.join(HERE, "..", key))).convert("RGB")
+        im = s._ph[key]; z = 1.0 + 0.05 * min(t / 4.0, 1) if s.reel else 1.0
+        iw, ih = im.size; sc_ = max(W / iw, H / ih) * z
+        im2 = im.resize((int(iw * sc_) + 1, int(ih * sc_) + 1), Image.LANCZOS)
+        fx, fy = sc.get("focus", [0.5, 0.5])
+        x0 = int((im2.width - W) * fx); y0 = int((im2.height - H) * fy)
+        img = im2.crop((x0, y0, x0 + W, y0 + H)).convert("RGBA")
+        img = Image.alpha_composite(img, Image.new("RGBA", (W, H), (20, 22, 26, 105)))
+        d = ImageDraw.Draw(img); CRM = (246, 236, 205)
+        k1 = serif(92, True, 500); k2 = serif(84, False, 500)
+        lines = wrap(d, sc["text"], k2, W - 220)
+        hh = 110 + len(lines) * 92; y = (H - hh) // 2 + sc.get("dy", 0)
+        a = 255 if not s.reel else int(255 * ease((t - 0.1) / 0.4))
+        lay = Image.new("RGBA", (W, H), (0, 0, 0, 0)); ld = ImageDraw.Draw(lay)
+        kick = sc.get("kicker", "Ziemlich sympathisch,")
+        ld.text(((W - ld.textlength(kick, font=k1)) / 2, y), kick, font=k1, fill=CRM + (a,)); y += 118
+        for ln in lines:
+            ld.text(((W - ld.textlength(ln, font=k2)) / 2, y), ln, font=k2, fill=CRM + (a,)); y += 92
+        hf = fira(30, "Regular"); hd = "Zahnärztin Altstadt · Salzburg"
+        ld.text(((W - ld.textlength(hd, font=hf)) / 2, H - 110), hd, font=hf, fill=CRM + (int(a * .8),))
+        band = Image.new("RGBA", (W, H), (0, 0, 0, 0)); bd = ImageDraw.Draw(band)
+        top = (H - hh) // 2 + sc.get("dy", 0)
+        bd.rounded_rectangle([60, top - 70, W - 60, top + hh + 50], radius=200, fill=(15, 16, 20, int(sc.get("shade", 120) * a / 255)))
+        img.alpha_composite(band.filter(ImageFilter.GaussianBlur(60)))
+        shadow = lay.split()[3].filter(ImageFilter.GaussianBlur(6)).point(lambda v: int(v * .7))
+        img.alpha_composite(Image.merge("RGBA", [Image.new("L", (W, H), 0)] * 3 + [shadow]))
+        img.alpha_composite(lay); return img
+
     def scenes(s):
-        durs = {"hook": 3.2, "statement": 3.8, "tips": 5.4, "close": 4.2}
+        durs = {"photo": 3.4, "hook": 3.2, "statement": 3.8, "tips": 5.4, "close": 4.2}
         out = []
         for sc in s.spec["scenes"]:
             fn = getattr(s, sc["type"])

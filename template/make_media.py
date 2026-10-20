@@ -87,8 +87,11 @@ def stack(spec, top, bottom):
     return [L for L, _ in spec]
 
 
+ANIM = 0.55
+
+
 def draw_layer(img, t, L):
-    p = ease((t - L.at) / 0.55)
+    p = ease((t - L.at) / ANIM)
     if p <= 0: return
     layer = Image.new("RGBA", img.size, (0, 0, 0, 0)); d = ImageDraw.Draw(layer)
     a = int(255 * p); y = L.y + int((1 - p) * 40); k = L.kw; x = 90; maxw = k.get("maxw", W - 180)
@@ -136,7 +139,7 @@ class Builder:
     def hook(s, t, sc):
         img = s.bg.copy(); H = s.H
         ph_h = 1080 if s.reel else 760
-        z = 1.0 + 0.07 * min(t / 4.5, 1)
+        z = (1.0 + 0.12 * min(t / 3.0, 1)) if s.reel else 1.0
         pw, phh = s.photo.size
         cw, ch = pw / z, pw / z * ph_h / W
         if ch > phh: ch = phh / z; cw = ch * W / ph_h
@@ -145,10 +148,12 @@ class Builder:
         mask = Image.new("L", (W, ph_h), 255); md = ImageDraw.Draw(mask)
         for i in range(260):
             md.line([(0, ph_h - 260 + i), (W, ph_h - 260 + i)], fill=int(255 * (1 - i / 260)))
-        pa = ease(t / 0.6); mask = mask.point(lambda v: int(v * pa))
+        pa = 1.0 if s.reel else ease(t / 0.6); mask = mask.point(lambda v: int(v * pa))
         img.paste(crop, (0, 0), mask)
-        spec = headline_layers(sc["lines"], 0.4, 0.3, 34) + [(Layer(1.4, "rule"), 40),
-                (Layer(1.6, "text", text=sc["sub"], font=fira(54, "LightItalic"), color=SLATE), 0)]
+        t0, st, tr, tsub = (-1.0, 0.0, -1.0, 0.5) if s.reel else (0.4, 0.3, 1.4, 1.6)
+        spec = headline_layers(sc["lines"], t0, st, 34) + [(Layer(tr, "rule"), 40)]
+        if sc.get("sub"):
+            spec.append((Layer(tsub, "text", text=sc["sub"], font=fira(54, "LightItalic"), color=SLATE), 0))
         top, bottom = (1000, 1560) if s.reel else (ph_h - 80, H - 60)
         for L in stack(spec, top, bottom): draw_layer(img, t, L)
         return img
@@ -157,8 +162,8 @@ class Builder:
         img = s.bg.copy(); spec = []
         if sc.get("kicker"):
             spec.append((Layer(0.1, "text", text=sc["kicker"], font=fira(52, "LightItalic"), color=RED), 24))
-        spec += headline_layers(sc["lines"], 0.3)
-        spec += [(Layer(1.1, "rule"), 44), (Layer(1.3, "text", text=sc["body"], font=fira(56, "Light"), color=SLATE, lh=1.34), 0)]
+        spec += headline_layers(sc["lines"], 0.15, 0.12)
+        spec += [(Layer(0.5, "rule"), 44), (Layer(0.7, "text", text=sc["body"], font=fira(56, "Light"), color=SLATE, lh=1.34), 0)]
         for L in stack(spec, *s.zone): draw_layer(img, t, L)
         s.handle(img); return img
 
@@ -166,7 +171,7 @@ class Builder:
         img = s.bg.copy()
         spec = headline_layers(sc["lines"], 0.1, 0.15, 40) + [(Layer(0.5, "rule"), 56)]
         for i, it in enumerate(sc["items"]):
-            spec.append((Layer(0.9 + 1.2 * i, "item", n=str(i + 1), title=it["title"], sub=it["sub"]), 54 if i < len(sc["items"]) - 1 else 0))
+            spec.append((Layer(0.5 + 0.9 * i, "item", n=str(i + 1), title=it["title"], sub=it["sub"]), 54 if i < len(sc["items"]) - 1 else 0))
         for L in stack(spec, *s.zone): draw_layer(img, t, L)
         s.handle(img); return img
 
@@ -177,10 +182,10 @@ class Builder:
             c = s.photo.crop((int(pw * 0.50), 40, int(pw * 0.50) + 430, 470)).resize((sz, sz), Image.LANCZOS)
             m = Image.new("L", (sz * 4, sz * 4), 0); ImageDraw.Draw(m).ellipse([0, 0, sz * 4, sz * 4], fill=255)
             s.circ = (c.convert("RGBA"), m.resize((sz, sz), Image.LANCZOS))
-        spec = headline_layers(sc["lines"], 0.1, 0.2, 50) + [(Layer(0.9, "text", text=sc["body"], font=fira(52, "Light"), color=SLATE, lh=1.32), 0)]
+        spec = headline_layers(sc["lines"], 0.1, 0.15, 50) + [(Layer(0.5, "text", text=sc["body"], font=fira(52, "Light"), color=SLATE, lh=1.32), 0)]
         top, bottom = (230, 860) if s.reel else (50, 680)
         for L in stack(spec, top, bottom): draw_layer(img, t, L)
-        p = ease((t - 1.8) / 0.6)
+        p = ease((t - 1.0) / 0.5)
         if p > 0:
             card = Image.new("RGBA", (W, s.H), (0, 0, 0, 0)); d = ImageDraw.Draw(card)
             a = int(255 * p); y0 = (920 if s.reel else 710) + int((1 - p) * 40)
@@ -201,7 +206,7 @@ class Builder:
         return img
 
     def scenes(s):
-        durs = {"hook": 4.6, "statement": 4.7, "tips": 6.6, "close": 6.0}
+        durs = {"hook": 3.2, "statement": 3.8, "tips": 5.4, "close": 4.2}
         out = []
         for sc in s.spec["scenes"]:
             fn = getattr(s, sc["type"])
@@ -210,7 +215,8 @@ class Builder:
 
 
 def render_reel(spec, out):
-    b = Builder(spec, 1920); sc = b.scenes(); XF = 0.45
+    global ANIM; ANIM = 0.35
+    b = Builder(spec, 1920); sc = b.scenes(); XF = 0.25
     total = sum(d for _, d in sc); n = int(total * FPS)
     ff = subprocess.Popen(["ffmpeg", "-y", "-loglevel", "error", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x1920",
                            "-r", str(FPS), "-i", "-", "-f", "lavfi", "-i", "anullsrc=r=44100:cl=stereo",
@@ -223,7 +229,8 @@ def render_reel(spec, out):
         fn, dur = sc[i]; lt = t - starts[i]; frame = fn(lt)
         if i + 1 < len(sc) and lt > dur - XF:
             frame = Image.blend(frame, sc[i + 1][0](0.0), (lt - (dur - XF)) / XF)
-        ff.stdin.write(frame.convert("RGB").tobytes())
+        frame = frame.convert("RGB"); ImageDraw.Draw(frame).rectangle([0, 0, int(W * t / total), 9], fill=SAGE)
+        ff.stdin.write(frame.tobytes())
     ff.stdin.close(); ff.wait(); print("reel", out, round(total, 1), "s")
 
 

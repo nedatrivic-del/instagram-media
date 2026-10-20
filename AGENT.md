@@ -15,7 +15,7 @@ Nothing is ever published without Neda's explicit OK.
 ## Posting rhythm (from the strategy)
 | Slot | Time | Format | Prepared in run |
 |---|---|---|---|
-| Instagram Monday "Wissen" | Mon 10:00 | Reel (text on screen, Neda's photo) | Tuesday 19:07 (for the NEXT Monday) |
+| Instagram Monday "Wissen" | Mon 10:00 | Reel 12–17 s (text on screen, Neda's photo, hook in first frame) | Tuesday 19:07 (for the NEXT Monday) |
 | Instagram Wednesday "Wussten Sie schon?" | Wed 10:00 | Alternating reel / carousel (see plan) | Sunday 19:07 (for the coming Wednesday) |
 | Google Business Profile (**PAUSED** – see below) | Thu 10:00 | Text post (publication) with ONE image, German only | Sunday 19:07, together with the Wednesday post |
 | Google reviews | – | Reply suggestions by email, never posted by the agent | Monday 9:07 |
@@ -53,6 +53,16 @@ Determine the current local date/time in Europe/Vienna first.
 - Austrian dental advertising rules (WR-ÖZÄK): factual and informative, no prices, no vouchers/promotions, no comparisons with other practices, no before/after images, no patient images.
 - Closing slide: a gentle line, never a hard sell. Good: "Es lohnt sich, …", "Fragen Sie uns." only if the practice really does it.
 - Do not repeat a topic within 4 weeks. Reserved for December: "Mythos oder Wahrheit? Bei Zahnfleischbluten lieber nicht putzen?" (reel already rendered in Neda's chat; re-render from a spec if needed).
+
+## Attention rules (since 20.10.2026 – from Neda's reel insights: ~50 % of viewers left in the first second)
+- **Reels: 12–17 seconds, max 4 scenes**: hook → 1 statement (or tips) → optional tips → close. One idea per reel. Never more than 4 scenes.
+- **The hook is the whole game.** It is visible in the very first frame (the template does this automatically). Max ~6 words, speaks to the viewer directly, as a question or surprising fact: "Blutet Ihr Zahnfleisch beim Putzen?", "Das wissen die wenigsten:", "3 Zeichen, dass …", "Stimmt das?". Never a generic title like "Zahnfleischbluten" or "Wussten Sie schon?" on its own – for "Wussten Sie schon?" put the surprising fact itself in the hook (e.g. "Zahnfleisch und Herz hängen zusammen?").
+- Hook `sub` is optional and very short (max 5 words).
+- Headlines max 3 lines, body max 2 short lines per scene – people read fast.
+- Close: prefer a save/share line ("Speichern Sie sich diesen Tipp.", "Teilen Sie das mit jemandem, der es wissen sollte.") or a gentle "Es lohnt sich, …". Still no hard sell.
+- Carousels: slide 1 = the same kind of hook (question/number), last slide = save line + practice card. 5–7 slides.
+- Caption: the FIRST line repeats the hook (it is what people see under the reel), then the content. End the German part with one save/share line.
+- Approval email: add one line reminding Neda she can add a trending sound in the Instagram app after publishing (Reel → ⋯ → Audio) – optional, ~30 seconds.
 
 ## How to build a post
 1. Pick the topic from `plan/redaktionsplan.md` (Wednesday: research a fresh study first; you may replace the planned topic if you find a better, recent, Austria-appropriate one).

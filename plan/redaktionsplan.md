@@ -3,6 +3,7 @@
 Monday = Reel "Wissen" · Wednesday = "Wussten Sie schon?" (new study), alternating reel / carousel · Thursday = Google-Profil text post with image.
 If the Google column says "Entwurf vorhanden", a draft already exists in Metricool – include it in the approval email instead of creating a new one.
 The Wednesday topic is a suggestion: research a fresh study and replace it if something better fits.
+Read the section "Attention rules" before writing any spec.
 
 | Woche | Mo 10:00 · Reel "Wissen" | Mi 10:00 · Wussten Sie schon? | Mi-Format | Do 10:00 · Google-Profil (Text + Bild) | Status |
 |---|---|---|---|---|---|

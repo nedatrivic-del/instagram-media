@@ -54,17 +54,17 @@
    "kicker": "Zahnschmerzen an den Feiertagen?",
    "lines": [
     {
-     "text": "Zahnärztlicher",
+     "text": "Das ist doppelt",
      "size": 104
     },
     {
-     "text": "Notdienst",
+     "text": "unangenehm.",
      "size": 104,
      "bold": true,
      "red": true
     }
    ],
-   "body": "Notdienstzentrum Salzburg: an Wochenenden und Feiertagen. Zeiten und Adresse auf ndz.at."
+   "body": "Sie müssen nicht bis Jänner warten: Das Notdienstzentrum Salzburg hilft an Wochenenden und Feiertagen. Zeiten und Adresse auf ndz.at."
   },
   {
    "type": "close",

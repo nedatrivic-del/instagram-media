@@ -159,10 +159,11 @@ class Builder:
         s.handle_y = 1600 if s.reel else H - 90
         s.zone = (260, 1520) if s.reel else (130, H - 140)
 
-    def door(s, img):
+    def door(s, img, left=False):
         n = s.spec.get("door")
         if THEME != "advent" or not n: return
-        d = ImageDraw.Draw(img); x1, y1 = W - 90, (150 if s.reel else 60); sz = 150
+        sz = 150
+        d = ImageDraw.Draw(img); x1, y1 = (90 + sz if left else W - 90), (150 if s.reel else 60)
         d.rounded_rectangle([x1 - sz, y1, x1, y1 + sz], radius=22, outline=SAGE, width=5, fill=(20, 48, 38, 230))
         nf = oswald(84, 400); tw = d.textlength(str(n), font=nf)
         d.text((x1 - sz / 2 - tw / 2, y1 + 10), str(n), font=nf, fill=SAGE)
@@ -192,7 +193,7 @@ class Builder:
             spec.append((Layer(tsub, "text", text=sc["sub"], font=fira(54, "LightItalic"), color=SLATE), 0))
         top, bottom = (1000, 1560) if s.reel else (ph_h - 80, H - 60)
         for L in stack(spec, top, bottom): draw_layer(img, t, L)
-        s.door(img); return img
+        s.door(img, left=True); return img
 
     def statement(s, t, sc):
         img = s.bg.copy(); spec = []

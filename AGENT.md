@@ -36,6 +36,7 @@ Determine the current local date/time in Europe/Vienna first.
 6. Idempotency: before preparing, check posts/*/status.json and Metricool (getScheduledPosts) – never create a second post for a slot that already has one.
 
 ## Content rules (from Neda – non-negotiable)
+- **Everyone must understand it (Neda, 20.10.2026 – applies to ALL posts):** plain everyday German, as if explaining to a neighbour. No jargon or explain it in the same breath (e.g. no "pH-Wert", "Eugenol", "Dentintubuli", "Gingivitis" without a simple word next to it). Short sentences, one message per slide, concrete comparisons from daily life ("so sauer wie Orangensaft", "so groß wie Ihre Handfläche"). Test: would a 70-year-old patient and a 14-year-old both get the message on first read? If not, simplify.
 - On-screen text German, formal "Sie". Tone: calm, warm, professional, informative. No promises, no "we solve everything", no magic wand.
 - Captions: German first, then English, then BKS (Bosnian/Croatian/Serbian), separated by a line with "—". **No flag emojis.** End block:
   ```
@@ -81,7 +82,7 @@ Idea from Neda (inspired by an orthodontist's "kinda chic to …" carousel – a
 - **Always positive (Neda: "keine Adventspielverderber")**: never forbid or scold. Every door says what people CAN do and ends on a light, warm note ("Genießen Sie …, mit diesem kleinen Trick bleibt es zahnfreundlich."). No "verzichten Sie", no warnings as headline; the hook may be curious, never alarming.
 - Same content rules as always (Sie, calm, no promises, WR-ÖZÄK, only services offered, no nutrition counselling, no bleaching promo). Every fact must be checked against a reputable source (open the page); drop or replace a door if a fact cannot be verified. Caption DE → EN → BKS + end block; first line = hook; hashtag #adventskalender + #zahnärztinaltstadt.
 - Doors v2 (Neda: every door needs a KICK and a small AHA – hook = surprising question/fact, then the AHA, then a positive tip; never boring). Verify every fact at build time (open the source); if a number can't be confirmed, keep the AHA without the number.
-  1 REEL „Glühwein ist saurer als Sie denken" – AHA: Wein liegt bei pH ~3–4, Zahnschmelz wird ab ~5,5 weich · Tipp: Glas Wasser dazwischen, mit dem Putzen ~30 min warten.
+  1 REEL „Glühwein ist saurer als Sie denken" – AHA (plain words): Glühwein ist etwa so sauer wie Orangensaft – Säure macht den Zahnschmelz kurzzeitig weich (verify the comparison) · Tipp: Glas Wasser dazwischen, mit dem Putzen ~30 min warten.
   2 KAR „Härter als Knochen – und trotzdem kann er nicht heilen" – AHA: Zahnschmelz ist das härteste Material im Körper, hat aber keine lebenden Zellen und wächst nicht nach · Tipp: Fluorid & Speichel stärken ihn.
   3 REEL Quiz „Putzen Sie wirklich 2 Minuten?" – AHA: gefühlt ja, gemessen oft deutlich kürzer (Studien) · Tipp: heute Abend Timer/Lied mitlaufen lassen.
   4 KAR „Ihr Partner hört es – Sie nicht" (Zähneknirschen) – AHA: passiert meist unbemerkt im Schlaf; Zeichen: Kiefer morgens müde, abgeflachte Zähne · Tipp: beim nächsten Termin ansprechen.
@@ -91,11 +92,11 @@ Idea from Neda (inspired by an orthodontist's "kinda chic to …" carousel – a
   8 KAR „Eine Entzündung so groß wie Ihre Handfläche" – AHA: bei Parodontitis kann die entzündete Fläche in den Zahnfleischtaschen zusammen etwa handtellergroß sein; Studien zeigen Zusammenhang mit Herz-Kreislauf · Tipp: Zahnfleisch ernst nehmen, Kontrolle.
   9 REEL „Ihr bester Zahnschutz ist kostenlos" (Speichel) – AHA: Speichel neutralisiert Säure und repariert Schmelz in kleinem Maß; Alkohol trocknet den Mund aus · Tipp: Wasser zwischendurch.
   10 KAR Hinter den Kulissen „Was Ihre Zahnbürste nicht schafft" – AHA: Zahnstein ist verkalkter Belag und lässt sich nicht wegputzen · So läuft eine Prophylaxe bei uns (Schritte).
-  11 REEL „Kalte Luft, ziehender Zahn?" – AHA: freiliegende Zahnhälse haben winzige Kanälchen, die Kälte direkt zum Nerv leiten · Tipp: Zahnpasta für empfindliche Zähne, länger als 2 Wochen → abklären.
+  11 REEL „Kalte Luft, ziehender Zahn?" – AHA (plain words): wenn das Zahnfleisch etwas zurückgeht, liegen winzige Kanälchen frei – sie leiten die Kälte direkt zum Nerv · Tipp: Zahnpasta für empfindliche Zähne, länger als 2 Wochen → abklären.
   12 KAR „Ihre Dritten feiern mit" – AHA: auf Prothesen siedeln Bakterien genauso; normale Zahnpasta kann sie zerkratzen · Tipp: Prothesenbürste, milde Reinigung, nachts nach Anleitung.
   13 REEL „Über 700 Bakterienarten – die meisten sind auf Ihrer Seite" – AHA: Problem ist nicht DIE Bakterien, sondern das Gleichgewicht · Tipp: regelmäßig stören (putzen, Zwischenräume) statt „desinfizieren".
-  14 KAR „Was Nelken in der Zahnarztpraxis zu suchen haben" – AHA: Nelkenöl (Eugenol) wird in der Zahnmedizin tatsächlich verwendet, z. B. in provisorischen Materialien · aber: Hausmittel ersetzen keine Behandlung; Gewürze in Keksen schaden nicht.
-  15 REEL „Wechseljahre spürt man auch im Mund" – AHA: weniger Östrogen kann Mundtrockenheit, Zahnfleischveränderungen und Brennen auslösen · Tipp: ansprechen, es gibt Hilfe. (Short new angle; Nov series covers depth.)
+  14 KAR „Was Nelken in der Zahnarztpraxis zu suchen haben" – AHA (plain words): ein Stoff aus dem Nelkenöl steckt tatsächlich in manchen Zahnarzt-Materialien, z. B. in provisorischen Füllungen · aber: Hausmittel ersetzen keine Behandlung; Gewürze in Keksen schaden nicht.
+  15 REEL „Wechseljahre spürt man auch im Mund" – AHA (plain words): wenn sich die Hormone verändern, kann der Mund trockener werden und das Zahnfleisch empfindlicher · Tipp: ansprechen, es gibt Hilfe. (Short new angle; Nov series covers depth.)
   16 KAR „Kein Zahnfleischbluten? Bei Rauchern kein Entwarnungs-Zeichen" – AHA: Rauchen verengt Gefäße und kann Bluten verdecken, obwohl Entzündung da ist · Tipp: regelmäßige Kontrolle; Rauchstopp lohnt sich in jedem Alter.
   17 REEL Quiz „Ihre Zahnbürste erreicht nicht alle Flächen" – AHA: die Zwischenräume bleiben für die Bürste unerreichbar · Quiz: Zahnseide oder Bürstchen – welcher Typ sind Sie? (Lücken → Bürstchen, eng → Seide).
   18 KAR „Krone in der Hand? Bitte kein Sekundenkleber" – empathy first; AHA: Kleber kann Zahn und Krone schädigen · Tipp: Krone aufheben, nicht selbst einkleben, Notdienst ndz.at an Feiertagen.

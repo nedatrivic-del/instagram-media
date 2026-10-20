@@ -65,7 +65,7 @@ Determine the current local date/time in Europe/Vienna first.
 - Caption: the FIRST line repeats the hook (it is what people see under the reel), then the content. End the German part with one save/share line.
 - Approval email: add one line reminding Neda she can add a trending sound in the Instagram app after publishing (Reel → ⋯ → Audio) – optional, ~30 seconds.
 
-## Monthly series „Ziemlich sympathisch, wenn …“ (first Wednesday of each month, from 02.12.2026)
+## Monthly series „Ziemlich sympathisch, wenn …“ (episode 1: Fri 30.10.2026; then first Wednesday of each month from 02.12.2026)
 Idea from Neda (inspired by an orthodontist's "kinda chic to …" carousel – adapt, never copy). Values, not teeth: time, listening, explaining, trust.
 - Carousel, 5–6 slides. Every slide (Neda-approved look): the whole slide is an analog photo print – the practice photo full size with the text ON the photo ("Ziemlich sympathisch," Fira italic + the "wenn …" line in Oswald, cream, centred), framed by a cream paper border; "ZAHNÄRZTIN ALTSTADT" + handle on the bottom strip of the frame. Only brand fonts. Last slide: `close` with "So arbeiten wir in der Altstadt." + practice card.
 - Lines are from the patient's perspective (never self-praise). Examples Neda liked: "wenn sich jemand Zeit nimmt für noch eine Frage." · "wenn erst erklärt und dann behandelt wird." · "wenn Angst ernst genommen wird." · "wenn man in drei Sprachen zuhört." · "wenn Zahnfleisch genauso wichtig ist wie Zähne." Write new lines each month; no promises.
@@ -73,7 +73,7 @@ Idea from Neda (inspired by an orthodontist's "kinda chic to …" carousel – a
 - Neda still has to take the photos. If `photos/praxis/` has fewer than 5 photos, do NOT build the series: use a normal „Wussten Sie schon?“ post and add one line to the approval email reminding her to send practice photos.
 - Any carousel scene accepts `"frame": true` (same paper frame); in the series the closing `close` slide is always framed.
 - Scene type `photo` exists: `{"type":"photo","photo":"photos/praxis/<file>.jpg","text":"wenn …","focus":[x,y],"shade":120}` (framed analog print, text on photo; "Ziemlich sympathisch," added automatically; optional "dy", "shade", "size"). Last slide: `close`. Neda's approved look: `drafts/_demo_sympathisch/` (5 photos + close).
-- Episode 1 (02.12.2026) is done and scheduled and used all five current photos (wartezimmer, globus, voegel, blumen_1, blumen_2). From episode 2 (January) ask Neda (in the approval email) for new photos so the series does not look repetitive.
+- Episode 1 (Fri 30.10.2026, posts/2026-10-30_serie_ziemlich-sympathisch) is done and scheduled and used all five current photos (wartezimmer, globus, voegel, blumen_1, blumen_2). From episode 2 (02.12.2026) ask Neda (in the approval email) for new photos so the series does not look repetitive.
 
 ## How to build a post
 1. Pick the topic from `plan/redaktionsplan.md` (Wednesday: research a fresh study first; you may replace the planned topic if you find a better, recent, Austria-appropriate one).

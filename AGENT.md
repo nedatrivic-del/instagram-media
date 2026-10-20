@@ -64,6 +64,14 @@ Determine the current local date/time in Europe/Vienna first.
 - Caption: the FIRST line repeats the hook (it is what people see under the reel), then the content. End the German part with one save/share line.
 - Approval email: add one line reminding Neda she can add a trending sound in the Instagram app after publishing (Reel → ⋯ → Audio) – optional, ~30 seconds.
 
+## Monthly series „Ziemlich sympathisch, wenn …“ (first Wednesday of each month, from 02.12.2026)
+Idea from Neda (inspired by an orthodontist's "kinda chic to …" carousel – adapt, never copy). Values, not teeth: time, listening, explaining, trust.
+- Carousel, 5–6 slides. Every slide: a REAL practice photo (from `photos/praxis/`) full-bleed, slightly darkened, with an elegant overlay: "Ziemlich sympathisch," (italic) + one line "wenn …". Last slide: practice card + "So arbeiten wir in der Altstadt."
+- Lines are from the patient's perspective (never self-praise). Examples Neda liked: "wenn sich jemand Zeit nimmt für noch eine Frage." · "wenn erst erklärt und dann behandelt wird." · "wenn Angst ernst genommen wird." · "wenn man in drei Sprachen zuhört." · "wenn Zahnfleisch genauso wichtig ist wie Zähne." Write new lines each month; no promises.
+- Photos: only Neda, team, hands, instruments, rooms, details. NEVER patients (WR-ÖZÄK). Never reuse the same photo two months in a row.
+- Neda still has to take the photos. If `photos/praxis/` has fewer than 5 photos, do NOT build the series: use a normal „Wussten Sie schon?“ post and add one line to the approval email reminding her to send practice photos.
+- The template has no full-bleed photo scene yet: before the first series post, add a `photo` scene type to make_media.py (photo cover-cropped, dark gradient, Oswald/serif italic overlay), check the stills, then build.
+
 ## How to build a post
 1. Pick the topic from `plan/redaktionsplan.md` (Wednesday: research a fresh study first; you may replace the planned topic if you find a better, recent, Austria-appropriate one).
 2. Create `posts/<YYYY-MM-DD>_<slot>_<slug>/spec.json` – copy the structure of `posts/2026-10-21_wussten-sie_naschen/spec.json`. Scene types: `hook` (Neda's photo + headline + sub), `statement` (optional kicker, headline lines, body), `tips` (headline + exactly 3 items), `close` (headline + body + practice card). Keep every headline line short enough to fit (Oswald, ~900 px width; use smaller `size` or `maxw` to force clean breaks).

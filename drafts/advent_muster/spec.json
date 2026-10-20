@@ -1,0 +1,5 @@
+{"theme":"advent","door":1,"title":"Türchen 1 – Glühwein (Muster)","scenes":[
+ {"type":"hook","lines":[{"text":"Glühwein","size":140,"bold":true,"red":true},{"text":"und Ihre Zähne?","size":120}],"sub":"Drei Dinge treffen sich."},
+ {"type":"tips","lines":[{"text":"Zucker, Säure","size":110},{"text":"& Wärme","size":110,"bold":true,"red":true}],"items":[{"title":"Zucker","sub":"Futter für Bakterien – sie bilden Säure."},{"title":"Säure","sub":"Wein und Gewürze greifen den Schmelz an."},{"title":"Nippen über Stunden","sub":"Die Zähne bekommen keine Pause."}]},
+ {"type":"statement","kicker":"Unser Tipp","lines":[{"text":"Ein Glas Wasser","size":110,"bold":true,"red":true},{"text":"dazwischen","size":110}],"body":"Und mit dem Zähneputzen etwa 30 Minuten warten."},
+ {"type":"close","lines":[{"text":"Schönen","size":104},{"text":"1. Dezember!","size":104,"bold":true,"red":true}],"body":"Morgen öffnen wir Türchen Nummer 2."}]}

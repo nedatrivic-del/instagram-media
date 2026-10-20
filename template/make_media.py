@@ -17,6 +17,8 @@ PHOTO = os.path.join(HERE, "neda.jpg")
 RED = (166, 41, 41); SLATE = (71, 82, 95); SAGE = (169, 202, 187)
 MINT = (236, 246, 246); CREAM = (249, 247, 240); BLUSH = (239, 192, 182)
 W, FPS = 1080, 30
+INK = (71, 82, 95); BRAND_RED = (166, 41, 41)
+THEME = "default"
 
 
 def oswald(size, wght=300):
@@ -29,7 +31,26 @@ def fira(size, style="Light"):
     return ImageFont.truetype(F + f"FiraSans-{style}.ttf", size)
 
 
+def make_advent_bg(H):
+    random.seed(11)
+    top, bot = (28, 66, 52), (14, 38, 30)
+    bg = Image.new("RGB", (W, H)); d = ImageDraw.Draw(bg)
+    for y in range(H):
+        f = y / H; d.line([(0, y), (W, y)], fill=tuple(int(top[i] * (1 - f) + bot[i] * f) for i in range(3)))
+    glow = Image.new("RGBA", (W, H), (0, 0, 0, 0)); gd = ImageDraw.Draw(glow)
+    gd.ellipse([W - 520, -260, W + 260, 420], fill=(214, 178, 110, 46)); gd.ellipse([-300, H - 420, 420, H + 300], fill=(190, 60, 50, 40))
+    bg = Image.alpha_composite(bg.convert("RGBA"), glow.filter(ImageFilter.GaussianBlur(110)))
+    st = Image.new("RGBA", (W, H), (0, 0, 0, 0)); sd = ImageDraw.Draw(st)
+    for _ in range(int(55 * H / 1920)):
+        x, y, r = random.uniform(0, W), random.uniform(0, H), random.choice([2, 2, 3, 4])
+        sd.ellipse([x - r, y - r, x + r, y + r], fill=(240, 214, 150, random.randint(60, 150)))
+    bg.alpha_composite(st)
+    noise = Image.effect_noise((W, H), 14).convert("L").point(lambda v: 128 + (v - 128) // 3)
+    return Image.blend(bg.convert("RGB"), Image.merge("RGB", [noise] * 3), 0.035).convert("RGBA")
+
+
 def make_bg(H):
+    if THEME == "advent": return make_advent_bg(H)
     random.seed(7)
     bg = Image.new("RGB", (W, H), CREAM)
     blob = Image.new("RGBA", (W, H), (0, 0, 0, 0)); bd = ImageDraw.Draw(blob)
@@ -126,6 +147,10 @@ def headline_layers(lines, t0=0.1, step=0.2, last_gap=44):
 
 class Builder:
     def __init__(s, spec, H):
+        global THEME, SLATE, RED, SAGE
+        THEME = spec.get("theme", "default")
+        if THEME == "advent":
+            SLATE, RED, SAGE = (247, 239, 222), (236, 112, 96), (214, 178, 110)
         s.spec, s.H = spec, H
         s.reel = H == 1920
         s.bg = make_bg(H)
@@ -134,7 +159,17 @@ class Builder:
         s.handle_y = 1600 if s.reel else H - 90
         s.zone = (260, 1520) if s.reel else (130, H - 140)
 
+    def door(s, img):
+        n = s.spec.get("door")
+        if THEME != "advent" or not n: return
+        d = ImageDraw.Draw(img); x1, y1 = W - 90, (150 if s.reel else 60); sz = 150
+        d.rounded_rectangle([x1 - sz, y1, x1, y1 + sz], radius=22, outline=SAGE, width=5, fill=(20, 48, 38, 230))
+        nf = oswald(84, 400); tw = d.textlength(str(n), font=nf)
+        d.text((x1 - sz / 2 - tw / 2, y1 + 10), str(n), font=nf, fill=SAGE)
+        lf = fira(22, "Regular"); lt = "TÜRCHEN"; d.text((x1 - sz / 2 - d.textlength(lt, font=lf) / 2, y1 + 112), lt, font=lf, fill=SAGE)
+
     def handle(s, img):
+        s.door(img)
         ImageDraw.Draw(img).text((90, s.handle_y), "@dentistry.oldtown", font=fira(34, "Regular"), fill=SLATE + (178,))
 
     def hook(s, t, sc):
@@ -157,7 +192,7 @@ class Builder:
             spec.append((Layer(tsub, "text", text=sc["sub"], font=fira(54, "LightItalic"), color=SLATE), 0))
         top, bottom = (1000, 1560) if s.reel else (ph_h - 80, H - 60)
         for L in stack(spec, top, bottom): draw_layer(img, t, L)
-        return img
+        s.door(img); return img
 
     def statement(s, t, sc):
         img = s.bg.copy(); spec = []
@@ -194,17 +229,17 @@ class Builder:
             c, m = s.circ
             card.paste(c, (130, y0 + 50), m.point(lambda v: int(v * p)))
             d.ellipse([126, y0 + 46, 434, y0 + 354], outline=SAGE + (a,), width=6)
-            d.text((480, y0 + 95), "ZAHNÄRZTIN", font=oswald(66, 300), fill=SLATE + (a,))
-            d.text((480, y0 + 170), "ALTSTADT", font=oswald(66, 300), fill=SLATE + (a,))
-            d.text((480, y0 + 262), "Dr. med. dent. Neda Trivić", font=fira(34, "Regular"), fill=SLATE + (a,))
-            d.text((480, y0 + 306), "Alle Kassen & Privat", font=fira(32, "Light"), fill=SLATE + (a,))
-            d.text((130, y0 + 395), "Kapitelgasse 9 · Salzburger Altstadt", font=fira(38, "Light"), fill=SLATE + (a,))
-            d.text((130, y0 + 445), "Terminvereinbarung online:", font=fira(38, "Medium"), fill=RED + (a,))
-            d.rounded_rectangle([130, y0 + 503, W - 130, y0 + 575], radius=36, fill=SLATE + (a,))
+            d.text((480, y0 + 95), "ZAHNÄRZTIN", font=oswald(66, 300), fill=INK + (a,))
+            d.text((480, y0 + 170), "ALTSTADT", font=oswald(66, 300), fill=INK + (a,))
+            d.text((480, y0 + 262), "Dr. med. dent. Neda Trivić", font=fira(34, "Regular"), fill=INK + (a,))
+            d.text((480, y0 + 306), "Alle Kassen & Privat", font=fira(32, "Light"), fill=INK + (a,))
+            d.text((130, y0 + 395), "Kapitelgasse 9 · Salzburger Altstadt", font=fira(38, "Light"), fill=INK + (a,))
+            d.text((130, y0 + 445), "Terminvereinbarung online:", font=fira(38, "Medium"), fill=BRAND_RED + (a,))
+            d.rounded_rectangle([130, y0 + 503, W - 130, y0 + 575], radius=36, fill=INK + (a,))
             txt = "termine.softdent.at/zahnaerztin-altstadt"; ff = fira(34, "Regular")
             d.text(((W - d.textlength(txt, font=ff)) / 2, y0 + 517), txt, font=ff, fill=(255, 255, 255, a))
             img.alpha_composite(card)
-        return img
+        s.door(img); return img
 
     def photo(s, t, sc):
         """Series "Ziemlich sympathisch, wenn ...": whole slide = analog photo print.

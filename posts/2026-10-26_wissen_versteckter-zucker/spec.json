@@ -1,18 +1,94 @@
 {
-  "date": "2026-10-26",
-  "slot": "Mo · Wissen",
-  "format": "reel",
-  "title": "Versteckter Zucker: Erkennen Sie ihn?",
-  "scenes": [
-    {"type": "hook", "lines": [{"text": "Versteckter Zucker:", "size": 112}, {"text": "Erkennen Sie ihn?", "size": 112, "bold": true, "red": true}],
-     "sub": "Ihre Zähne merken es."},
-    {"type": "statement", "kicker": "Oft unerwartet", "lines": [{"text": "Fruchtjoghurt,", "size": 120}, {"text": "Ketchup, Müsli,", "size": 120}, {"text": "Saft & Eistee", "size": 120, "bold": true, "red": true}],
-     "body": "Auch herzhafte und „gesunde“ Produkte enthalten oft viel Zucker."},
-    {"type": "tips", "lines": [{"text": "Zucker hat", "size": 110}, {"text": "viele Namen", "size": 110, "bold": true, "red": true}],
-     "items": [{"title": "Endung „-ose“", "sub": "Glukose, Fruktose, Saccharose."},
-               {"title": "Sirup & Dicksaft", "sub": "Glukosesirup, Agavendicksaft, Honig – auch das ist Zucker."},
-               {"title": "Getränke im Blick", "sub": "Säfte und Smoothies, über den Tag verteilt getrunken, belasten die Zähne."}]},
-    {"type": "close", "lines": [{"text": "Speichern Sie sich", "size": 104}, {"text": "diesen Tipp.", "size": 104, "bold": true, "red": true}],
-     "body": "Ein Blick aufs Etikett lohnt sich – Ihren Zähnen zuliebe."}
-  ]
+ "date": "2026-10-26",
+ "slot": "Mo · Wissen",
+ "format": "reel",
+ "title": "Versteckter Zucker: Erkennen Sie ihn?",
+ "scenes": [
+  {
+   "type": "hook",
+   "lines": [
+    {
+     "text": "Versteckter Zucker:",
+     "size": 112
+    },
+    {
+     "text": "Erkennen Sie ihn?",
+     "size": 112,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "sub": "Ihre Zähne merken es.",
+   "duration": 3.6
+  },
+  {
+   "type": "statement",
+   "kicker": "Oft unerwartet",
+   "lines": [
+    {
+     "text": "Fruchtjoghurt,",
+     "size": 120
+    },
+    {
+     "text": "Ketchup, Müsli,",
+     "size": 120
+    },
+    {
+     "text": "Saft & Eistee",
+     "size": 120,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "body": "Auch herzhafte und „gesunde“ Produkte enthalten oft viel Zucker.",
+   "duration": 4.6
+  },
+  {
+   "type": "tips",
+   "lines": [
+    {
+     "text": "Zucker hat",
+     "size": 110
+    },
+    {
+     "text": "viele Namen",
+     "size": 110,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "items": [
+    {
+     "title": "Endung „-ose“",
+     "sub": "Glukose, Fruktose, Saccharose."
+    },
+    {
+     "title": "Sirup & Dicksaft",
+     "sub": "Glukosesirup, Agavendicksaft, Honig – auch das ist Zucker."
+    },
+    {
+     "title": "Getränke im Blick",
+     "sub": "Säfte und Smoothies, über den Tag verteilt getrunken, belasten die Zähne."
+    }
+   ],
+   "duration": 6.4
+  },
+  {
+   "type": "close",
+   "lines": [
+    {
+     "text": "Speichern Sie sich",
+     "size": 104
+    },
+    {
+     "text": "diesen Tipp.",
+     "size": 104,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "body": "Ein Blick aufs Etikett lohnt sich – Ihren Zähnen zuliebe.",
+   "duration": 4.8
+  }
+ ]
 }

@@ -261,12 +261,31 @@ class Builder:
         d.text((W - bx - 4 - d.textlength(hd, font=hf), by + 8), hd, font=hf, fill=SLATE)
         return img
 
+    def framed(s, img):
+        """Put any finished slide into the same analog paper frame as the photo series."""
+        H = s.H; bx, bt, bb = 46, 46, 150; pw, ph = W - 2 * bx, H - bt - bb
+        k = ph / H; sm = img.resize((int(W * k), ph), Image.LANCZOS)
+        inner = s.bg.resize((pw, ph), Image.LANCZOS); inner.alpha_composite(sm.convert("RGBA"), ((pw - sm.width) // 2, 0))
+        paper = Image.new("RGB", (W, H), (250, 247, 238)); pn = Image.effect_noise((W, H), 10).convert("L")
+        out = Image.blend(paper, Image.merge("RGB", [pn] * 3), 0.025).convert("RGBA")
+        sh = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+        ImageDraw.Draw(sh).rectangle([bx - 2, bt - 2, bx + pw + 2, bt + ph + 2], fill=(0, 0, 0, 60))
+        out.alpha_composite(sh.filter(ImageFilter.GaussianBlur(3))); out.alpha_composite(inner, (bx, bt))
+        d = ImageDraw.Draw(out); by = bt + ph + 50
+        d.text((bx + 4, by), "ZAHNÄRZTIN ALTSTADT", font=oswald(40, 300), fill=SLATE)
+        hf = fira(30, "LightItalic"); hd = "@dentistry.oldtown"
+        d.text((W - bx - 4 - d.textlength(hd, font=hf), by + 8), hd, font=hf, fill=SLATE)
+        return out
+
     def scenes(s):
         durs = {"photo": 3.4, "hook": 3.2, "statement": 3.8, "tips": 5.4, "close": 4.2}
         out = []
         for sc in s.spec["scenes"]:
             fn = getattr(s, sc["type"])
-            out.append(((lambda t, fn=fn, sc=sc: fn(t, sc)), sc.get("duration", durs[sc["type"]])))
+            if sc.get("frame") and sc["type"] != "photo":
+                out.append(((lambda t, fn=fn, sc=sc: s.framed(fn(t, sc))), sc.get("duration", durs[sc["type"]])))
+            else:
+                out.append(((lambda t, fn=fn, sc=sc: fn(t, sc)), sc.get("duration", durs[sc["type"]])))
         return out
 
 

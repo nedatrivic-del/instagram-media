@@ -1,7 +1,67 @@
-{"title":"Ziemlich sympathisch – Demo","scenes":[
- {"type":"photo","photo":"photos/praxis/wartezimmer.jpg","text":"wenn man sich schon an der Tür willkommen fühlt.","focus":[0.5,0.5]},
- {"type":"photo","photo":"photos/praxis/blumen_2.jpg","text":"wenn sich jemand Zeit nimmt für noch eine Frage.","focus":[0.35,0.5]},
- {"type":"photo","photo":"photos/praxis/voegel.jpg","text":"wenn Angst ernst genommen wird.","focus":[0.5,0.6]},
- {"type":"photo","photo":"photos/praxis/globus.jpg","text":"wenn man in drei Sprachen zuhört.","focus":[0.25,0.5]},
- {"type":"photo","photo":"photos/praxis/blumen_1.jpg","text":"wenn erst erklärt und dann behandelt wird.","focus":[0.5,0.5]},
- {"type":"close","lines":[{"text":"So arbeiten wir","size":104},{"text":"in der Altstadt.","size":104,"bold":true,"red":true}],"body":"Ruhig, erklärend, in Ihrem Tempo."}]}
+{
+ "title": "Ziemlich sympathisch – Demo",
+ "scenes": [
+  {
+   "type": "photo",
+   "photo": "photos/praxis/wartezimmer.jpg",
+   "text": "wenn man sich schon an der Tür willkommen fühlt.",
+   "focus": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "type": "photo",
+   "photo": "photos/praxis/blumen_2.jpg",
+   "text": "wenn sich jemand Zeit nimmt für noch eine Frage.",
+   "focus": [
+    0.35,
+    0.5
+   ]
+  },
+  {
+   "type": "photo",
+   "photo": "photos/praxis/voegel.jpg",
+   "text": "wenn Angst ernst genommen wird.",
+   "focus": [
+    0.5,
+    0.6
+   ]
+  },
+  {
+   "type": "photo",
+   "photo": "photos/praxis/globus.jpg",
+   "text": "wenn man in drei Sprachen zuhört.",
+   "focus": [
+    0.25,
+    0.5
+   ]
+  },
+  {
+   "type": "photo",
+   "photo": "photos/praxis/blumen_1.jpg",
+   "text": "wenn erst erklärt und dann behandelt wird.",
+   "focus": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "type": "close",
+   "lines": [
+    {
+     "text": "So arbeiten wir",
+     "size": 104
+    },
+    {
+     "text": "in der Altstadt.",
+     "size": 104,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "body": "Ruhig, erklärend, in Ihrem Tempo.",
+   "frame": true
+  }
+ ]
+}

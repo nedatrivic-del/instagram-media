@@ -70,6 +70,7 @@ Idea from Neda (inspired by an orthodontist's "kinda chic to …" carousel – a
 - Lines are from the patient's perspective (never self-praise). Examples Neda liked: "wenn sich jemand Zeit nimmt für noch eine Frage." · "wenn erst erklärt und dann behandelt wird." · "wenn Angst ernst genommen wird." · "wenn man in drei Sprachen zuhört." · "wenn Zahnfleisch genauso wichtig ist wie Zähne." Write new lines each month; no promises.
 - Photos: only Neda, team, hands, instruments, rooms, details. NEVER patients (WR-ÖZÄK). Never reuse the same photo two months in a row.
 - Neda still has to take the photos. If `photos/praxis/` has fewer than 5 photos, do NOT build the series: use a normal „Wussten Sie schon?“ post and add one line to the approval email reminding her to send practice photos.
+- Any carousel scene accepts `"frame": true` (same paper frame); in the series the closing `close` slide is always framed.
 - Scene type `photo` exists: `{"type":"photo","photo":"photos/praxis/<file>.jpg","text":"wenn …","focus":[x,y],"shade":120}` (framed analog print, text on photo; "Ziemlich sympathisch," added automatically; optional "dy", "shade", "size"). Last slide: `close`. Neda's approved look: `drafts/_demo_sympathisch/` (5 photos + close).
 - Episode 1 (02.12.2026) is done and scheduled and used all five current photos (wartezimmer, globus, voegel, blumen_1, blumen_2). From episode 2 (January) ask Neda (in the approval email) for new photos so the series does not look repetitive.
 

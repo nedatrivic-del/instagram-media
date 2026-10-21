@@ -285,7 +285,7 @@ class Builder:
         im = s._ph[key]
         bx, bt, bb = 46, 46, 150
         pw, ph = W - 2 * bx, H - bt - bb
-        iw, ih = im.size; k = max(pw / iw, ph / ih)
+        iw, ih = im.size; k = max(pw / iw, ph / ih) * sc.get("zoom", 1.0)
         im2 = im.resize((int(iw * k) + 1, int(ih * k) + 1), Image.LANCZOS)
         fx, fy = sc.get("focus", [0.5, 0.5]); x0 = int((im2.width - pw) * fx); y0 = int((im2.height - ph) * fy)
         p_ = im2.crop((x0, y0, x0 + pw, y0 + ph))

@@ -1,7 +1,64 @@
-{"title":"Matcha oder Kaffee? (Entwurf)","scenes":[
- {"type":"photo","photo":"photos/praxis/neda_matcha_schulterzucken.jpg","kicker":"Matcha oder Kaffee?","text":"Die Zahnärztin sagt: Kommt drauf an.","focus":[0.5,0.3],"dy":300,"shade":110},
- {"type":"photo","photo":"photos/praxis/matcha_glaeser.jpg","kicker":"Team Matcha","text":"Grüner Tee enthält Stoffe, die Kariesbakterien bremsen können.","size":72},
- {"type":"photo","photo":"photos/praxis/kaffee_tassen.jpg","kicker":"Team Kaffee","text":"Etwas mehr Säure – und er färbt gern ab.","size":76},
- {"type":"photo","photo":"photos/praxis/espresso_hortensien.jpg","kicker":"Das AHA","text":"Nicht das Getränk entscheidet, sondern der Zucker darin.","size":72,"dy":-120},
- {"type":"photo","photo":"photos/praxis/matcha_hand.jpg","kicker":"Unser Tipp","text":"Genießen statt stundenlang nippen. Danach ein Schluck Wasser.","size":72,"dy":-150},
- {"type":"close","frame":true,"lines":[{"text":"Team Matcha oder","size":96},{"text":"Team Kaffee?","size":110,"bold":true,"red":true}],"body":"Schreiben Sie es uns! Und Verfärbungen? Die entfernen wir bei der Zahnreinigung."}]}
+{
+ "title": "Matcha oder Kaffee? (Entwurf)",
+ "scenes": [
+  {
+   "type": "photo",
+   "photo": "photos/praxis/neda_matcha_schulterzucken.jpg",
+   "kicker": "Matcha oder Kaffee?",
+   "text": "Die Zahnärztin sagt: Kommt drauf an.",
+   "focus": [
+    0.5,
+    0.3
+   ],
+   "dy": 300,
+   "shade": 110
+  },
+  {
+   "type": "photo",
+   "photo": "photos/praxis/matcha_glaeser.jpg",
+   "kicker": "Team Matcha",
+   "text": "Grüner Tee enthält Stoffe, die Kariesbakterien bremsen können.",
+   "size": 72
+  },
+  {
+   "type": "photo",
+   "photo": "photos/praxis/kaffee_tassen.jpg",
+   "kicker": "Team Kaffee",
+   "text": "Etwas mehr Säure – und er färbt gern ab.",
+   "size": 76
+  },
+  {
+   "type": "photo",
+   "photo": "photos/praxis/espresso_hortensien.jpg",
+   "kicker": "Das AHA",
+   "text": "Am meisten zählt der Zucker darin.",
+   "size": 78,
+   "dy": -120
+  },
+  {
+   "type": "photo",
+   "photo": "photos/praxis/matcha_hand.jpg",
+   "kicker": "Unser Tipp",
+   "text": "Genießen statt stundenlang nippen. Danach ein Schluck Wasser.",
+   "size": 72,
+   "dy": -150
+  },
+  {
+   "type": "close",
+   "frame": true,
+   "lines": [
+    {
+     "text": "Team Matcha oder",
+     "size": 96
+    },
+    {
+     "text": "Team Kaffee?",
+     "size": 110,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "body": "Schreiben Sie es uns! Verfärbungen – egal ob von Matcha oder Kaffee – entfernen wir bei der Zahnreinigung."
+  }
+ ]
+}

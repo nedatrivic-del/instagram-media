@@ -49,7 +49,26 @@ def make_advent_bg(H):
     return Image.blend(bg.convert("RGB"), Image.merge("RGB", [noise] * 3), 0.035).convert("RGBA")
 
 
+def make_kino_bg(H):
+    random.seed(5)
+    bg = Image.new("RGB", (W, H), (18, 17, 20)).convert("RGBA")
+    glow = Image.new("RGBA", (W, H), (0, 0, 0, 0)); gd = ImageDraw.Draw(glow)
+    gd.ellipse([W * .1, -H * .25, W * .9, H * .45], fill=(255, 226, 170, 38))   # projector light
+    gd.ellipse([-200, H - 380, 500, H + 250], fill=(166, 41, 41, 55))           # red curtain glow
+    bg = Image.alpha_composite(bg, glow.filter(ImageFilter.GaussianBlur(120)))
+    # film strip edges
+    d = ImageDraw.Draw(bg); sw = 46
+    for x0 in (0, W - sw):
+        d.rectangle([x0, 0, x0 + sw, H], fill=(8, 8, 10))
+        y = 18
+        while y < H:
+            d.rounded_rectangle([x0 + 12, y, x0 + sw - 12, y + 26], radius=5, fill=(232, 222, 200, 255)); y += 54
+    noise = Image.effect_noise((W, H), 30).convert("L").point(lambda v: 128 + (v - 128) // 2)
+    return Image.blend(bg.convert("RGB"), Image.merge("RGB", [noise] * 3), 0.06).convert("RGBA")
+
+
 def make_bg(H):
+    if THEME == "kino": return make_kino_bg(H)
     if THEME == "advent": return make_advent_bg(H)
     random.seed(7)
     bg = Image.new("RGB", (W, H), CREAM)
@@ -151,6 +170,8 @@ class Builder:
         THEME = spec.get("theme", "default")
         if THEME == "advent":
             SLATE, RED, SAGE = (247, 239, 222), (236, 112, 96), (214, 178, 110)
+        elif THEME == "kino":
+            SLATE, RED, SAGE = (240, 232, 214), (226, 74, 64), (238, 196, 92)
         s.spec, s.H = spec, H
         s.reel = H == 1920
         s.bg = make_bg(H)
@@ -160,6 +181,17 @@ class Builder:
         s.zone = (260, 1520) if s.reel else (130, H - 140)
 
     def door(s, img, left=False):
+        if THEME == "kino" and s.spec.get("episode"):
+            d = ImageDraw.Draw(img); tw_, th_ = 210, 92
+            x0 = (80 if left else W - 80 - tw_); y0 = (150 if s.reel else 60)
+            d.rounded_rectangle([x0, y0, x0 + tw_, y0 + th_], radius=12, fill=SAGE)
+            for cy in (y0 + th_ / 2,):
+                d.ellipse([x0 - 14, cy - 14, x0 + 14, cy + 14], fill=(18, 17, 20)); d.ellipse([x0 + tw_ - 14, cy - 14, x0 + tw_ + 14, cy + 14], fill=(18, 17, 20))
+            f1 = fira(22, "Medium"); f2 = oswald(44, 400)
+            t1 = "ZAHNARZT IM KINO"; t2 = f"FOLGE {s.spec['episode']}"
+            d.text((x0 + (tw_ - d.textlength(t1, font=f1)) / 2, y0 + 10), t1, font=f1, fill=(18, 17, 20))
+            d.text((x0 + (tw_ - d.textlength(t2, font=f2)) / 2, y0 + 34), t2, font=f2, fill=(18, 17, 20))
+            return
         n = s.spec.get("door")
         if THEME != "advent" or not n: return
         sz = 150

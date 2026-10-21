@@ -1,6 +1,91 @@
-{"title":"Zahnarzt im Kino 1 – Doc Holliday (Muster)","scenes":[
- {"type":"hook","lines":[{"text":"Ein Westernheld","size":104},{"text":"war Zahnarzt.","size":120,"bold":true,"red":true}],"sub":"Kein Scherz. Wahre Geschichte."},
- {"type":"statement","kicker":"Zahnarzt im Kino · Folge 1","lines":[{"text":"Doc Holliday","size":120,"bold":true,"red":true},{"text":"aus „Tombstone“","size":100}],"body":"Den berühmten Westernhelden gab es wirklich – und er hatte Zahnmedizin studiert."},
- {"type":"statement","kicker":"Darum „Doc“","lines":[{"text":"Erst Bohrer,","size":110},{"text":"dann Colt.","size":110,"bold":true,"red":true}],"body":"Bevor er in den Wilden Westen zog, arbeitete er als Zahnarzt. Der Spitzname blieb."},
- {"type":"statement","kicker":"Bei uns zum Glück","lines":[{"text":"Keine Duelle.","size":110,"bold":true,"red":true},{"text":"Nur Zeit für Sie.","size":110}],"body":"Und eine Erklärung, bevor es losgeht."},
- {"type":"close","lines":[{"text":"Nächste Woche:","size":96},{"text":"Ein Zahnarzt mit Kutsche.","size":96,"bold":true,"red":true,"maxw":800}],"body":"Folgen Sie uns, damit Sie Folge 2 nicht verpassen."}]}
+{
+ "title": "Zahnarzt im Kino 1 – Doc Holliday (Muster)",
+ "scenes": [
+  {
+   "type": "hook",
+   "lines": [
+    {
+     "text": "Ein Westernheld",
+     "size": 104
+    },
+    {
+     "text": "war Zahnarzt.",
+     "size": 120,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "sub": "Kein Scherz. Wahre Geschichte."
+  },
+  {
+   "type": "statement",
+   "kicker": "Die wahre Geschichte",
+   "lines": [
+    {
+     "text": "Doc Holliday",
+     "size": 120,
+     "bold": true,
+     "red": true
+    },
+    {
+     "text": "aus „Tombstone“",
+     "size": 100
+    }
+   ],
+   "body": "Den berühmten Westernhelden gab es wirklich – und er hatte Zahnmedizin studiert."
+  },
+  {
+   "type": "statement",
+   "kicker": "Darum „Doc“",
+   "lines": [
+    {
+     "text": "Erst Bohrer,",
+     "size": 110
+    },
+    {
+     "text": "dann Colt.",
+     "size": 110,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "body": "Bevor er in den Wilden Westen zog, arbeitete er als Zahnarzt. Der Spitzname blieb."
+  },
+  {
+   "type": "statement",
+   "kicker": "Bei uns zum Glück",
+   "lines": [
+    {
+     "text": "Keine Duelle.",
+     "size": 110,
+     "bold": true,
+     "red": true
+    },
+    {
+     "text": "Nur Zeit für Sie.",
+     "size": 110
+    }
+   ],
+   "body": "Und eine Erklärung, bevor es losgeht."
+  },
+  {
+   "type": "close",
+   "lines": [
+    {
+     "text": "Nächste Woche:",
+     "size": 96
+    },
+    {
+     "text": "Ein Zahnarzt mit Kutsche.",
+     "size": 96,
+     "bold": true,
+     "red": true,
+     "maxw": 800
+    }
+   ],
+   "body": "Folgen Sie uns, damit Sie Folge 2 nicht verpassen."
+  }
+ ],
+ "theme": "kino",
+ "episode": 1
+}

@@ -5,8 +5,8 @@
    "type": "photo",
    "photo": "photos/praxis/realfood_tomaten.jpg",
    "kicker": "Real Food",
-   "text": "Was Ihre Zähne wirklich gern essen.",
-   "size": 80,
+   "text": "Zutatenliste: Tomate. Fertig.",
+   "size": 86,
    "focus": [
     0.5,
     0.55
@@ -17,7 +17,7 @@
    "type": "photo",
    "photo": "photos/praxis/realfood_salat.jpg",
    "kicker": "Kauen erwünscht!",
-   "text": "Knackiges Gemüse bringt den Speichel in Schwung – Ihren natürlichen Zahnschutz.",
+   "text": "Knackiges Gemüse ist Fitness für Ihren Speichel – Ihren natürlichen Zahnschutz.",
    "size": 70,
    "focus": [
     0.5,
@@ -28,8 +28,8 @@
    "type": "photo",
    "photo": "photos/praxis/realfood_jause.jpg",
    "kicker": "Käse zum Schluss",
-   "text": "Käse kann die Säure im Mund ausgleichen und liefert Kalzium.",
-   "size": 78,
+   "text": "Die Franzosen wussten es längst: Käse kann die Säure im Mund ausgleichen.",
+   "size": 70,
    "focus": [
     0.5,
     0.7
@@ -40,8 +40,8 @@
    "type": "photo",
    "photo": "photos/praxis/realfood_quiche.jpg",
    "kicker": "Selbst gemacht",
-   "text": "Wer selbst kocht, weiß, was drin ist – und was nicht.",
-   "size": 76,
+   "text": "Keine Geheimzutaten. Außer Liebe.",
+   "size": 86,
    "focus": [
     0.5,
     0.6
@@ -54,34 +54,35 @@
    "kicker": "Das AHA",
    "lines": [
     {
-     "text": "Fertigprodukte",
+     "text": "Zucker ist ein",
      "size": 110
     },
     {
-     "text": "verstecken Zucker.",
-     "size": 110,
+     "text": "Versteck-Profi.",
+     "size": 120,
      "bold": true,
      "red": true
     }
    ],
-   "body": "Oft dort, wo man ihn nicht erwartet: in Brot, Saucen oder Dressing. Echtes Essen hat ihn meist gar nicht."
+   "body": "Er sitzt in Brot, Saucen und Dressing. In echtem Essen findet er kaum ein Versteck."
   },
   {
    "type": "close",
    "frame": true,
    "lines": [
     {
-     "text": "Real Food schmeckt",
-     "size": 96
+     "text": "Real Food:",
+     "size": 100
     },
     {
-     "text": "auch Ihren Zähnen.",
-     "size": 104,
+     "text": "Ihre Zähne sagen danke.",
+     "size": 100,
      "bold": true,
-     "red": true
+     "red": true,
+     "maxw": 850
     }
    ],
-   "body": "Was ist Ihr liebstes echtes Essen? Schreiben Sie es uns!"
+   "body": "Was ist Ihr liebstes echtes Essen? Verraten Sie es uns in den Kommentaren!"
   }
  ]
 }

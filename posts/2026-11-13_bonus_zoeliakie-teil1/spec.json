@@ -1,0 +1,79 @@
+{
+ "title": "Zöliakie: Zeichen im Mund (Reel-Entwurf)",
+ "scenes": [
+  {
+   "type": "photo",
+   "photo": "photos/praxis/gluten_schild_productos.jpg",
+   "kicker": "Gluten & Zähne",
+   "text": "Manchmal merkt es die Zahnärztin zuerst.",
+   "size": 86,
+   "focus": [
+    0.5,
+    0.75
+   ],
+   "instant": true,
+   "duration": 3.4
+  },
+  {
+   "type": "tips",
+   "frame": true,
+   "lines": [
+    {
+     "text": "Woran? An diesen",
+     "size": 104
+    },
+    {
+     "text": "kleinen Spuren:",
+     "size": 104,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "items": [
+    {
+     "title": "Flecken oder Rillen im Zahnschmelz",
+     "sub": "Oft an mehreren Zähnen gleich."
+    },
+    {
+     "title": "Aphthen, die immer wiederkommen",
+     "sub": "Kleine, schmerzhafte Bläschen im Mund."
+    },
+    {
+     "title": "Eine glatte, brennende Zunge",
+     "sub": "Manchmal ein Zeichen für Nährstoffmangel."
+    }
+   ],
+   "duration": 5.6
+  },
+  {
+   "type": "photo",
+   "photo": "photos/praxis/gluten_brot_ofen.jpg",
+   "kicker": "Und glutenfrei backen?",
+   "text": "Herrlich! Für Ihre Zähne zählt trotzdem vor allem eins: wie viel Zucker drin ist.",
+   "size": 68,
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "duration": 3.6
+  },
+  {
+   "type": "close",
+   "frame": true,
+   "lines": [
+    {
+     "text": "Etwas bemerkt?",
+     "size": 104
+    },
+    {
+     "text": "Wir schauen genau hin.",
+     "size": 84,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "body": "Die Abklärung übernimmt dann Ihre Hausärztin oder Ihr Hausarzt. Teil 2 nächste Woche: glutenfrei auf Reisen!",
+   "duration": 4.4
+  }
+ ]
+}

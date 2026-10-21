@@ -1,0 +1,94 @@
+{
+ "title": "Glutenfrei unterwegs – Teil 2 (Entwurf)",
+ "scenes": [
+  {
+   "type": "photo",
+   "photo": "photos/praxis/gluten_pizza.jpg",
+   "kicker": "Teil 2 · Glutenfrei auf Reisen",
+   "text": "Erster Stopp: Italien. Die Pizza ist glutenfrei – Ihre Zähne merken keinen Unterschied.",
+   "size": 68,
+   "focus": [
+    0.5,
+    0.15
+   ],
+   "dy": -60
+  },
+  {
+   "type": "photo",
+   "photo": "photos/praxis/gluten_sevilla.jpg",
+   "kicker": "Zweiter Stopp: Sevilla",
+   "text": "Hier gibt es sogar ein eigenes Netz glutenfreier Lokale – mit App der Stadt. Olé!",
+   "size": 66,
+   "focus": [
+    0.5,
+    0.35
+   ],
+   "dy": -330
+  },
+  {
+   "type": "statement",
+   "frame": true,
+   "kicker": "Zurück zu Hause",
+   "lines": [
+    {
+     "text": "Glutenfrei heißt",
+     "size": 110
+    },
+    {
+     "text": "nicht zuckerfrei.",
+     "size": 110,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "body": "Beim Einkaufen lohnt ein Blick aufs Etikett: Fertige glutenfreie Produkte enthalten manchmal mehr Zucker, als man denkt."
+  },
+  {
+   "type": "tips",
+   "frame": true,
+   "lines": [
+    {
+     "text": "Ihr Reisegepäck",
+     "size": 110
+    },
+    {
+     "text": "für die Zähne",
+     "size": 110,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "items": [
+    {
+     "title": "Wasser nach dem Essen",
+     "sub": "Spült Reste und Säure ab."
+    },
+    {
+     "title": "Reisezahnbürste in die Tasche",
+     "sub": "Passt in jede Handtasche."
+    },
+    {
+     "title": "Süßes zum Essen, nicht dazwischen",
+     "sub": "So bekommen die Zähne Pausen."
+    }
+   ]
+  },
+  {
+   "type": "close",
+   "frame": true,
+   "lines": [
+    {
+     "text": "Und Ihr Lieblingsort",
+     "size": 96
+    },
+    {
+     "text": "für glutenfrei?",
+     "size": 104,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "body": "Verraten Sie es uns – wir sammeln Ihre Tipps für die nächste Reise!"
+  }
+ ]
+}

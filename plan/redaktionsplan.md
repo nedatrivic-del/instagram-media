@@ -29,3 +29,8 @@ Topic pillars for later weeks (rotate, no repeat within 4 weeks): gum health & g
 When a week is prepared, set its Status to "zur Freigabe", then "geplant" after OK.
 
 Zusätzlich (außerhalb des Mo/Mi-Rhythmus): **Fr 13.11.2026 10:00 – Marken-Karussell „Wer wir sind“** (posts/2026-11-13_marke_wer-wir-sind, Metricool-Entwurf, zur Freigabe). Neue Säule „Marke / wer wir sind“ – Neda möchte mehr zeigen, wer wir sind und wie wir mit Menschen umgehen.
+
+## Idee Jänner 2027 (von Neda, 21.10.2026) – Serie „Zahnarzt im Kino" (4–5 Posts, nach dem Urlaub ab 11.01.)
+Light, funny, easy to digest; each with a small AHA + positive tip. NOT yet approved in detail – discuss with Neda in early December before building.
+Candidate topics: Doc Holliday (Western legend was a trained dentist – real) · Django Unchained (Christoph Waltz as ex-dentist Dr. King Schultz, wagon with the big tooth) · The Sisters Brothers (gunslinger buys his first toothbrush) · Charlie und die Schokoladenfabrik (Willy Wonka's father is a dentist) · „Bitte nicht nachmachen" (Hangover / Cast Away: pulling/knocking out your own tooth) · Findet Nemo (fish in a dentist's aquarium) / Hollywood & dental fear (Marathon Man, Kleiner Horrorladen) → „bei uns ist es zum Glück ganz anders".
+Copyright: NO film clips, stills, posters or actor photos (not allowed for practice advertising). Name the film, describe the scene in our own design/text; optionally a trending Instagram sound added in the app.

@@ -1,0 +1,80 @@
+{
+ "title": "Zöliakie: Zeichen im Mund (Reel-Entwurf)",
+ "scenes": [
+  {
+   "type": "photo",
+   "photo": "photos/praxis/gluten_schild_productos.jpg",
+   "kicker": "Gluten & Zähne",
+   "text": "Zöliakie zeigt sich manchmal zuerst im Mund.",
+   "size": 82,
+   "focus": [
+    0.5,
+    0.75
+   ],
+   "instant": true,
+   "duration": 3.4
+  },
+  {
+   "type": "tips",
+   "frame": true,
+   "lines": [
+    {
+     "text": "Darauf achten",
+     "size": 104
+    },
+    {
+     "text": "wir",
+     "size": 104,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "items": [
+    {
+     "title": "Flecken oder Rillen im Zahnschmelz",
+     "sub": "Oft an mehreren Zähnen gleich."
+    },
+    {
+     "title": "Aphthen, die immer wiederkommen",
+     "sub": "Kleine, schmerzhafte Bläschen im Mund."
+    },
+    {
+     "title": "Glatte, brennende Zunge",
+     "sub": "Kann auf einen Nährstoffmangel hinweisen."
+    }
+   ],
+   "duration": 5.6
+  },
+  {
+   "type": "photo",
+   "photo": "photos/praxis/gluten_brot_ofen.jpg",
+   "kicker": "Mythos",
+   "text": "Glutenfrei heißt nicht automatisch zahnfreundlich. Es zählt der Zucker.",
+   "size": 72,
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "duration": 3.6
+  },
+  {
+   "type": "close",
+   "frame": true,
+   "lines": [
+    {
+     "text": "Etwas bemerkt?",
+     "size": 104
+    },
+    {
+     "text": "Sprechen Sie uns an.",
+     "size": 90,
+     "bold": true,
+     "red": true,
+     "maxw": 850
+    }
+   ],
+   "body": "Wir schauen genau hin. Die Abklärung macht dann Ihre Hausärztin oder Ihr Hausarzt.",
+   "duration": 4.4
+  }
+ ]
+}

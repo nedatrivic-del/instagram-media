@@ -27,3 +27,5 @@ Monthly series: episode 1 is an extra post on FRIDAY 30.10.2026 10:00 (already a
 Topic pillars for later weeks (rotate, no repeat within 4 weeks): gum health & general health (30 %), healthy habits & food (25 %), understanding prosthetics (20 %), women 40+ (15 %), practice & people (10 %, e.g. prophylaxis appointment, online booking). Children at most 1 in 8 posts.
 
 When a week is prepared, set its Status to "zur Freigabe", then "geplant" after OK.
+
+Zusätzlich (außerhalb des Mo/Mi-Rhythmus): **Fr 13.11.2026 10:00 – Marken-Karussell „Wer wir sind“** (posts/2026-11-13_marke_wer-wir-sind, Metricool-Entwurf, zur Freigabe). Neue Säule „Marke / wer wir sind“ – Neda möchte mehr zeigen, wer wir sind und wie wir mit Menschen umgehen.

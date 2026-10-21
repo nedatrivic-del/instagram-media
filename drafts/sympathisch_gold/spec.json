@@ -1,0 +1,32 @@
+{
+ "title": "Ziemlich sympathisch – Demo",
+ "scenes": [
+  {
+   "type": "photo",
+   "photo": "photos/praxis/wartezimmer.jpg",
+   "text": "wenn es in der Praxis schon nach Advent aussieht.",
+   "focus": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "type": "close",
+   "frame": true,
+   "lines": [
+    {
+     "text": "Eine ruhige",
+     "size": 104
+    },
+    {
+     "text": "Adventszeit!",
+     "size": 104,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "body": "Ihr Team der Zahnärztin Altstadt."
+  }
+ ],
+ "frame_ink": "gold"
+}

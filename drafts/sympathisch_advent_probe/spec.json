@@ -1,0 +1,52 @@
+{
+ "title": "Ziemlich sympathisch – Advent (Probe)",
+ "scenes": [
+  {
+   "type": "photo",
+   "photo": "photos/praxis/advent_kranz.jpg",
+   "text": "wenn die Vorfreude mit jeder Kerze wächst.",
+   "focus": [
+    0.5,
+    0.5
+   ]
+  },
+  {
+   "type": "photo",
+   "photo": "photos/praxis/advent_fenster.jpg",
+   "text": "wenn draußen die Altstadt leuchtet und drinnen jemand Zeit für Sie hat.",
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "dy": -60,
+   "size": 70
+  },
+  {
+   "type": "photo",
+   "photo": "photos/praxis/advent_kekse.jpg",
+   "text": "wenn auch die Zahnärztin Kekse bäckt.",
+   "focus": [
+    0.5,
+    0.55
+   ]
+  },
+  {
+   "type": "close",
+   "frame": true,
+   "lines": [
+    {
+     "text": "Eine ruhige",
+     "size": 104
+    },
+    {
+     "text": "Adventszeit!",
+     "size": 104,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "body": "Ihr Team der Zahnärztin Altstadt."
+  }
+ ],
+ "frame_ink": "gold"
+}

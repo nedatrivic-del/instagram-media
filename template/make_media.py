@@ -17,6 +17,8 @@ PHOTO = os.path.join(HERE, "neda.jpg")
 RED = (166, 41, 41); SLATE = (71, 82, 95); SAGE = (169, 202, 187)
 MINT = (236, 246, 246); CREAM = (249, 247, 240); BLUSH = (239, 192, 182)
 W, FPS = 1080, 30
+INK = (71, 82, 95); BRAND_RED = (166, 41, 41)
+THEME = "default"
 
 
 def oswald(size, wght=300):
@@ -29,7 +31,26 @@ def fira(size, style="Light"):
     return ImageFont.truetype(F + f"FiraSans-{style}.ttf", size)
 
 
+def make_advent_bg(H):
+    random.seed(11)
+    top, bot = (28, 66, 52), (14, 38, 30)
+    bg = Image.new("RGB", (W, H)); d = ImageDraw.Draw(bg)
+    for y in range(H):
+        f = y / H; d.line([(0, y), (W, y)], fill=tuple(int(top[i] * (1 - f) + bot[i] * f) for i in range(3)))
+    glow = Image.new("RGBA", (W, H), (0, 0, 0, 0)); gd = ImageDraw.Draw(glow)
+    gd.ellipse([W - 520, -260, W + 260, 420], fill=(214, 178, 110, 46)); gd.ellipse([-300, H - 420, 420, H + 300], fill=(190, 60, 50, 40))
+    bg = Image.alpha_composite(bg.convert("RGBA"), glow.filter(ImageFilter.GaussianBlur(110)))
+    st = Image.new("RGBA", (W, H), (0, 0, 0, 0)); sd = ImageDraw.Draw(st)
+    for _ in range(int(55 * H / 1920)):
+        x, y, r = random.uniform(0, W), random.uniform(0, H), random.choice([2, 2, 3, 4])
+        sd.ellipse([x - r, y - r, x + r, y + r], fill=(240, 214, 150, random.randint(60, 150)))
+    bg.alpha_composite(st)
+    noise = Image.effect_noise((W, H), 14).convert("L").point(lambda v: 128 + (v - 128) // 3)
+    return Image.blend(bg.convert("RGB"), Image.merge("RGB", [noise] * 3), 0.035).convert("RGBA")
+
+
 def make_bg(H):
+    if THEME == "advent": return make_advent_bg(H)
     random.seed(7)
     bg = Image.new("RGB", (W, H), CREAM)
     blob = Image.new("RGBA", (W, H), (0, 0, 0, 0)); bd = ImageDraw.Draw(blob)
@@ -126,6 +147,10 @@ def headline_layers(lines, t0=0.1, step=0.2, last_gap=44):
 
 class Builder:
     def __init__(s, spec, H):
+        global THEME, SLATE, RED, SAGE
+        THEME = spec.get("theme", "default")
+        if THEME == "advent":
+            SLATE, RED, SAGE = (247, 239, 222), (236, 112, 96), (214, 178, 110)
         s.spec, s.H = spec, H
         s.reel = H == 1920
         s.bg = make_bg(H)
@@ -134,7 +159,18 @@ class Builder:
         s.handle_y = 1600 if s.reel else H - 90
         s.zone = (260, 1520) if s.reel else (130, H - 140)
 
+    def door(s, img, left=False):
+        n = s.spec.get("door")
+        if THEME != "advent" or not n: return
+        sz = 150
+        d = ImageDraw.Draw(img); x1, y1 = (90 + sz if left else W - 90), (150 if s.reel else 60)
+        d.rounded_rectangle([x1 - sz, y1, x1, y1 + sz], radius=22, outline=SAGE, width=5, fill=(20, 48, 38, 230))
+        nf = oswald(84, 400); tw = d.textlength(str(n), font=nf)
+        d.text((x1 - sz / 2 - tw / 2, y1 + 10), str(n), font=nf, fill=SAGE)
+        lf = fira(22, "Regular"); lt = "TÜRCHEN"; d.text((x1 - sz / 2 - d.textlength(lt, font=lf) / 2, y1 + 112), lt, font=lf, fill=SAGE)
+
     def handle(s, img):
+        s.door(img)
         ImageDraw.Draw(img).text((90, s.handle_y), "@dentistry.oldtown", font=fira(34, "Regular"), fill=SLATE + (178,))
 
     def hook(s, t, sc):
@@ -157,7 +193,7 @@ class Builder:
             spec.append((Layer(tsub, "text", text=sc["sub"], font=fira(54, "LightItalic"), color=SLATE), 0))
         top, bottom = (1000, 1560) if s.reel else (ph_h - 80, H - 60)
         for L in stack(spec, top, bottom): draw_layer(img, t, L)
-        return img
+        s.door(img, left=True); return img
 
     def statement(s, t, sc):
         img = s.bg.copy(); spec = []
@@ -194,17 +230,17 @@ class Builder:
             c, m = s.circ
             card.paste(c, (130, y0 + 50), m.point(lambda v: int(v * p)))
             d.ellipse([126, y0 + 46, 434, y0 + 354], outline=SAGE + (a,), width=6)
-            d.text((480, y0 + 95), "ZAHNÄRZTIN", font=oswald(66, 300), fill=SLATE + (a,))
-            d.text((480, y0 + 170), "ALTSTADT", font=oswald(66, 300), fill=SLATE + (a,))
-            d.text((480, y0 + 262), "Dr. med. dent. Neda Trivić", font=fira(34, "Regular"), fill=SLATE + (a,))
-            d.text((480, y0 + 306), "Alle Kassen & Privat", font=fira(32, "Light"), fill=SLATE + (a,))
-            d.text((130, y0 + 395), "Kapitelgasse 9 · Salzburger Altstadt", font=fira(38, "Light"), fill=SLATE + (a,))
-            d.text((130, y0 + 445), "Terminvereinbarung online:", font=fira(38, "Medium"), fill=RED + (a,))
-            d.rounded_rectangle([130, y0 + 503, W - 130, y0 + 575], radius=36, fill=SLATE + (a,))
+            d.text((480, y0 + 95), "ZAHNÄRZTIN", font=oswald(66, 300), fill=INK + (a,))
+            d.text((480, y0 + 170), "ALTSTADT", font=oswald(66, 300), fill=INK + (a,))
+            d.text((480, y0 + 262), "Dr. med. dent. Neda Trivić", font=fira(34, "Regular"), fill=INK + (a,))
+            d.text((480, y0 + 306), "Alle Kassen & Privat", font=fira(32, "Light"), fill=INK + (a,))
+            d.text((130, y0 + 395), "Kapitelgasse 9 · Salzburger Altstadt", font=fira(38, "Light"), fill=INK + (a,))
+            d.text((130, y0 + 445), "Terminvereinbarung online:", font=fira(38, "Medium"), fill=BRAND_RED + (a,))
+            d.rounded_rectangle([130, y0 + 503, W - 130, y0 + 575], radius=36, fill=INK + (a,))
             txt = "termine.softdent.at/zahnaerztin-altstadt"; ff = fira(34, "Regular")
             d.text(((W - d.textlength(txt, font=ff)) / 2, y0 + 517), txt, font=ff, fill=(255, 255, 255, a))
             img.alpha_composite(card)
-        return img
+        s.door(img); return img
 
     def photo(s, t, sc):
         """Series "Ziemlich sympathisch, wenn ...": whole slide = analog photo print.
@@ -232,7 +268,8 @@ class Builder:
         p_ = p_.convert("RGBA")
         p_ = Image.alpha_composite(p_, Image.new("RGBA", (pw, ph), (20, 22, 26, 40)))
         # text on the photo (brand fonts), centred, with soft shade
-        CRM = (250, 242, 222)
+        CRM = (250, 242, 222); GOLD = s.spec.get("frame_ink") == "gold"
+        KCOL = (236, 204, 134) if GOLD else CRM; FINK = (156, 116, 44) if GOLD else SLATE
         kf = fira(62, "LightItalic"); tf = oswald(sc.get("size", 80), 300)
         d0 = ImageDraw.Draw(p_); lines = wrap(d0, sc["text"].upper(), tf, pw - 160)
         lh = int(tf.size * 1.18); hh = 86 + len(lines) * lh; y = (ph - hh) // 2 + sc.get("dy", 0)
@@ -241,7 +278,7 @@ class Builder:
         p_.alpha_composite(band.filter(ImageFilter.GaussianBlur(60)))
         lay = Image.new("RGBA", (pw, ph), (0, 0, 0, 0)); ld = ImageDraw.Draw(lay)
         kick = sc.get("kicker", "Ziemlich sympathisch,")
-        ld.text(((pw - ld.textlength(kick, font=kf)) / 2, y), kick, font=kf, fill=CRM); y += 86
+        ld.text(((pw - ld.textlength(kick, font=kf)) / 2, y), kick, font=kf, fill=KCOL); y += 86
         for ln in lines:
             ld.text(((pw - ld.textlength(ln, font=tf)) / 2, y), ln, font=tf, fill=CRM); y += lh
         shadow = lay.split()[3].filter(ImageFilter.GaussianBlur(6)).point(lambda v: int(v * .6))
@@ -256,9 +293,58 @@ class Builder:
         img.alpha_composite(p_, (bx, bt))
         d = ImageDraw.Draw(img); by = bt + ph + 50
         bf = oswald(40, 300); brand = "ZAHNÄRZTIN ALTSTADT"
-        d.text((bx + 4, by), brand, font=bf, fill=SLATE)
+        d.text((bx + 4, by), brand, font=bf, fill=FINK)
         hf = fira(30, "LightItalic"); hd = "@dentistry.oldtown"
-        d.text((W - bx - 4 - d.textlength(hd, font=hf), by + 8), hd, font=hf, fill=SLATE)
+        d.text((W - bx - 4 - d.textlength(hd, font=hf), by + 8), hd, font=hf, fill=FINK)
+        return img
+
+    def polaroid(s, t, sc):
+        """Series "Ziemlich sympathisch, wenn ...": practice photo as an analog print (polaroid) on the brand background."""
+        from PIL import ImageOps, ImageEnhance
+        H = s.H; key = sc["photo"]
+        if not hasattr(s, "_ph"): s._ph = {}
+        if key not in s._ph:
+            s._ph[key] = ImageOps.exif_transpose(Image.open(os.path.join(HERE, "..", key))).convert("RGB")
+        im = s._ph[key]
+        pw, ph = 700, 660 if not s.reel else 820
+        iw, ih = im.size; k = max(pw / iw, ph / ih)
+        im2 = im.resize((int(iw * k) + 1, int(ih * k) + 1), Image.LANCZOS)
+        fx, fy = sc.get("focus", [0.5, 0.5]); x0 = int((im2.width - pw) * fx); y0 = int((im2.height - ph) * fy)
+        ph_img = im2.crop((x0, y0, x0 + pw, y0 + ph))
+        # analog look: faded contrast, warm tone, lifted blacks, grain, soft vignette
+        ph_img = ImageEnhance.Contrast(ph_img).enhance(0.86); ph_img = ImageEnhance.Color(ph_img).enhance(0.82)
+        r_, g_, b_ = ph_img.split()
+        ph_img = Image.merge("RGB", [r_.point(lambda v: int(18 + v * 0.93)), g_.point(lambda v: int(12 + v * 0.9)), b_.point(lambda v: int(6 + v * 0.82))])
+        grain = Image.effect_noise((pw, ph), 22).convert("L")
+        ph_img = Image.blend(ph_img, Image.merge("RGB", [grain] * 3), 0.06)
+        vig = Image.new("L", (pw, ph), 0); ImageDraw.Draw(vig).ellipse([-pw * .25, -ph * .25, pw * 1.25, ph * 1.25], fill=255)
+        vig = vig.filter(ImageFilter.GaussianBlur(90))
+        ph_img = Image.composite(ph_img, Image.blend(ph_img, Image.new("RGB", (pw, ph), (60, 45, 30)), 0.35), vig)
+        bx, bt, bb = 30, 30, 104
+        card = Image.new("RGBA", (pw + 2 * bx, ph + bt + bb), (251, 249, 242, 255))
+        card.paste(ph_img, (bx, bt)); cd = ImageDraw.Draw(card)
+        cap = "Zahnärztin Altstadt"; cf = fira(34, "LightItalic")
+        cd.text(((card.width - cd.textlength(cap, font=cf)) / 2, bt + ph + 32), cap, font=cf, fill=SLATE)
+        ang = sc.get("tilt", random.Random(key).choice([-2.4, -1.6, 1.4, 2.2]))
+        rc = card.rotate(ang, resample=Image.BICUBIC, expand=True)
+        img = s.bg.copy()
+        sh = Image.new("RGBA", img.size, (0, 0, 0, 0)); cx = (W - rc.width) // 2; cy = 58 if not s.reel else 200
+        sh.paste((40, 35, 30, 70), (cx + 10, cy + 16), rc.split()[3])
+        img.alpha_composite(sh.filter(ImageFilter.GaussianBlur(18))); img.alpha_composite(rc, (cx, cy))
+        # text in brand fonts
+        y = cy + rc.height + (34 if not s.reel else 80)
+        kf = fira(60, "LightItalic"); d = ImageDraw.Draw(img)
+        kick = sc.get("kicker", "Ziemlich sympathisch,")
+        d.text((90, y), kick, font=kf, fill=RED); y += 84
+        tf = oswald(sc.get("size", 78), 300)
+        for ln in wrap(d, sc["text"].upper(), tf, W - 180):
+            d.text((90, y), ln, font=tf, fill=SLATE); y += int(tf.size * 1.2)
+        bf = oswald(30, 400); brand = "ZAHNÄRZTIN ALTSTADT"
+        by = H - 70 if not s.reel else 1640
+        d.rectangle([90, by + 14, 150, by + 18], fill=SAGE)
+        d.text((168, by), brand, font=bf, fill=SLATE)
+        hf = fira(28, "Regular"); hd = "@dentistry.oldtown"
+        d.text((W - 90 - d.textlength(hd, font=hf), by + 4), hd, font=hf, fill=SLATE + (178,))
         return img
 
     def framed(s, img):
@@ -272,13 +358,13 @@ class Builder:
         ImageDraw.Draw(sh).rectangle([bx - 2, bt - 2, bx + pw + 2, bt + ph + 2], fill=(0, 0, 0, 60))
         out.alpha_composite(sh.filter(ImageFilter.GaussianBlur(3))); out.alpha_composite(inner, (bx, bt))
         d = ImageDraw.Draw(out); by = bt + ph + 50
-        d.text((bx + 4, by), "ZAHNÄRZTIN ALTSTADT", font=oswald(40, 300), fill=SLATE)
+        d.text((bx + 4, by), "ZAHNÄRZTIN ALTSTADT", font=oswald(40, 300), fill=((156, 116, 44) if s.spec.get("frame_ink") == "gold" else SLATE))
         hf = fira(30, "LightItalic"); hd = "@dentistry.oldtown"
-        d.text((W - bx - 4 - d.textlength(hd, font=hf), by + 8), hd, font=hf, fill=SLATE)
+        d.text((W - bx - 4 - d.textlength(hd, font=hf), by + 8), hd, font=hf, fill=((156, 116, 44) if s.spec.get("frame_ink") == "gold" else SLATE))
         return out
 
     def scenes(s):
-        durs = {"photo": 3.4, "hook": 3.2, "statement": 3.8, "tips": 5.4, "close": 4.2}
+        durs = {"polaroid": 3.4, "photo": 3.4, "hook": 3.2, "statement": 3.8, "tips": 5.4, "close": 4.2}
         out = []
         for sc in s.spec["scenes"]:
             fn = getattr(s, sc["type"])

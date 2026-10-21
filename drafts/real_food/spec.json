@@ -1,0 +1,87 @@
+{
+ "title": "Real Food – was Zähne gern essen (Entwurf)",
+ "scenes": [
+  {
+   "type": "photo",
+   "photo": "photos/praxis/realfood_tomaten.jpg",
+   "kicker": "Real Food",
+   "text": "Was Ihre Zähne wirklich gern essen.",
+   "size": 80,
+   "focus": [
+    0.5,
+    0.55
+   ],
+   "dy": -300
+  },
+  {
+   "type": "photo",
+   "photo": "photos/praxis/realfood_salat.jpg",
+   "kicker": "Kauen erwünscht!",
+   "text": "Knackiges Gemüse bringt den Speichel in Schwung – Ihren natürlichen Zahnschutz.",
+   "size": 70,
+   "focus": [
+    0.5,
+    0.45
+   ]
+  },
+  {
+   "type": "photo",
+   "photo": "photos/praxis/realfood_jause.jpg",
+   "kicker": "Käse zum Schluss",
+   "text": "Käse kann die Säure im Mund ausgleichen und liefert Kalzium.",
+   "size": 78,
+   "focus": [
+    0.5,
+    0.7
+   ],
+   "dy": -200
+  },
+  {
+   "type": "photo",
+   "photo": "photos/praxis/realfood_quiche.jpg",
+   "kicker": "Selbst gemacht",
+   "text": "Wer selbst kocht, weiß, was drin ist – und was nicht.",
+   "size": 76,
+   "focus": [
+    0.5,
+    0.6
+   ],
+   "dy": -330
+  },
+  {
+   "type": "statement",
+   "frame": true,
+   "kicker": "Das AHA",
+   "lines": [
+    {
+     "text": "Fertigprodukte",
+     "size": 110
+    },
+    {
+     "text": "verstecken Zucker.",
+     "size": 110,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "body": "Oft dort, wo man ihn nicht erwartet: in Brot, Saucen oder Dressing. Echtes Essen hat ihn meist gar nicht."
+  },
+  {
+   "type": "close",
+   "frame": true,
+   "lines": [
+    {
+     "text": "Real Food schmeckt",
+     "size": 96
+    },
+    {
+     "text": "auch Ihren Zähnen.",
+     "size": 104,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "body": "Was ist Ihr liebstes echtes Essen? Schreiben Sie es uns!"
+  }
+ ]
+}

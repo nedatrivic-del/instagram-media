@@ -1,0 +1,6 @@
+{"theme":"kino","episode":3,"title":"Zahnarzt im Kino – The Sisters Brothers (Entwurf)","scenes":[
+ {"type":"hook","lines":[{"text":"Ein Revolverheld","size":110},{"text":"entdeckt die Zahnbürste.","size":96,"bold":true,"red":true,"maxw":900}],"sub":"Und ist begeistert."},
+ {"type":"statement","kicker":"„The Sisters Brothers“ (2018)","lines":[{"text":"Wilder Westen,","size":110},{"text":"um 1850.","size":110,"bold":true,"red":true}],"body":"Revolverheld Eli kauft seine erste Zahnbürste – und putzt ab da mit großer Freude."},
+ {"type":"statement","kicker":"Das AHA","lines":[{"text":"Damals Luxus,","size":110,"bold":true,"red":true},{"text":"heute ganz normal.","size":110}],"body":"Zahnpasta aus der Tube gibt es erst seit gut 130 Jahren. Davor putzte man mit Pulver – wenn überhaupt."},
+ {"type":"statement","kicker":"Machen Sie es wie Eli","lines":[{"text":"Gönnen Sie sich","size":110},{"text":"eine neue.","size":110,"bold":true,"red":true}],"body":"Alle drei Monate eine frische Zahnbürste. Ihr Zahnfleisch sagt danke."},
+ {"type":"close","lines":[{"text":"Nächste Woche:","size":96},{"text":"Willy Wonkas Vater.","size":96,"bold":true,"red":true,"maxw":850}],"body":"Folgen Sie uns, damit Sie die nächste Folge nicht verpassen."}]}

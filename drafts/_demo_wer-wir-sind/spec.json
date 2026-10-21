@@ -22,7 +22,7 @@
      "red": true
     }
    ],
-   "sub": "Bevor jemand bohrt."
+   "sub": "Schon im ersten Gespräch."
   },
   {
    "type": "statement",
@@ -54,7 +54,7 @@
      "red": true
     }
    ],
-   "body": "Was wir sehen und welche Möglichkeiten es gibt."
+   "body": "Was wir sehen und welche Wege es gibt – in einfachen Worten."
   },
   {
    "type": "statement",
@@ -76,7 +76,7 @@
    "type": "statement",
    "lines": [
     {
-     "text": "Erst dann",
+     "text": "Gut informiert",
      "size": 130
     },
     {
@@ -86,7 +86,7 @@
      "red": true
     }
    ],
-   "body": "Gemeinsam. Wir nehmen uns Zeit."
+   "body": "Mit allem, was Sie dafür wissen müssen. Wir nehmen uns Zeit."
   },
   {
    "type": "close",

@@ -5,8 +5,8 @@
    "type": "photo",
    "photo": "photos/praxis/gluten_schild_productos.jpg",
    "kicker": "Gluten & Zähne",
-   "text": "Zöliakie zeigt sich manchmal zuerst im Mund.",
-   "size": 82,
+   "text": "Manchmal merkt es die Zahnärztin zuerst.",
+   "size": 86,
    "focus": [
     0.5,
     0.75
@@ -19,11 +19,11 @@
    "frame": true,
    "lines": [
     {
-     "text": "Darauf achten",
+     "text": "Woran? An diesen",
      "size": 104
     },
     {
-     "text": "wir",
+     "text": "kleinen Spuren:",
      "size": 104,
      "bold": true,
      "red": true
@@ -39,8 +39,8 @@
      "sub": "Kleine, schmerzhafte Bläschen im Mund."
     },
     {
-     "title": "Glatte, brennende Zunge",
-     "sub": "Kann auf einen Nährstoffmangel hinweisen."
+     "title": "Eine glatte, brennende Zunge",
+     "sub": "Manchmal ein Zeichen für Nährstoffmangel."
     }
    ],
    "duration": 5.6
@@ -48,9 +48,9 @@
   {
    "type": "photo",
    "photo": "photos/praxis/gluten_brot_ofen.jpg",
-   "kicker": "Mythos",
-   "text": "Glutenfrei heißt nicht automatisch zahnfreundlich. Es zählt der Zucker.",
-   "size": 72,
+   "kicker": "Und glutenfrei backen?",
+   "text": "Herrlich! Für Ihre Zähne zählt trotzdem vor allem eins: wie viel Zucker drin ist.",
+   "size": 68,
    "focus": [
     0.5,
     0.5
@@ -66,14 +66,13 @@
      "size": 104
     },
     {
-     "text": "Sprechen Sie uns an.",
-     "size": 90,
+     "text": "Wir schauen genau hin.",
+     "size": 84,
      "bold": true,
-     "red": true,
-     "maxw": 850
+     "red": true
     }
    ],
-   "body": "Wir schauen genau hin. Die Abklärung macht dann Ihre Hausärztin oder Ihr Hausarzt.",
+   "body": "Die Abklärung übernimmt dann Ihre Hausärztin oder Ihr Hausarzt. Teil 2 nächste Woche: glutenfrei auf Reisen!",
    "duration": 4.4
   }
  ]

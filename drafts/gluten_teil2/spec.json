@@ -4,9 +4,9 @@
   {
    "type": "photo",
    "photo": "photos/praxis/gluten_pizza.jpg",
-   "kicker": "Glutenfrei · Teil 2",
-   "text": "Glutenfreie Pizza? Ihre Zähne merken keinen Unterschied.",
-   "size": 76,
+   "kicker": "Teil 2 · Glutenfrei auf Reisen",
+   "text": "Erster Stopp: Italien. Die Pizza ist glutenfrei – Ihre Zähne merken keinen Unterschied.",
+   "size": 68,
    "focus": [
     0.5,
     0.15
@@ -16,9 +16,9 @@
   {
    "type": "photo",
    "photo": "photos/praxis/gluten_sevilla.jpg",
-   "kicker": "Reise-AHA",
-   "text": "Sevilla hat ein eigenes Netz glutenfreier Lokale – samt App der Stadt.",
-   "size": 70,
+   "kicker": "Zweiter Stopp: Sevilla",
+   "text": "Hier gibt es sogar ein eigenes Netz glutenfreier Lokale – mit App der Stadt. Olé!",
+   "size": 66,
    "focus": [
     0.5,
     0.35
@@ -28,7 +28,7 @@
   {
    "type": "statement",
    "frame": true,
-   "kicker": "Gut zu wissen",
+   "kicker": "Zurück zu Hause",
    "lines": [
     {
      "text": "Glutenfrei heißt",
@@ -41,18 +41,18 @@
      "red": true
     }
    ],
-   "body": "Fertige glutenfreie Produkte enthalten manchmal mehr Zucker, als man denkt. Ein Blick aufs Etikett lohnt sich."
+   "body": "Beim Einkaufen lohnt ein Blick aufs Etikett: Fertige glutenfreie Produkte enthalten manchmal mehr Zucker, als man denkt."
   },
   {
    "type": "tips",
    "frame": true,
    "lines": [
     {
-     "text": "Unterwegs",
+     "text": "Ihr Reisegepäck",
      "size": 110
     },
     {
-     "text": "zahnfreundlich",
+     "text": "für die Zähne",
      "size": 110,
      "bold": true,
      "red": true
@@ -78,17 +78,17 @@
    "frame": true,
    "lines": [
     {
-     "text": "Wo haben Sie am besten",
-     "size": 92
+     "text": "Und Ihr Lieblingsort",
+     "size": 96
     },
     {
-     "text": "glutenfrei gegessen?",
-     "size": 92,
+     "text": "für glutenfrei?",
+     "size": 104,
      "bold": true,
      "red": true
     }
    ],
-   "body": "Verraten Sie es uns in den Kommentaren!"
+   "body": "Verraten Sie es uns – wir sammeln Ihre Tipps für die nächste Reise!"
   }
  ]
 }

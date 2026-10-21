@@ -64,7 +64,7 @@ Determine the current local date/time in Europe/Vienna first.
 - Close: prefer a save/share line ("Speichern Sie sich diesen Tipp.", "Teilen Sie das mit jemandem, der es wissen sollte.") or a gentle "Es lohnt sich, …". Still no hard sell.
 - Carousels: slide 1 = the same kind of hook (question/number), last slide = save line + practice card. 5–7 slides.
 - Caption: the FIRST line repeats the hook (it is what people see under the reel), then the content. End the German part with one save/share line.
-- Approval email: add one line that the post also goes out automatically as a Story (see 6a), and one line reminding Neda she can add a trending sound in the Instagram app after publishing (Reel → ⋯ → Audio) – optional, ~30 seconds.
+- Approval email: add one line that the post also goes out automatically as a Story (see 6a). Do NOT ask Neda to do anything manually in the Instagram app (no trending-sound or share-to-story reminders) – Neda, 21.10.2026: she wants everything automated that can be; her only job is the OK. Keep approval emails short.
 
 ## Monthly series „Ziemlich sympathisch, wenn …“ (episode 1: Fri 30.10.2026; episode 2: Fri 27.11.2026 10:00 Advent edition; then first Wednesday of each month from January 2027)
 Idea from Neda (inspired by an orthodontist's "kinda chic to …" carousel – adapt, never copy). Values, not teeth: time, listening, explaining, trust.

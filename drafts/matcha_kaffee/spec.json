@@ -15,15 +15,10 @@
   },
   {
    "type": "photo",
-   "photo": "photos/praxis/matcha_latteart.jpg",
+   "photo": "photos/praxis/matcha_glaeser.jpg",
    "kicker": "Matcha · PRO",
    "text": "Grüner Tee kann Kariesbakterien bremsen.",
-   "size": 78,
-   "focus": [
-    0.18,
-    0.5
-   ],
-   "dy": -180
+   "size": 78
   },
   {
    "type": "photo",

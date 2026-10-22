@@ -1,8 +1,131 @@
-{"title":"Termin vergessen? (Entwurf)","scenes":[
- {"type":"hook","lines":[{"text":"Termin vergessen?","size":110},{"text":"Passiert.","size":130,"bold":true,"red":true}],"sub":"Aber was passiert eigentlich danach?"},
- {"type":"statement","kicker":"Den Zug verpasst?","lines":[{"text":"Er fährt trotzdem.","size":110,"bold":true,"red":true}],"body":"Und das Ticket? Ist weg."},
- {"type":"statement","kicker":"Das Konzert vergessen?","lines":[{"text":"Die Band spielt","size":110},{"text":"trotzdem.","size":110,"bold":true,"red":true}],"body":"Und die Karte? Gibt's nicht zurück."},
- {"type":"statement","kicker":"Und bei uns?","lines":[{"text":"Bleibt der Stuhl","size":110},{"text":"einfach leer.","size":110,"bold":true,"red":true}],"body":"Dabei war die Zeit nur für Sie reserviert – und jemand mit Zahnschmerzen hätte sie gern gehabt."},
- {"type":"tips","lines":[{"text":"Absagen geht","size":110},{"text":"ganz leicht","size":110,"bold":true,"red":true}],"items":[{"title":"Bis 24 Stunden vorher","sub":"Dann ist es kostenlos."},{"title":"Anrufen: 0662 843 106","sub":"Oder auf die Mailbox sprechen."},{"title":"Online verschieben","sub":"termine.softdent.at/zahnaerztin-altstadt"}]},
- {"type":"statement","kicker":"Fair für alle","lines":[{"text":"Nicht abgesagt?","size":110},{"text":"Ausfallhonorar.","size":110,"bold":true,"red":true}],"body":"Termine, die nicht mindestens 24 Stunden vorher abgesagt werden, müssen wir leider verrechnen. Danke für Ihr Verständnis!"},
- {"type":"close","lines":[{"text":"Danke, dass Sie","size":100},{"text":"kurz Bescheid geben.","size":100,"bold":true,"red":true,"maxw":900}],"body":"Sie helfen damit nicht nur uns, sondern auch allen, die auf einen Termin warten."}]}
+{
+ "title": "Termin vergessen? (Entwurf)",
+ "scenes": [
+  {
+   "type": "hook",
+   "lines": [
+    {
+     "text": "Termin vergessen?",
+     "size": 110
+    },
+    {
+     "text": "Passiert.",
+     "size": 130,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "sub": "Aber was passiert eigentlich danach?"
+  },
+  {
+   "type": "statement",
+   "kicker": "Den Zug verpasst?",
+   "lines": [
+    {
+     "text": "Er fährt trotzdem.",
+     "size": 110,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "body": "Und das Ticket? Ist weg."
+  },
+  {
+   "type": "statement",
+   "kicker": "Das Konzert vergessen?",
+   "lines": [
+    {
+     "text": "Die Band spielt",
+     "size": 110
+    },
+    {
+     "text": "trotzdem.",
+     "size": 110,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "body": "Und die Karte? Gibt's nicht zurück."
+  },
+  {
+   "type": "statement",
+   "kicker": "Und bei uns?",
+   "lines": [
+    {
+     "text": "Bleibt der Stuhl",
+     "size": 110
+    },
+    {
+     "text": "einfach leer.",
+     "size": 110,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "body": "Dabei war die Zeit nur für Sie reserviert – und jemand mit Zahnschmerzen hätte sie gern gehabt."
+  },
+  {
+   "type": "tips",
+   "lines": [
+    {
+     "text": "Absagen geht",
+     "size": 110
+    },
+    {
+     "text": "ganz leicht",
+     "size": 110,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "items": [
+    {
+     "title": "Bis 24 Stunden vorher",
+     "sub": "Dann ist es kostenlos."
+    },
+    {
+     "title": "Anrufen: 0662 843 106",
+     "sub": "Während unserer Ordinationszeiten."
+    },
+    {
+     "title": "Online verschieben",
+     "sub": "termine.softdent.at/zahnaerztin-altstadt"
+    }
+   ]
+  },
+  {
+   "type": "statement",
+   "kicker": "Fair für alle",
+   "lines": [
+    {
+     "text": "Nicht abgesagt?",
+     "size": 110
+    },
+    {
+     "text": "Ausfallhonorar.",
+     "size": 110,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "body": "Termine, die nicht mindestens 24 Stunden vorher abgesagt werden, müssen wir leider verrechnen. Danke für Ihr Verständnis!"
+  },
+  {
+   "type": "close",
+   "lines": [
+    {
+     "text": "Danke, dass Sie",
+     "size": 100
+    },
+    {
+     "text": "kurz Bescheid geben.",
+     "size": 100,
+     "bold": true,
+     "red": true,
+     "maxw": 900
+    }
+   ],
+   "body": "Sie helfen damit nicht nur uns, sondern auch allen, die auf einen Termin warten."
+  }
+ ]
+}

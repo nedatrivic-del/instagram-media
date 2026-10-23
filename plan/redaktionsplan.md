@@ -46,3 +46,8 @@ Gluten-Serie (Zöliakie-Reel + Glutenfrei auf Reisen) gehört hierher, als Teil 
 
 ## Reserve-Posts (fertig, freigegeben, ohne Termin)
 - „Termin vergessen? Passiert.“ – drafts/reserve_termin-vergessen/ (Metricool-Entwurf, Platzhalter 29.01.2027). Nur nach Rücksprache mit Neda einsetzen.
+
+## Idee: Serie „Reisen & Mundhygiene“ (Neda, 23.10.2026) – Zeitpunkt offen (Vorschlag: vor der Sommer-/Urlaubssaison 2027)
+- Zahnputztabletten fürs Backpacking: wie man sie benutzt (zerkauen, mit nasser Bürste putzen), Vorteile (leicht, kein Flüssigkeitslimit im Handgepäck, wenig Plastik), Achtung: auf Fluorid achten. KEINE Markennamen.
+- Weitere Ideen: Zahnbürste vergessen? · Zahnschmerzen im Urlaub · Fliegen & Zähne (Druck) · Reise-Checkliste · Zahnersatz auf Reisen · Leitungswasser/Zahnputzbecher im Hotel.
+- Neda schickt ggf. eigene Reisefotos. Vor dem Bauen mit Neda Termin + Format klären; Fakten prüfen.

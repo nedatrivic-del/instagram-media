@@ -37,8 +37,12 @@ Look (Neda chose 21.10.): `"theme": "kino"` + `"episode": <n>` – dark cinema b
 Copyright: NO film clips, stills, posters or actor photos (not allowed for practice advertising). Name the film, describe the scene in our own design/text; optionally a trending Instagram sound added in the app.
 
 ## Bonus Fridays 10:00 (Neda's own photos, approved & scheduled in chat – never create anything for these dates)
-23.10. Matcha oder Kaffee · 30.10. Ziemlich sympathisch 1 · 06.11. Real Food · 13.11. Termin vergessen? (Absage/Ausfallhonorar) · 20.11. frei · 27.11. Ziemlich sympathisch Advent
+23.10. Matcha oder Kaffee · 30.10. Ziemlich sympathisch 1 · 06.11. Real Food · 13.11. Wer wir sind (aus anderem Chat, inkl. Story) · 20.11. Kinder-Post (Schwer/Noch schwerer, wartet auf Fotos) · 27.11. Ziemlich sympathisch Advent
 
 
 ## März 2027 – Frühlings-/Detox-Geschichte (Idee Neda, 22.10.2026)
 Gluten-Serie (Zöliakie-Reel + Glutenfrei auf Reisen) gehört hierher, als Teil einer Frühlings-Detox-Erzählung. Liegt als Metricool-ENTWURF auf Fr 05.03. und Fr 12.03.2027 (posts/2027-03-*). Rahmen im Februar mit Neda planen, Texte ggf. an Detox-Story anpassen, dann neu freigeben. Nicht vorher veröffentlichen.
+
+
+## Reserve-Posts (fertig, freigegeben, ohne Termin)
+- „Termin vergessen? Passiert.“ – drafts/reserve_termin-vergessen/ (Metricool-Entwurf, Platzhalter 29.01.2027). Nur nach Rücksprache mit Neda einsetzen.

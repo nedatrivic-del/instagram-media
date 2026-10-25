@@ -2,27 +2,25 @@
  "date": "2026-11-18",
  "slot": "Mi · Frauen 40+",
  "format": "reel",
- "title": "Frauen 40+ (3/3): Liebes Tagebuch – Knochen & Zahnhalt",
+ "title": "Frauen 40+ (3/3): Knochen & Zahnhalt",
  "scenes": [
   {
-   "type": "hook",
+   "type": "statement",
+   "kicker": "Frauen 40+ · Teil 3 von 3",
    "lines": [
     {
-     "text": "Liebes Tagebuch,",
+     "text": "„Halten meine Zähne",
      "size": 110
     },
     {
-     "text": "halten meine Zähne",
-     "size": 100
-    },
-    {
-     "text": "noch gut?",
+     "text": "noch gut?“",
      "size": 110,
      "bold": true,
      "red": true
     }
    ],
-   "sub": "Frauen 40+ · Teil 3 von 3"
+   "body": "Eine Frage, die sich viele Frauen nach den Wechseljahren stellen.",
+   "instant": true
   },
   {
    "type": "statement",

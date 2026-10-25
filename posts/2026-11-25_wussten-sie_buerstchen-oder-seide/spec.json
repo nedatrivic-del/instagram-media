@@ -1,7 +1,7 @@
 {
  "date": "2026-11-25",
  "slot": "Mi · Mundpflege",
- "format": "reel",
+ "format": "carousel",
  "title": "Bürstchen oder Zahnseide? Das Duell",
  "scenes": [
   {
@@ -18,7 +18,24 @@
      "red": true
     }
    ],
-   "sub": "Das große Duell."
+   "sub": "Das große Duell im Badezimmer."
+  },
+  {
+   "type": "statement",
+   "kicker": "Warum überhaupt?",
+   "lines": [
+    {
+     "text": "Die Zahnbürste",
+     "size": 120
+    },
+    {
+     "text": "kommt nicht überall hin.",
+     "size": 96,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "body": "Zwischen den Zähnen bleibt Belag liegen – genau dort beginnen Karies und Zahnfleischentzündung oft."
   },
   {
    "type": "statement",
@@ -35,7 +52,36 @@
      "red": true
     }
    ],
-   "body": "Reinigt gründlich, wo etwas Platz ist – auch unter Brücken."
+   "body": "Ideal, wenn etwas Platz ist: bei zurückgegangenem Zahnfleisch, unter Brücken oder mit Zahnspange. Es gibt viele Größen."
+  },
+  {
+   "type": "tips",
+   "lines": [
+    {
+     "text": "So geht's:",
+     "size": 110
+    },
+    {
+     "text": "Bürstchen",
+     "size": 110,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "items": [
+    {
+     "title": "Die richtige Größe",
+     "sub": "Es soll leicht reiben, aber nicht klemmen."
+    },
+    {
+     "title": "Sanft hinein und heraus",
+     "sub": "Ein paar Mal pro Zwischenraum."
+    },
+    {
+     "title": "Nicht mit Gewalt",
+     "sub": "Passt es nicht, eine Nummer kleiner nehmen."
+    }
+   ]
   },
   {
    "type": "statement",
@@ -52,7 +98,36 @@
      "red": true
     }
    ],
-   "body": "Kommt dorthin, wo kein Bürstchen durchpasst."
+   "body": "Wo kein Bürstchen durchpasst, gleitet Zahnseide hinein – besonders bei eng stehenden Zähnen."
+  },
+  {
+   "type": "tips",
+   "lines": [
+    {
+     "text": "So geht's:",
+     "size": 110
+    },
+    {
+     "text": "Zahnseide",
+     "size": 110,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "items": [
+    {
+     "title": "Etwa 40 cm abreißen",
+     "sub": "Um die Mittelfinger wickeln."
+    },
+    {
+     "title": "Sanft hineingleiten",
+     "sub": "Nicht ins Zahnfleisch schnalzen lassen."
+    },
+    {
+     "title": "Wie ein C um den Zahn",
+     "sub": "Auf und ab – an beiden Nachbarzähnen."
+    }
+   ]
   },
   {
    "type": "close",
@@ -69,7 +144,7 @@
      "maxw": 900
     }
    ],
-   "body": "Welches zu Ihnen passt, zeigen wir Ihnen gern."
+   "body": "Welches zu Ihnen passt, zeigen wir Ihnen gern bei der nächsten Zahnreinigung."
   }
  ]
 }

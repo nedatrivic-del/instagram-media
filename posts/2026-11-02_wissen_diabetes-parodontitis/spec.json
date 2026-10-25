@@ -1,7 +1,7 @@
 {
  "date": "2026-11-02",
  "slot": "Mo · Wissen",
- "format": "reel",
+ "format": "carousel",
  "title": "Diabetes & Zahnfleisch – ein schwieriges Paar",
  "scenes": [
   {
@@ -22,28 +22,45 @@
      "red": true
     }
    ],
-   "sub": "Sie machen sich das Leben schwer."
+   "sub": "Eine Beziehungsgeschichte in 5 Kapiteln."
   },
   {
    "type": "statement",
-   "kicker": "Er ärgert sie",
+   "kicker": "Kapitel 1: Das Kennenlernen",
    "lines": [
     {
-     "text": "Hoher Blutzucker",
-     "size": 104
+     "text": "Zwei, die sich",
+     "size": 110
     },
     {
-     "text": "reizt das Zahnfleisch.",
-     "size": 96,
+     "text": "ständig beeinflussen.",
+     "size": 100,
      "bold": true,
      "red": true
     }
    ],
-   "body": "Entzündungen entstehen leichter und heilen langsamer."
+   "body": "Diabetes und Parodontitis – eine Entzündung des Zahnhalteapparats – treten oft gemeinsam auf."
   },
   {
    "type": "statement",
-   "kicker": "Sie ärgert ihn",
+   "kicker": "Kapitel 2: Er ärgert sie",
+   "lines": [
+    {
+     "text": "Hoher Blutzucker",
+     "size": 110
+    },
+    {
+     "text": "reizt das Zahnfleisch.",
+     "size": 100,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "body": "Die Abwehr arbeitet schlechter. Entzündungen entstehen leichter und heilen langsamer."
+  },
+  {
+   "type": "statement",
+   "kicker": "Kapitel 3: Sie ärgert ihn",
    "lines": [
     {
      "text": "Entzündetes Zahnfleisch",
@@ -51,29 +68,74 @@
     },
     {
      "text": "stört den Blutzucker.",
-     "size": 96,
+     "size": 100,
      "bold": true,
      "red": true
     }
    ],
-   "body": "Studien zeigen: Das wirkt in beide Richtungen."
+   "body": "Die Entzündung im Mund wirkt im ganzen Körper und kann die Zuckereinstellung erschweren."
+  },
+  {
+   "type": "statement",
+   "kicker": "Kapitel 4: Die Warnzeichen",
+   "lines": [
+    {
+     "text": "Oft ganz leise –",
+     "size": 110
+    },
+    {
+     "text": "ohne Schmerzen.",
+     "size": 110,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "body": "Zahnfleischbluten, Mundgeruch, Zähne, die länger wirken oder locker werden: Das sollten wir uns ansehen."
+  },
+  {
+   "type": "tips",
+   "lines": [
+    {
+     "text": "Kapitel 5:",
+     "size": 110
+    },
+    {
+     "text": "Das Happy End",
+     "size": 110,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "items": [
+    {
+     "title": "Sagen Sie uns, dass Sie Diabetes haben",
+     "sub": "Dann schauen wir besonders genau hin."
+    },
+    {
+     "title": "Regelmäßige Zahnreinigung",
+     "sub": "Entfernt Beläge, die die Entzündung nähren."
+    },
+    {
+     "title": "Zahnfleisch behandeln lassen",
+     "sub": "Studien zeigen: Das kann auch dem Blutzucker helfen."
+    }
+   ]
   },
   {
    "type": "close",
    "lines": [
     {
-     "text": "Die gute Nachricht:",
-     "size": 100
+     "text": "Gesundes Zahnfleisch:",
+     "size": 90
     },
     {
-     "text": "Beides lässt sich beruhigen.",
-     "size": 92,
+     "text": "ein guter Partner.",
+     "size": 104,
      "bold": true,
-     "red": true,
-     "maxw": 900
+     "red": true
     }
    ],
-   "body": "Gesundes Zahnfleisch kann auch dem Blutzucker helfen. Sprechen Sie uns darauf an."
+   "body": "Für Ihren Mund und für Ihren Blutzucker. Wir begleiten Sie dabei."
   }
  ]
 }

@@ -230,9 +230,10 @@ class Builder:
     def statement(s, t, sc):
         img = s.bg.copy(); spec = []
         if sc.get("kicker"):
-            spec.append((Layer(0.1, "text", text=sc["kicker"], font=fira(52, "LightItalic"), color=RED), 24))
-        spec += headline_layers(sc["lines"], 0.15, 0.12)
-        spec += [(Layer(0.5, "rule"), 44), (Layer(0.7, "text", text=sc["body"], font=fira(56, "Light"), color=SLATE, lh=1.34), 0)]
+            spec.append((Layer(-1.0 if (sc.get("instant") and s.reel) else 0.1, "text", text=sc["kicker"], font=fira(52, "LightItalic"), color=RED), 24))
+        inst = sc.get("instant") and s.reel
+        spec += headline_layers(sc["lines"], -1.0 if inst else 0.15, 0.0 if inst else 0.12)
+        spec += [(Layer(-1.0 if inst else 0.5, "rule"), 44), (Layer(0.4 if inst else 0.7, "text", text=sc["body"], font=fira(56, "Light"), color=SLATE, lh=1.34), 0)]
         zone = s.zone
         if sc.get("image"):
             fig = Image.open(os.path.join(HERE, sc["image"])).convert("RGBA")

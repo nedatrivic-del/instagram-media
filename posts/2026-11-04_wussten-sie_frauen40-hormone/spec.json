@@ -2,27 +2,25 @@
  "date": "2026-11-04",
  "slot": "Mi · Frauen 40+",
  "format": "reel",
- "title": "Frauen 40+ (1/3): Liebes Tagebuch – Hormone im Mund",
+ "title": "Frauen 40+ (1/3): Hormone im Mund",
  "scenes": [
   {
-   "type": "hook",
+   "type": "statement",
+   "kicker": "Frauen 40+ · Teil 1 von 3",
    "lines": [
     {
-     "text": "Liebes Tagebuch,",
+     "text": "„Seit Kurzem blutet",
      "size": 110
     },
     {
-     "text": "seit Kurzem blutet",
-     "size": 100
-    },
-    {
-     "text": "mein Zahnfleisch.",
-     "size": 100,
+     "text": "mein Zahnfleisch.“",
+     "size": 110,
      "bold": true,
      "red": true
     }
    ],
-   "sub": "Frauen 40+ · Teil 1 von 3"
+   "body": "Das hören wir oft von Frauen ab 40. Und es hat einen Grund.",
+   "instant": true
   },
   {
    "type": "statement",

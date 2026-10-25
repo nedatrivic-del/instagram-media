@@ -2,27 +2,25 @@
  "date": "2026-11-11",
  "slot": "Mi · Frauen 40+",
  "format": "carousel",
- "title": "Frauen 40+ (2/3): Liebes Tagebuch – trockener Mund",
+ "title": "Frauen 40+ (2/3): trockener Mund",
  "scenes": [
   {
-   "type": "hook",
+   "type": "statement",
+   "kicker": "Frauen 40+ · Teil 2 von 3",
    "lines": [
     {
-     "text": "Liebes Tagebuch,",
-     "size": 104
+     "text": "„Mein Mund ist",
+     "size": 110
     },
     {
-     "text": "mein Mund ist",
-     "size": 104
-    },
-    {
-     "text": "ständig trocken.",
-     "size": 104,
+     "text": "ständig trocken.“",
+     "size": 110,
      "bold": true,
      "red": true
     }
    ],
-   "sub": "Frauen 40+ · Teil 2 von 3"
+   "body": "Auch das erzählen uns viele Frauen in den Wechseljahren.",
+   "instant": true
   },
   {
    "type": "statement",

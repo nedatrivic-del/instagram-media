@@ -1,7 +1,7 @@
 {
  "date": "2026-11-09",
  "slot": "Mo · Wissen",
- "format": "reel",
+ "format": "carousel",
  "title": "Eine Reise vom Zahnfleisch zum Herzen",
  "scenes": [
   {
@@ -23,28 +23,62 @@
      "maxw": 900
     }
    ],
-   "sub": "Eine kleine Reise."
+   "sub": "Eine kleine Reise durch den Körper."
   },
   {
    "type": "statement",
-   "kicker": "Start: das Zahnfleisch",
+   "kicker": "Station 1: Der Mund",
+   "lines": [
+    {
+     "text": "Hunderte",
+     "size": 120
+    },
+    {
+     "text": "Bakterienarten.",
+     "size": 116,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "body": "Die meisten sind harmlos. Doch bleibt Belag am Zahnfleischrand liegen, entzündet sich das Zahnfleisch."
+  },
+  {
+   "type": "statement",
+   "kicker": "Station 2: Das Zahnfleisch",
    "lines": [
     {
      "text": "Entzündet",
      "size": 120
     },
     {
-     "text": "und offen.",
+     "text": "wie eine offene Tür.",
+     "size": 104,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "body": "Blutet das Zahnfleisch, können Bakterien und Entzündungsstoffe ins Blut gelangen."
+  },
+  {
+   "type": "statement",
+   "kicker": "Station 3: Die Blutbahn",
+   "lines": [
+    {
+     "text": "Die Entzündung",
+     "size": 120
+    },
+    {
+     "text": "reist mit.",
      "size": 120,
      "bold": true,
      "red": true
     }
    ],
-   "body": "Über blutendes Zahnfleisch können Bakterien ins Blut gelangen."
+   "body": "Sie bleibt nicht im Mund, sondern wirkt im ganzen Körper – auch an den Blutgefäßen."
   },
   {
    "type": "statement",
-   "kicker": "Ziel: das Herz",
+   "kicker": "Station 4: Das Herz",
    "lines": [
     {
      "text": "Studien zeigen",
@@ -57,7 +91,36 @@
      "red": true
     }
    ],
-   "body": "Menschen mit Parodontitis haben häufiger Herz-Kreislauf-Erkrankungen."
+   "body": "Menschen mit Parodontitis haben häufiger Herz-Kreislauf-Erkrankungen. Wie genau, wird noch erforscht."
+  },
+  {
+   "type": "tips",
+   "lines": [
+    {
+     "text": "Ihre",
+     "size": 110
+    },
+    {
+     "text": "Rückfahrkarte",
+     "size": 110,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "items": [
+    {
+     "title": "Abends die Zwischenräume reinigen",
+     "sub": "Mit Zahnseide oder Bürstchen."
+    },
+    {
+     "title": "Zahnfleischbluten ernst nehmen",
+     "sub": "Gesundes Zahnfleisch blutet nicht."
+    },
+    {
+     "title": "Regelmäßig zur Kontrolle",
+     "sub": "So erkennen wir Entzündungen früh."
+    }
+   ]
   },
   {
    "type": "close",

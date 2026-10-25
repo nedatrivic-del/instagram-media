@@ -8,7 +8,7 @@ Read the section "Attention rules" before writing any spec.
 | Woche | Mo 10:00 · Reel "Wissen" | Mi 10:00 · Wussten Sie schon? | Mi-Format | Do 10:00 · Google-Profil (Text + Bild) | Status |
 |---|---|---|---|---|---|
 | 19.10.2026 | Warum blutet Ihr Zahnfleisch? | Naschen – wie oft zählt (Frontiers in Oral Health 2026) | Reel | Prophylaxe – warum sie sich lohnt (20.10. veröffentlicht, von Google entfernt; Posten am Profil gesperrt) | geplant |
-| 26.10.2026 | Versteckter Zucker: Erkennen Sie ihn? (Mo-Reel freigegeben, eingeplant) | Was Zähne nach dem Essen brauchen (Säure, Speichel, wann putzen) | Karussell | PAUSIERT: Zahnfleischbluten? Nicht ignorieren (Entwurf vorhanden, Do 29.10., Telefonnummer entfernt – erst nach Google-Freischaltung) | offen |
+| 26.10.2026 | Versteckter Zucker: Erkennen Sie ihn? (Mo-Reel freigegeben, eingeplant) | Nach dem Essen sofort putzen? (Säure, Speichel, 30-Minuten-Regel; Caries Research 2024) – Mi zur Freigabe | Karussell | PAUSIERT: Zahnfleischbluten? Nicht ignorieren (Entwurf vorhanden, Do 29.10., Telefonnummer entfernt – erst nach Google-Freischaltung) | zur Freigabe |
 | 02.11.2026 | Parodontitis und Diabetes – keine Einbahnstraße | Studie zu Parodontitis und Herz-Kreislauf | Reel | Prophylaxe in der Altstadt: Ablauf eines Termins | offen |
 | 09.11.2026 | Frauen 40+ (1/3): Was die Hormone im Mund verändern | Frauen 40+ (2/3): Trockener Mund und empfindliches Zahnfleisch | Karussell | Krone, Brücke oder Prothese? | offen |
 | 16.11.2026 | Gesunde Gewohnheiten: die 2-Minuten-Routine am Abend | Parodontitis und Demenz – was Studien zeigen | Reel | Online-Termin in 1 Minute | offen |

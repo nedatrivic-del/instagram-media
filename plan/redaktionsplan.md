@@ -58,3 +58,6 @@ Ruhig, faktisch, Storytelling. Inhalt: was Studien zeigen (Zahnpasta vs. stark f
 
 ## November-Batch (Neda 25.10.2026)
 Alle Mo/Mi-Posts 2.–30.11. werden im Chat gesammelt gebaut und von Neda gesammelt freigegeben (posts/2026-11-*, status awaiting_approval, approval_channel chat-batch). Der Agent erstellt für diese Termine NICHTS und schickt keine Freigabe-Mails dafür. Parodontitis & Demenz und Säure/Zahnschmelz sind auf später verschoben.
+
+
+November-Reihenfolge (Neda 25.10., abwechselnd Parodontitis/Frauen): 2.11. Diabetes · 4.11. Frauen 40+ 1/3 · 9.11. Zahnfleisch & Herz · 11.11. Frauen 40+ 2/3 · 16.11. Abendroutine · 18.11. Frauen 40+ 3/3 · 23.11. Krone/Brücke/Prothese · 25.11. Bürstchen oder Seide · 30.11. Prothese pflegen. (Die Tabelle oben ist für November überholt.)

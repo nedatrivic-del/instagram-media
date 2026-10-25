@@ -1,0 +1,124 @@
+{
+ "date": "2026-10-28",
+ "slot": "Mi · Wussten Sie schon?",
+ "format": "carousel",
+ "title": "Nach dem Essen sofort putzen?",
+ "scenes": [
+  {
+   "type": "hook",
+   "lines": [
+    {
+     "text": "Nach dem Essen",
+     "size": 110
+    },
+    {
+     "text": "sofort putzen?",
+     "size": 110,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "sub": "Das wissen die wenigsten."
+  },
+  {
+   "type": "statement",
+   "kicker": "Nach jeder Mahlzeit",
+   "lines": [
+    {
+     "text": "Im Mund",
+     "size": 130
+    },
+    {
+     "text": "wird es sauer.",
+     "size": 130,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "body": "Bakterien machen aus Zucker Säure. Saft bringt sie gleich mit."
+  },
+  {
+   "type": "statement",
+   "kicker": "Ihr bester Helfer",
+   "lines": [
+    {
+     "text": "Der Speichel",
+     "size": 130
+    },
+    {
+     "text": "räumt auf.",
+     "size": 130,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "body": "Er verdünnt die Säure und macht den Zahnschmelz wieder fest."
+  },
+  {
+   "type": "statement",
+   "kicker": "Übersichtsarbeit, 2024",
+   "lines": [
+    {
+     "text": "Die 30-Minuten-",
+     "size": 120
+    },
+    {
+     "text": "Regel ist",
+     "size": 120
+    },
+    {
+     "text": "kein Muss.",
+     "size": 120,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "body": "Mit Fluorid und sanft geputzt, schadet frühes Putzen meist nicht."
+  },
+  {
+   "type": "tips",
+   "lines": [
+    {
+     "text": "Das hilft Ihren",
+     "size": 110
+    },
+    {
+     "text": "Zähnen danach",
+     "size": 110,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "items": [
+    {
+     "title": "Ein Glas Wasser",
+     "sub": "Spült Säure und Essensreste weg."
+    },
+    {
+     "title": "Zuckerfreier Kaugummi",
+     "sub": "Bringt den Speichel in Schwung."
+    },
+    {
+     "title": "Sanft putzen mit Fluorid",
+     "sub": "Weiche Bürste, wenig Druck."
+    }
+   ]
+  },
+  {
+   "type": "close",
+   "lines": [
+    {
+     "text": "Speichern Sie sich",
+     "size": 104
+    },
+    {
+     "text": "diesen Tipp.",
+     "size": 104,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "body": "Sanft und mit Fluorid – das zählt mehr als die Uhr."
+  }
+ ]
+}

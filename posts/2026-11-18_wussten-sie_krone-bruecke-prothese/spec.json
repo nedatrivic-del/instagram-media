@@ -35,7 +35,8 @@
      "red": true
     }
    ],
-   "body": "Ist ein Zahn stark beschädigt, schützt und stärkt sie ihn – er bleibt erhalten."
+   "body": "Ist ein Zahn stark beschädigt, schützt und stärkt sie ihn – er bleibt erhalten.",
+   "image": "illus/krone.png"
   },
   {
    "type": "statement",
@@ -52,7 +53,8 @@
      "red": true
     }
    ],
-   "body": "Sie wird an den Nachbarzähnen befestigt und sitzt fest im Mund."
+   "body": "Sie wird an den Nachbarzähnen befestigt und sitzt fest im Mund.",
+   "image": "illus/bruecke.png"
   },
   {
    "type": "statement",
@@ -69,7 +71,8 @@
      "red": true
     }
    ],
-   "body": "Sie ersetzt mehrere oder alle Zähne und lässt sich zum Reinigen herausnehmen."
+   "body": "Sie ersetzt mehrere oder alle Zähne und lässt sich zum Reinigen herausnehmen.",
+   "image": "illus/prothese.png"
   },
   {
    "type": "close",

@@ -233,7 +233,14 @@ class Builder:
             spec.append((Layer(0.1, "text", text=sc["kicker"], font=fira(52, "LightItalic"), color=RED), 24))
         spec += headline_layers(sc["lines"], 0.15, 0.12)
         spec += [(Layer(0.5, "rule"), 44), (Layer(0.7, "text", text=sc["body"], font=fira(56, "Light"), color=SLATE, lh=1.34), 0)]
-        for L in stack(spec, *s.zone): draw_layer(img, t, L)
+        zone = s.zone
+        if sc.get("image"):
+            fig = Image.open(os.path.join(HERE, sc["image"])).convert("RGBA")
+            fw = 860; fig = fig.resize((fw, int(fig.height * fw / fig.width)), Image.LANCZOS)
+            fy = s.H - fig.height - (200 if s.reel else 110)
+            img.alpha_composite(fig, ((W - fw) // 2, fy))
+            zone = (zone[0] - (0 if s.reel else 40), fy - 30)
+        for L in stack(spec, *zone): draw_layer(img, t, L)
         s.handle(img); return img
 
     def tips(s, t, sc):

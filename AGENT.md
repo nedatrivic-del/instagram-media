@@ -112,6 +112,11 @@ Idea from Neda (inspired by an orthodontist's "kinda chic to …" carousel – a
 - Store each door in `posts/2026-12-<DD>_advent_<n>_<slug>/` with status.json like every post (email_thread_id = the one approval email).
 - During the Advent calendar and the practice holiday (1.12.2026–10.01.2027) do NOT prepare normal Mo/Mi or Google posts. Normal preparation resumes with the Tuesday 05.01.2027 19:07 run (prepares Mo 11.01.2027); then the usual rhythm. Doors 8 and 15 overlap with November topics – Neda approved that; write them as short new angles, not repeats.
 
+## Neda's brushing recommendation (25.10.2026 – use in all posts)
+- Brush in the morning BEFORE breakfast (mouth closed all night, little saliva, plaque) and in the evening before bed with careful interdental cleaning (floss/interdental brushes) – the most important clean of the day.
+- After eating: water; if brushing after a meal, wait about 20–30 minutes (especially after acidic food/drinks). Never claim "no need to wait".
+- Do not emphasise fluoride in posts (Neda will treat fluoride as its own topic later). Say "Zahnpasta" rather than pushing fluoride.
+
 ## How to build a post
 1. Pick the topic from `plan/redaktionsplan.md` (Wednesday: research a fresh study first; you may replace the planned topic if you find a better, recent, Austria-appropriate one).
 2. Create `posts/<YYYY-MM-DD>_<slot>_<slug>/spec.json` – copy the structure of `posts/2026-10-21_wussten-sie_naschen/spec.json`. Scene types: `hook` (Neda's photo + headline + sub), `statement` (optional kicker, headline lines, body), `tips` (headline + exactly 3 items), `close` (headline + body + practice card). Keep every headline line short enough to fit (Oswald, ~900 px width; use smaller `size` or `maxw` to force clean breaks).

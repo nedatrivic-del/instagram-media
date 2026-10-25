@@ -2,113 +2,105 @@
  "date": "2026-10-28",
  "slot": "Mi · Wussten Sie schon?",
  "format": "carousel",
- "title": "Nach dem Essen sofort putzen?",
+ "title": "Ihr Mund hatte Nachtschicht",
  "scenes": [
   {
    "type": "hook",
    "lines": [
     {
-     "text": "Vor oder nach",
+     "text": "Guten Morgen!",
      "size": 110
     },
     {
-     "text": "dem Frühstück",
-     "size": 110,
-     "bold": true,
-     "red": true
-    },
-    {
-     "text": "putzen?",
-     "size": 110
-    }
-   ],
-   "sub": "Der große Zahnputz-Mythos."
-  },
-  {
-   "type": "statement",
-   "kicker": "Der Mythos",
-   "lines": [
-    {
-     "text": "„Nach dem Essen",
-     "size": 104
-    },
-    {
-     "text": "immer 30 Minuten",
-     "size": 104
-    },
-    {
-     "text": "warten!“",
-     "size": 104,
-     "bold": true,
-     "red": true
-    }
-   ],
-   "body": "Das haben wir alle gelernt. Aber stimmt es auch?"
-  },
-  {
-   "type": "statement",
-   "kicker": "Was Studien zeigen (2024)",
-   "lines": [
-    {
-     "text": "Die Warteregel",
+     "text": "Ihr Mund hatte",
      "size": 110
     },
     {
-     "text": "steht auf",
-     "size": 110
-    },
-    {
-     "text": "wackligen Beinen.",
-     "size": 110,
-     "bold": true,
-     "red": true
-    }
-   ],
-   "body": "Mit Fluorid-Zahnpasta und sanft geputzt, schadete frühes Putzen in den Studien nicht."
-  },
-  {
-   "type": "statement",
-   "kicker": "Vor dem Frühstück?",
-   "lines": [
-    {
-     "text": "Auch eine",
-     "size": 120
-    },
-    {
-     "text": "gute Idee.",
+     "text": "Nachtschicht.",
      "size": 120,
      "bold": true,
      "red": true
     }
    ],
-   "body": "Dann schützt das Fluorid Ihre Zähne schon beim Essen."
+   "sub": "Wann putzen Sie also am besten?"
   },
   {
    "type": "statement",
-   "kicker": "Ausnahme",
+   "kicker": "22 Uhr bis 7 Uhr",
    "lines": [
     {
-     "text": "Viel Säure im Spiel?",
-     "size": 104
+     "text": "Mund zu,",
+     "size": 120
     },
     {
-     "text": "Kurz warten.",
+     "text": "Speichel Pause.",
+     "size": 120,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "body": "Nachts fließt kaum Speichel. Die Bakterien haben freie Bahn – und feiern eine kleine Party."
+  },
+  {
+   "type": "statement",
+   "kicker": "7:00 Uhr",
+   "lines": [
+    {
+     "text": "Erst putzen,",
+     "size": 120
+    },
+    {
+     "text": "dann frühstücken.",
      "size": 110,
      "bold": true,
      "red": true
     }
    ],
-   "body": "Nach Saft, Zitrusfrüchten oder bei Sodbrennen: erst Wasser trinken, dann putzen."
+   "body": "So räumen Sie den Belag der Nacht weg, bevor das Frühstück kommt. Frischer Start, frischer Atem."
+  },
+  {
+   "type": "statement",
+   "kicker": "Nach dem Essen",
+   "lines": [
+    {
+     "text": "Ein Glas Wasser.",
+     "size": 110
+    },
+    {
+     "text": "Und kurz warten.",
+     "size": 110,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "body": "Wer nach dem Essen putzen möchte, wartet besser etwa 20 bis 30 Minuten – vor allem nach Saft oder Obst."
+  },
+  {
+   "type": "statement",
+   "kicker": "22:00 Uhr",
+   "lines": [
+    {
+     "text": "Der wichtigste",
+     "size": 110
+    },
+    {
+     "text": "Termin des Tages.",
+     "size": 110,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "body": "Abends in Ruhe putzen – und mit Zahnseide oder Bürstchen auch die Zwischenräume reinigen."
   },
   {
    "type": "tips",
    "lines": [
     {
-     "text": "Was wirklich",
+     "text": "Ihr Tag",
      "size": 110
     },
     {
-     "text": "zählt",
+     "text": "in 3 Schritten",
      "size": 110,
      "bold": true,
      "red": true
@@ -116,16 +108,16 @@
    ],
    "items": [
     {
-     "title": "Zweimal täglich",
-     "sub": "Morgens – vor oder nach dem Frühstück."
+     "title": "Morgens vor dem Frühstück",
+     "sub": "Den Belag der Nacht entfernen."
     },
     {
-     "title": "Abends besonders gründlich",
-     "sub": "Über Nacht ist am wenigsten Speichel im Mund."
+     "title": "Nach dem Essen: Wasser",
+     "sub": "Spült Reste und Säure ab."
     },
     {
-     "title": "Sanft und mit Fluorid",
-     "sub": "Weiche Bürste, wenig Druck."
+     "title": "Abends gründlich",
+     "sub": "Zähne und Zwischenräume, ohne Eile."
     }
    ]
   },
@@ -133,17 +125,18 @@
    "type": "close",
    "lines": [
     {
-     "text": "Team vorher oder",
+     "text": "Dann wird die",
      "size": 100
     },
     {
-     "text": "Team nachher?",
-     "size": 104,
+     "text": "Nachtschicht ruhig.",
+     "size": 100,
      "bold": true,
-     "red": true
+     "red": true,
+     "maxw": 900
     }
    ],
-   "body": "Verraten Sie es uns! Wir finden gern heraus, was für Ihre Zähne am besten passt."
+   "body": "Und wann putzen Sie? Verraten Sie es uns in den Kommentaren!"
   }
  ]
 }

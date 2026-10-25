@@ -8,82 +8,107 @@
    "type": "hook",
    "lines": [
     {
-     "text": "Nach dem Essen",
+     "text": "Vor oder nach",
      "size": 110
     },
     {
-     "text": "sofort putzen?",
+     "text": "dem Frühstück",
+     "size": 110,
+     "bold": true,
+     "red": true
+    },
+    {
+     "text": "putzen?",
+     "size": 110
+    }
+   ],
+   "sub": "Der große Zahnputz-Mythos."
+  },
+  {
+   "type": "statement",
+   "kicker": "Der Mythos",
+   "lines": [
+    {
+     "text": "„Nach dem Essen",
+     "size": 104
+    },
+    {
+     "text": "immer 30 Minuten",
+     "size": 104
+    },
+    {
+     "text": "warten!“",
+     "size": 104,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "body": "Das haben wir alle gelernt. Aber stimmt es auch?"
+  },
+  {
+   "type": "statement",
+   "kicker": "Was Studien zeigen (2024)",
+   "lines": [
+    {
+     "text": "Die Warteregel",
+     "size": 110
+    },
+    {
+     "text": "steht auf",
+     "size": 110
+    },
+    {
+     "text": "wackligen Beinen.",
      "size": 110,
      "bold": true,
      "red": true
     }
    ],
-   "sub": "Das wissen die wenigsten."
+   "body": "Mit Fluorid-Zahnpasta und sanft geputzt, schadete frühes Putzen in den Studien nicht."
   },
   {
    "type": "statement",
-   "kicker": "Nach jeder Mahlzeit",
+   "kicker": "Vor dem Frühstück?",
    "lines": [
     {
-     "text": "Im Mund",
-     "size": 130
-    },
-    {
-     "text": "wird es sauer.",
-     "size": 130,
-     "bold": true,
-     "red": true
-    }
-   ],
-   "body": "Bakterien machen aus Zucker Säure. Saft bringt sie gleich mit."
-  },
-  {
-   "type": "statement",
-   "kicker": "Ihr bester Helfer",
-   "lines": [
-    {
-     "text": "Der Speichel",
-     "size": 130
-    },
-    {
-     "text": "räumt auf.",
-     "size": 130,
-     "bold": true,
-     "red": true
-    }
-   ],
-   "body": "Er verdünnt die Säure und macht den Zahnschmelz wieder fest."
-  },
-  {
-   "type": "statement",
-   "kicker": "Übersichtsarbeit, 2024",
-   "lines": [
-    {
-     "text": "Die 30-Minuten-",
+     "text": "Auch eine",
      "size": 120
     },
     {
-     "text": "Regel ist",
-     "size": 120
-    },
-    {
-     "text": "kein Muss.",
+     "text": "gute Idee.",
      "size": 120,
      "bold": true,
      "red": true
     }
    ],
-   "body": "Mit Fluorid und sanft geputzt, schadet frühes Putzen meist nicht."
+   "body": "Dann schützt das Fluorid Ihre Zähne schon beim Essen."
+  },
+  {
+   "type": "statement",
+   "kicker": "Ausnahme",
+   "lines": [
+    {
+     "text": "Viel Säure im Spiel?",
+     "size": 104
+    },
+    {
+     "text": "Kurz warten.",
+     "size": 110,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "body": "Nach Saft, Zitrusfrüchten oder bei Sodbrennen: erst Wasser trinken, dann putzen."
   },
   {
    "type": "tips",
    "lines": [
     {
-     "text": "Das hilft Ihren",
+     "text": "Was wirklich",
      "size": 110
     },
     {
-     "text": "Zähnen danach",
+     "text": "zählt",
      "size": 110,
      "bold": true,
      "red": true
@@ -91,15 +116,15 @@
    ],
    "items": [
     {
-     "title": "Ein Glas Wasser",
-     "sub": "Spült Säure und Essensreste weg."
+     "title": "Zweimal täglich",
+     "sub": "Morgens – vor oder nach dem Frühstück."
     },
     {
-     "title": "Zuckerfreier Kaugummi",
-     "sub": "Bringt den Speichel in Schwung."
+     "title": "Abends besonders gründlich",
+     "sub": "Über Nacht ist am wenigsten Speichel im Mund."
     },
     {
-     "title": "Sanft putzen mit Fluorid",
+     "title": "Sanft und mit Fluorid",
      "sub": "Weiche Bürste, wenig Druck."
     }
    ]
@@ -108,17 +133,17 @@
    "type": "close",
    "lines": [
     {
-     "text": "Speichern Sie sich",
-     "size": 104
+     "text": "Team vorher oder",
+     "size": 100
     },
     {
-     "text": "diesen Tipp.",
+     "text": "Team nachher?",
      "size": 104,
      "bold": true,
      "red": true
     }
    ],
-   "body": "Sanft und mit Fluorid – das zählt mehr als die Uhr."
+   "body": "Verraten Sie es uns! Wir finden gern heraus, was für Ihre Zähne am besten passt."
   }
  ]
 }

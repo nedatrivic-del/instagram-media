@@ -36,6 +36,7 @@ Determine the current local date/time in Europe/Vienna first.
 6. Idempotency: before preparing, check posts/*/status.json and Metricool (getScheduledPosts) – never create a second post for a slot that already has one.
 
 ## Content rules (from Neda – non-negotiable)
+- **Storytelling for EVERY topic (Neda, 25.10.2026):** tell each post as a small story with a thread through the slides (e.g. a day in the mouth, a journey, a detective case, a duel) – easy to understand, light to digest, likeable and warm. Each slide leads to the next. Sample: posts/2026-10-28_wussten-sie_nach-dem-essen ("Ihr Mund hatte Nachtschicht").
 - **Everyone must understand it (Neda, 20.10.2026 – applies to ALL posts):** plain everyday German, as if explaining to a neighbour. No jargon or explain it in the same breath (e.g. no "pH-Wert", "Eugenol", "Dentintubuli", "Gingivitis" without a simple word next to it). Short sentences, one message per slide, concrete comparisons from daily life ("so sauer wie Orangensaft", "so groß wie Ihre Handfläche"). Test: would a 70-year-old patient and a 14-year-old both get the message on first read? If not, simplify.
 - On-screen text German, formal "Sie". Tone: calm, warm, professional, informative. No promises, no "we solve everything", no magic wand.
 - **Captions never copy the slide texts (Neda, 21.10.2026).** The caption adds something: a short, personal "why" / context in 2–4 sentences, a light hook line, and one question for the comments. The slides carry the details.

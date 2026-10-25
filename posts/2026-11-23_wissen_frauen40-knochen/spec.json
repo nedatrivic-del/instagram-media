@@ -1,0 +1,90 @@
+{
+ "date": "2026-11-23",
+ "slot": "Mo · Wissen",
+ "format": "reel",
+ "title": "Frauen 40+ (3/3): Liebes Tagebuch – Knochen & Zahnhalt",
+ "scenes": [
+  {
+   "type": "hook",
+   "lines": [
+    {
+     "text": "Liebes Tagebuch,",
+     "size": 110
+    },
+    {
+     "text": "halten meine Zähne",
+     "size": 100
+    },
+    {
+     "text": "noch gut?",
+     "size": 110,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "sub": "Frauen 40+ · Teil 3 von 3"
+  },
+  {
+   "type": "statement",
+   "kicker": "Was Östrogen auch tut",
+   "lines": [
+    {
+     "text": "Es schützt",
+     "size": 120
+    },
+    {
+     "text": "die Knochen.",
+     "size": 120,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "body": "Nach den Wechseljahren kann Knochen abbauen – auch im Kiefer, der die Zähne hält."
+  },
+  {
+   "type": "tips",
+   "lines": [
+    {
+     "text": "So bleiben",
+     "size": 110
+    },
+    {
+     "text": "Ihre Zähne fest",
+     "size": 110,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "items": [
+    {
+     "title": "Zahnfleisch gesund halten",
+     "sub": "Abends die Zwischenräume nicht vergessen."
+    },
+    {
+     "title": "Osteoporose? Sagen Sie es uns",
+     "sub": "Das ist wichtig für Ihre Behandlung."
+    },
+    {
+     "title": "Regelmäßig zur Kontrolle",
+     "sub": "So sehen wir Veränderungen früh."
+    }
+   ]
+  },
+  {
+   "type": "close",
+   "lines": [
+    {
+     "text": "Ende der Serie –",
+     "size": 104
+    },
+    {
+     "text": "nicht der Fürsorge.",
+     "size": 104,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "body": "Danke, dass Sie mitgelesen haben!"
+  }
+ ]
+}

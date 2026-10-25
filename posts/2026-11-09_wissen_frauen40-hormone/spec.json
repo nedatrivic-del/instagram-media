@@ -1,0 +1,90 @@
+{
+ "date": "2026-11-09",
+ "slot": "Mo · Wissen",
+ "format": "reel",
+ "title": "Frauen 40+ (1/3): Liebes Tagebuch – Hormone im Mund",
+ "scenes": [
+  {
+   "type": "hook",
+   "lines": [
+    {
+     "text": "Liebes Tagebuch,",
+     "size": 110
+    },
+    {
+     "text": "seit Kurzem blutet",
+     "size": 100
+    },
+    {
+     "text": "mein Zahnfleisch.",
+     "size": 100,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "sub": "Frauen 40+ · Teil 1 von 3"
+  },
+  {
+   "type": "statement",
+   "kicker": "Was dahintersteckt",
+   "lines": [
+    {
+     "text": "Die Hormone",
+     "size": 120
+    },
+    {
+     "text": "ändern sich.",
+     "size": 120,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "body": "Weniger Östrogen kann das Zahnfleisch empfindlicher machen."
+  },
+  {
+   "type": "tips",
+   "lines": [
+    {
+     "text": "Was jetzt",
+     "size": 110
+    },
+    {
+     "text": "hilft",
+     "size": 110,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "items": [
+    {
+     "title": "Abends die Zwischenräume",
+     "sub": "Mit Zahnseide oder Bürstchen."
+    },
+    {
+     "title": "Sanft putzen",
+     "sub": "Weiche Bürste, wenig Druck."
+    },
+    {
+     "title": "Veränderungen ansprechen",
+     "sub": "Wir schauen genau hin."
+    }
+   ]
+  },
+  {
+   "type": "close",
+   "lines": [
+    {
+     "text": "Sie sind nicht allein.",
+     "size": 100
+    },
+    {
+     "text": "Das ist ganz normal.",
+     "size": 100,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "body": "Teil 2: Wenn der Mund plötzlich trocken ist."
+  }
+ ]
+}

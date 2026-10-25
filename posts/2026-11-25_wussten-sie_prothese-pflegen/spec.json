@@ -1,0 +1,86 @@
+{
+ "date": "2026-11-25",
+ "slot": "Mi · Zahnersatz",
+ "format": "reel",
+ "title": "Auch Ihre Dritten brauchen Wellness",
+ "scenes": [
+  {
+   "type": "hook",
+   "lines": [
+    {
+     "text": "Auch Ihre Dritten",
+     "size": 110
+    },
+    {
+     "text": "brauchen Wellness.",
+     "size": 110,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "sub": "Das tägliche Pflegeprogramm."
+  },
+  {
+   "type": "tips",
+   "lines": [
+    {
+     "text": "Das tägliche",
+     "size": 110
+    },
+    {
+     "text": "Programm",
+     "size": 110,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "items": [
+    {
+     "title": "Täglich mit Prothesenbürste",
+     "sub": "Normale Zahnpasta kann sie zerkratzen."
+    },
+    {
+     "title": "Über einem Waschbecken mit Wasser",
+     "sub": "Fällt sie hinunter, landet sie weich."
+    },
+    {
+     "title": "Nachts eine Pause?",
+     "sub": "Fragen Sie uns, was für Ihre passt."
+    }
+   ]
+  },
+  {
+   "type": "statement",
+   "kicker": "Und der Mund?",
+   "lines": [
+    {
+     "text": "Zahnfleisch und",
+     "size": 110
+    },
+    {
+     "text": "Zunge mitputzen.",
+     "size": 110,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "body": "Auch unter der Prothese brauchen sie Pflege."
+  },
+  {
+   "type": "close",
+   "lines": [
+    {
+     "text": "Gut gepflegt",
+     "size": 110
+    },
+    {
+     "text": "hält länger.",
+     "size": 110,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "body": "Zur Kontrolle bringen Sie Ihre Prothese einfach mit."
+  }
+ ]
+}

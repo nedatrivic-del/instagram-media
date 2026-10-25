@@ -1,0 +1,75 @@
+{
+ "date": "2026-11-30",
+ "slot": "Mo · Wissen",
+ "format": "reel",
+ "title": "Bürstchen oder Zahnseide? Das Duell",
+ "scenes": [
+  {
+   "type": "hook",
+   "lines": [
+    {
+     "text": "Bürstchen",
+     "size": 120
+    },
+    {
+     "text": "oder Zahnseide?",
+     "size": 110,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "sub": "Das große Duell."
+  },
+  {
+   "type": "statement",
+   "kicker": "Team Bürstchen",
+   "lines": [
+    {
+     "text": "Für größere",
+     "size": 120
+    },
+    {
+     "text": "Zwischenräume.",
+     "size": 116,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "body": "Reinigt gründlich, wo etwas Platz ist – auch unter Brücken."
+  },
+  {
+   "type": "statement",
+   "kicker": "Team Zahnseide",
+   "lines": [
+    {
+     "text": "Für enge",
+     "size": 120
+    },
+    {
+     "text": "Zwischenräume.",
+     "size": 116,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "body": "Kommt dorthin, wo kein Bürstchen durchpasst."
+  },
+  {
+   "type": "close",
+   "lines": [
+    {
+     "text": "Der Sieger:",
+     "size": 110
+    },
+    {
+     "text": "das, was Sie täglich nutzen.",
+     "size": 90,
+     "bold": true,
+     "red": true,
+     "maxw": 900
+    }
+   ],
+   "body": "Welches zu Ihnen passt, zeigen wir Ihnen gern."
+  }
+ ]
+}

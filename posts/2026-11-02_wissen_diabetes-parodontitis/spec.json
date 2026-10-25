@@ -1,0 +1,79 @@
+{
+ "date": "2026-11-02",
+ "slot": "Mo · Wissen",
+ "format": "reel",
+ "title": "Diabetes & Zahnfleisch – ein schwieriges Paar",
+ "scenes": [
+  {
+   "type": "hook",
+   "lines": [
+    {
+     "text": "Diabetes und",
+     "size": 110
+    },
+    {
+     "text": "Zahnfleisch:",
+     "size": 110
+    },
+    {
+     "text": "ein schwieriges Paar.",
+     "size": 100,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "sub": "Sie machen sich das Leben schwer."
+  },
+  {
+   "type": "statement",
+   "kicker": "Er ärgert sie",
+   "lines": [
+    {
+     "text": "Hoher Blutzucker",
+     "size": 104
+    },
+    {
+     "text": "reizt das Zahnfleisch.",
+     "size": 96,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "body": "Entzündungen entstehen leichter und heilen langsamer."
+  },
+  {
+   "type": "statement",
+   "kicker": "Sie ärgert ihn",
+   "lines": [
+    {
+     "text": "Entzündetes Zahnfleisch",
+     "size": 96
+    },
+    {
+     "text": "stört den Blutzucker.",
+     "size": 96,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "body": "Studien zeigen: Das wirkt in beide Richtungen."
+  },
+  {
+   "type": "close",
+   "lines": [
+    {
+     "text": "Die gute Nachricht:",
+     "size": 100
+    },
+    {
+     "text": "Beides lässt sich beruhigen.",
+     "size": 92,
+     "bold": true,
+     "red": true,
+     "maxw": 900
+    }
+   ],
+   "body": "Gesundes Zahnfleisch kann auch dem Blutzucker helfen. Sprechen Sie uns darauf an."
+  }
+ ]
+}

@@ -1,0 +1,107 @@
+{
+ "date": "2026-11-11",
+ "slot": "Mi · Wussten Sie schon?",
+ "format": "carousel",
+ "title": "Frauen 40+ (2/3): Liebes Tagebuch – trockener Mund",
+ "scenes": [
+  {
+   "type": "hook",
+   "lines": [
+    {
+     "text": "Liebes Tagebuch,",
+     "size": 104
+    },
+    {
+     "text": "mein Mund ist",
+     "size": 104
+    },
+    {
+     "text": "ständig trocken.",
+     "size": 104,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "sub": "Frauen 40+ · Teil 2 von 3"
+  },
+  {
+   "type": "statement",
+   "kicker": "Kein Zufall",
+   "lines": [
+    {
+     "text": "Weniger Speichel",
+     "size": 110
+    },
+    {
+     "text": "in den Wechseljahren.",
+     "size": 96,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "body": "Hormone – und manche Medikamente – können den Speichelfluss verringern."
+  },
+  {
+   "type": "statement",
+   "kicker": "Warum das zählt",
+   "lines": [
+    {
+     "text": "Speichel ist",
+     "size": 120
+    },
+    {
+     "text": "Ihr Zahnschutz.",
+     "size": 120,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "body": "Er spült, gleicht Säure aus und schützt vor Karies und Entzündung."
+  },
+  {
+   "type": "tips",
+   "lines": [
+    {
+     "text": "Das hilft",
+     "size": 110
+    },
+    {
+     "text": "Ihrem Mund",
+     "size": 110,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "items": [
+    {
+     "title": "Viel Wasser über den Tag",
+     "sub": "Kleine Schlucke, immer wieder."
+    },
+    {
+     "title": "Zuckerfreier Kaugummi",
+     "sub": "Bringt den Speichel in Schwung."
+    },
+    {
+     "title": "Brennen oder Trockenheit?",
+     "sub": "Sprechen Sie uns an."
+    }
+   ]
+  },
+  {
+   "type": "close",
+   "lines": [
+    {
+     "text": "Teil 3:",
+     "size": 100
+    },
+    {
+     "text": "Knochen & Zahnhalt.",
+     "size": 100,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "body": "Nächsten Montag geht es weiter."
+  }
+ ]
+}

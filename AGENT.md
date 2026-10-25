@@ -135,6 +135,8 @@ Idea from Neda (inspired by an orthodontist's "kinda chic to …" carousel – a
 9. Optionally update the preview page (Artifact tool, `url` above): read it first, add the post (upload media as asset), mark it "wait".
 
 ## Approval check (runs 3×/day)
+Skip every status.json with `approval_channel` containing "chat" (Neda approves those directly in chat; no email, no reminder).
+
 For every `posts/*/status.json` with `status: "awaiting_approval"` or `"changes_requested"`:
 1. Read the Gmail thread (`email_thread_id`). Neda's replies are messages that do NOT start with `[Insta-Agent]`.
 2. Reply contains OK / ok / Okay / passt / ja / da / može / super (approval, no change request) → update every Metricool post in that email (Instagram and/or Google) with `draft: false` (keep everything else) via updateScheduledPost; set `status: "scheduled"`; reply in the thread "[Insta-Agent] Zakazano za <dan> u 10:00 ✅".

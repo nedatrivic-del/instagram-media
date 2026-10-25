@@ -1,0 +1,92 @@
+{
+ "date": "2026-11-18",
+ "slot": "Mi · Zahnersatz",
+ "format": "carousel",
+ "title": "Eine Lücke sucht eine Lösung: Krone, Brücke oder Prothese?",
+ "scenes": [
+  {
+   "type": "hook",
+   "lines": [
+    {
+     "text": "Eine Lücke",
+     "size": 120
+    },
+    {
+     "text": "sucht eine Lösung.",
+     "size": 110,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "sub": "Krone, Brücke oder Prothese?"
+  },
+  {
+   "type": "statement",
+   "kicker": "Die Krone",
+   "lines": [
+    {
+     "text": "Ein Helm",
+     "size": 120
+    },
+    {
+     "text": "für den Zahn.",
+     "size": 120,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "body": "Ist ein Zahn stark beschädigt, schützt und stärkt sie ihn – er bleibt erhalten."
+  },
+  {
+   "type": "statement",
+   "kicker": "Die Brücke",
+   "lines": [
+    {
+     "text": "Überbrückt",
+     "size": 120
+    },
+    {
+     "text": "die Lücke.",
+     "size": 120,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "body": "Sie wird an den Nachbarzähnen befestigt und sitzt fest im Mund."
+  },
+  {
+   "type": "statement",
+   "kicker": "Die Prothese",
+   "lines": [
+    {
+     "text": "Herausnehmbar",
+     "size": 116
+    },
+    {
+     "text": "und flexibel.",
+     "size": 116,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "body": "Sie ersetzt mehrere oder alle Zähne und lässt sich zum Reinigen herausnehmen."
+  },
+  {
+   "type": "close",
+   "lines": [
+    {
+     "text": "Welche passt zu Ihnen?",
+     "size": 96
+    },
+    {
+     "text": "Das klären wir gemeinsam.",
+     "size": 92,
+     "bold": true,
+     "red": true,
+     "maxw": 900
+    }
+   ],
+   "body": "In Ruhe erklärt, Schritt für Schritt."
+  }
+ ]
+}

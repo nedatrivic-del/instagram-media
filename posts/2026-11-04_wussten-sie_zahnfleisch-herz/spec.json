@@ -1,0 +1,79 @@
+{
+ "date": "2026-11-04",
+ "slot": "Mi · Wussten Sie schon?",
+ "format": "reel",
+ "title": "Eine Reise vom Zahnfleisch zum Herzen",
+ "scenes": [
+  {
+   "type": "hook",
+   "lines": [
+    {
+     "text": "Was hat Ihr",
+     "size": 110
+    },
+    {
+     "text": "Zahnfleisch mit",
+     "size": 110
+    },
+    {
+     "text": "Ihrem Herzen zu tun?",
+     "size": 96,
+     "bold": true,
+     "red": true,
+     "maxw": 900
+    }
+   ],
+   "sub": "Eine kleine Reise."
+  },
+  {
+   "type": "statement",
+   "kicker": "Start: das Zahnfleisch",
+   "lines": [
+    {
+     "text": "Entzündet",
+     "size": 120
+    },
+    {
+     "text": "und offen.",
+     "size": 120,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "body": "Über blutendes Zahnfleisch können Bakterien ins Blut gelangen."
+  },
+  {
+   "type": "statement",
+   "kicker": "Ziel: das Herz",
+   "lines": [
+    {
+     "text": "Studien zeigen",
+     "size": 110
+    },
+    {
+     "text": "einen Zusammenhang.",
+     "size": 100,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "body": "Menschen mit Parodontitis haben häufiger Herz-Kreislauf-Erkrankungen."
+  },
+  {
+   "type": "close",
+   "lines": [
+    {
+     "text": "Gesundes Zahnfleisch",
+     "size": 100
+    },
+    {
+     "text": "ist ein guter Start.",
+     "size": 100,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "body": "Für Ihren Mund – und vielleicht auch für Ihr Herz."
+  }
+ ]
+}

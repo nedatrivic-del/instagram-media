@@ -11,8 +11,8 @@ Read the section "Attention rules" before writing any spec.
 | 26.10.2026 | Versteckter Zucker: Erkennen Sie ihn? (Mo-Reel freigegeben, eingeplant) | Nach dem Essen sofort putzen? (Säure, Speichel, 30-Minuten-Regel; Caries Research 2024) – Mi zur Freigabe | Karussell | PAUSIERT: Zahnfleischbluten? Nicht ignorieren (Entwurf vorhanden, Do 29.10., Telefonnummer entfernt – erst nach Google-Freischaltung) | zur Freigabe |
 | 02.11.2026 | Parodontitis und Diabetes – keine Einbahnstraße | Studie zu Parodontitis und Herz-Kreislauf | Reel | Prophylaxe in der Altstadt: Ablauf eines Termins | offen |
 | 09.11.2026 | Frauen 40+ (1/3): Was die Hormone im Mund verändern | Frauen 40+ (2/3): Trockener Mund und empfindliches Zahnfleisch | Karussell | Krone, Brücke oder Prothese? | offen |
-| 16.11.2026 | Gesunde Gewohnheiten: die 2-Minuten-Routine am Abend | Parodontitis und Demenz – was Studien zeigen | Reel | Online-Termin in 1 Minute | offen |
-| 23.11.2026 | Frauen 40+ (3/3): Knochen, Östrogen und Zahnhalt | Säure und Zahnschmelz (Erosion) | Karussell | Zahnersatz richtig pflegen | offen |
+| 16.11.2026 | Gesunde Gewohnheiten: die 2-Minuten-Routine am Abend | ERSETZT (Neda 25.10.): Krone, Brücke oder Prothese? (statt Demenz) | Karussell | Online-Termin in 1 Minute | offen |
+| 23.11.2026 | Frauen 40+ (3/3): Knochen, Östrogen und Zahnhalt | ERSETZT (Neda 25.10.): Zahnersatz richtig pflegen (statt Säure/Zahnschmelz) | Reel | Zahnersatz richtig pflegen | offen |
 | 30.11.2026 | Zahnzwischenräume: Bürstchen oder Seide? | PAUSE (Adventskalender läuft ab 1.12.) – kein Mittwochspost | – | Unser Team stellt sich vor | offen |
 
 ## Sonderplan Advent & Jahreswechsel 2026 (Neda-approved, 20.10.2026)
@@ -54,3 +54,7 @@ Gluten-Serie (Zöliakie-Reel + Glutenfrei auf Reisen) gehört hierher, als Teil 
 
 ## Idee: „Fluorid – was wir wissen und was nicht“ (Neda, 25.10.2026) – Termin offen
 Ruhig, faktisch, Storytelling. Inhalt: was Studien zeigen (Zahnpasta vs. stark fluoridiertes Trinkwasser; Meta-Analyse Iamandii et al., Environ Res 2024 – Effekte auf TSH erst ab ca. 2,5 mg/L im Wasser, Zahnpasta nicht untersucht), offene Fragen, Alternativen (Hydroxylapatit, Xylit) ehrlich mit Evidenzlage. KEINE Aussage „Autoimmunkranke dürfen kein Fluorid“ (nicht belegt, widerspricht Leitlinien). Abschluss: „Haben Sie eine Schilddrüsenerkrankung? Sprechen Sie uns an – wir finden gemeinsam die passende Zahnpasta.“ Vorher mit Neda Inhalt abstimmen.
+
+
+## November-Batch (Neda 25.10.2026)
+Alle Mo/Mi-Posts 2.–30.11. werden im Chat gesammelt gebaut und von Neda gesammelt freigegeben (posts/2026-11-*, status awaiting_approval, approval_channel chat-batch). Der Agent erstellt für diese Termine NICHTS und schickt keine Freigabe-Mails dafür. Parodontitis & Demenz und Säure/Zahnschmelz sind auf später verschoben.

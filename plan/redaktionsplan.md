@@ -51,3 +51,6 @@ Gluten-Serie (Zöliakie-Reel + Glutenfrei auf Reisen) gehört hierher, als Teil 
 - Zahnputztabletten fürs Backpacking: wie man sie benutzt (zerkauen, mit nasser Bürste putzen), Vorteile (leicht, kein Flüssigkeitslimit im Handgepäck, wenig Plastik), Achtung: auf Fluorid achten. KEINE Markennamen.
 - Weitere Ideen: Zahnbürste vergessen? · Zahnschmerzen im Urlaub · Fliegen & Zähne (Druck) · Reise-Checkliste · Zahnersatz auf Reisen · Leitungswasser/Zahnputzbecher im Hotel.
 - Neda schickt ggf. eigene Reisefotos. Vor dem Bauen mit Neda Termin + Format klären; Fakten prüfen.
+
+## Idee: „Fluorid – was wir wissen und was nicht“ (Neda, 25.10.2026) – Termin offen
+Ruhig, faktisch, Storytelling. Inhalt: was Studien zeigen (Zahnpasta vs. stark fluoridiertes Trinkwasser; Meta-Analyse Iamandii et al., Environ Res 2024 – Effekte auf TSH erst ab ca. 2,5 mg/L im Wasser, Zahnpasta nicht untersucht), offene Fragen, Alternativen (Hydroxylapatit, Xylit) ehrlich mit Evidenzlage. KEINE Aussage „Autoimmunkranke dürfen kein Fluorid“ (nicht belegt, widerspricht Leitlinien). Abschluss: „Haben Sie eine Schilddrüsenerkrankung? Sprechen Sie uns an – wir finden gemeinsam die passende Zahnpasta.“ Vorher mit Neda Inhalt abstimmen.

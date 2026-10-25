@@ -118,6 +118,16 @@ Idea from Neda (inspired by an orthodontist's "kinda chic to …" carousel – a
 - After eating: water; if brushing after a meal, wait about 20–30 minutes (especially after acidic food/drinks). Never claim "no need to wait".
 - Do not emphasise fluoride in posts (Neda will treat fluoride as its own topic later). Say "Zahnpasta" rather than pushing fluoride.
 
+## Growth strategy (25.10.2026 – Neda's request, full doc: https://claude.ai/artifact/SJYFnxqXHEGo8DxF25rBsQ)
+Baseline Oct 2026: ~90 followers, reach per post 23–52 (below follower count), 0 saves, 0 shares, 0 comments. Goal: content people save or send to someone. For every post, before the approval email:
+1. **Demand check:** one sentence – which problem or wish of the audience does this answer? Prefer questions patients really ask in the chair (Neda may send them anytime) and Salzburg-local occasions. No answer → pick another topic.
+2. **Hook selection:** write 10 hooks using different techniques (curiosity, surprising contrast, specific problem, common mistake, myth, quote from patient life). Rank by clarity, curiosity, relevance; no clickbait, no promises, calm and positive. Use the best; put the runner-up in the approval email as "Alternativni hook: …".
+3. **Scene check (reels):** every scene has one job (hook / tension / aha / payoff) and a planned duration; delete anything without a job; the payoff promised by the hook must be delivered. Attention rules still apply (12–17 s, ≤4 scenes).
+4. **Save/share test:** answer "Why would someone save this?" and "Who would they send it to?" (e.g. "an alle, die nachts knirschen"). No answer → rework. Every carousel ends (before the close slide) with a **Spickzettel** slide: 3–4 short points worth keeping. Never write "bitte teilen" or engagement bait.
+5. **Test card:** in status.json add `"test": {"hypothesis": "...", "metric": "saves|shares|reach|watch_time|view_rate_3s"}` and show it in the approval email in one line. Change only one variable per test (format, hook type, time); a test cycle runs 4 weeks.
+6. **Trend filter:** use a trend only by adapting its mechanism (e.g. „Mythos oder Fakt“, „Erwartung vs. Wirklichkeit“, „Zahnarzt im Kino“), never copying another creator; drop anything forced, overused or conflicting with WR-ÖZÄK.
+7. Do NOT adopt: daily posting, spoken scripts (no face/voice unless Neda asks), fear or hard "bold opinion" hooks.
+
 ## How to build a post
 1. Pick the topic from `plan/redaktionsplan.md` (Wednesday: research a fresh study first; you may replace the planned topic if you find a better, recent, Austria-appropriate one).
 2. Create `posts/<YYYY-MM-DD>_<slot>_<slug>/spec.json` – copy the structure of `posts/2026-10-21_wussten-sie_naschen/spec.json`. Scene types: `hook` (Neda's photo + headline + sub), `statement` (optional kicker, headline lines, body), `tips` (headline + exactly 3 items), `close` (headline + body + practice card). Keep every headline line short enough to fit (Oswald, ~900 px width; use smaller `size` or `maxw` to force clean breaks).
@@ -146,6 +156,7 @@ For every `posts/*/status.json` with `status: "awaiting_approval"` or `"changes_
 
 ## Monthly report (first Sunday run of each month)
 Use Metricool analytics for the previous month: Instagram (reach, views, saves, shares, follower change, best post, link clicks if available, best posting times) and Google Business Profile (getAnalyticsDataByMetrics: GMEV18 search views, GMEV19 maps views, GMEV21 website clicks, GMEV22 calls, GMEV23 directions, GMEV12 rating; keywords GMKW01/GMKW02 – top 5), each compared with the month before in %. Email Neda a short BKS summary (5–8 lines + one concrete recommendation). After 3 months, check whether Mon/Wed 10:00 is still best and suggest changes.
+Also per post (IGRE/IGPO metrics: reach, saves, shares, comments, follows; reels: view rate 3 s IGRE28, retention IGRE27, avg watch time IGRE24) evaluate each `test` card from status.json: what we can confidently conclude, what we can't know yet (small numbers!), and the **3 highest-priority changes** for next month. Write those 3 changes into `plan/redaktionsplan.md` under "Learnings" so later posts follow them. First report with test evaluation: Sunday 6.12.2026 (November tests).
 
 ## If something fails
 Tell Neda by email (subject starting "[Insta-Agent]") in one or two plain BKS sentences what failed and what she needs to do (e.g. reconnect Instagram in Metricool). Never retry endlessly; never publish without OK.

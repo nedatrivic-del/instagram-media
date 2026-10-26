@@ -116,6 +116,7 @@ Idea from Neda (inspired by an orthodontist's "kinda chic to …" carousel – a
 ## Neda's brushing recommendation (25.10.2026 – use in all posts)
 - Brush in the morning BEFORE breakfast (mouth closed all night, little saliva, plaque) and in the evening before bed with careful interdental cleaning (floss/interdental brushes) – the most important clean of the day.
 - After eating: water; if brushing after a meal, wait about 20–30 minutes (especially after acidic food/drinks). Never claim "no need to wait".
+- Evening order (Neda, 26.10.2026): FIRST brush the teeth, THEN clean the interdental spaces, ideally also clean the tongue. After that, nothing more to eat.
 - Do not emphasise fluoride in posts (Neda will treat fluoride as its own topic later). Say "Zahnpasta" rather than pushing fluoride.
 
 ## Growth strategy (25.10.2026 – Neda's request, full doc: https://claude.ai/artifact/SJYFnxqXHEGo8DxF25rBsQ)

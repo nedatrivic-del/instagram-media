@@ -27,13 +27,15 @@ Neda approves on Monday and Wednesday mornings by replying OK to the approval em
 Google removed the post "Prophylaxe – warum sie sich lohnt" (20.10.2026) and turned off posting for the Business Profile. Until Neda writes that posting works again: do NOT prepare new Google posts, do NOT include Google drafts in approval emails, and do NOT switch any gmb draft to draft:false. Existing gmb drafts stay drafts. Instagram continues normally.
 
 ## Run schedule – what to do in each run (task fires daily 9:07, 13:07, 19:07 Europe/Vienna)
+**MONTHLY BATCH MODE (Neda, 26.10.2026):** Neda reviews ALL posts of a month ONCE, together in a chat, on the 20th of the previous month at 9:00 (so she has time for her perio master). NO weekly per-post approval emails any more.
 Determine the current local date/time in Europe/Vienna first.
-1. **Every run:** approval check (section "Approval check"). If nothing is pending, this step is a no-op.
-2. **Sunday 19:07 run:** prepare the coming Wednesday's Instagram post AND the coming Thursday's Google post; send ONE approval email for both. If it is the first Sunday of the month, also send the monthly report.
-3. **Tuesday 19:07 run:** prepare next Monday's Instagram post; send the approval email.
+1. **Every run:** approval check (section "Approval check") – only for older posts that still use email approval; everything with approval_channel containing "chat" is skipped.
+2. **15th of each month, 19:07 run:** build ALL Instagram posts of the NEXT month (Mon + Wed 10:00 per plan/redaktionsplan.md, Friday bonus/series posts, special posts; story twins prepared as files) following every content, strategy and attention rule. Render, check stills, push. status.json: `"status":"awaiting_approval","approval_channel":"chat-batch"`. Do NOT create anything in Metricool. Then send ONE short BKS email: subject `[Insta-Agent] Mjesečni paket <Monat> spreman`, body: number of posts, list (date – title – format), "Pregled zajedno 20. u 9:00 u chatu." Exception: December 2026 is built in the chat session (do nothing on 15.11.2026 except the Advent photo reminder).
+3. **Google posts are paused** (see above) – no Google drafts.
 4. **Monday 9:07 run:** Google reviews (section "Google reviews").
-5. Any other run: only step 1. Do not send any email when there is nothing to report.
-6. Idempotency: before preparing, check posts/*/status.json and Metricool (getScheduledPosts) – never create a second post for a slot that already has one.
+5. **First Sunday of the month, 19:07:** monthly report (section "Monthly report").
+6. Any other run: only step 1. Do not send any email when there is nothing to report.
+7. Idempotency: before preparing, check posts/*/status.json and Metricool (getScheduledPosts) – never create a second post for a slot that already has one.
 
 ## Content rules (from Neda – non-negotiable)
 - **Storytelling for EVERY topic (Neda, 25.10.2026):** tell each post as a small story with a thread through the slides (e.g. a day in the mouth, a journey, a detective case, a duel) – easy to understand, light to digest, likeable and warm. Each slide leads to the next. Sample: posts/2026-10-28_wussten-sie_nach-dem-essen ("Ihr Mund hatte Nachtschicht").

@@ -1,1 +1,17 @@
-{"date": "2026-11-16", "slot": "Mo · 20:30 (Abendroutine)", "title": "22:00 Uhr – die wichtigsten Minuten des Tages", "format": "reel", "status": "awaiting_approval", "approval_channel": "chat-batch (Neda reviews all November posts on the preview page https://claude.ai/artifact/6ohZKHEbWcnvm3xH4ypxPu; Metricool drafts are created only after her OK)", "metricool_id": null, "email_thread_id": null, "media": ["reel.mp4"], "time": "20:30"}
+{
+ "date": "2026-11-16",
+ "slot": "Mo · 20:30 (Abendroutine)",
+ "title": "22:00 Uhr – die wichtigsten Minuten des Tages",
+ "format": "reel",
+ "status": "scheduled",
+ "approval_channel": "chat-batch (Neda reviews all November posts on the preview page https://claude.ai/artifact/6ohZKHEbWcnvm3xH4ypxPu; Metricool drafts are created only after her OK)",
+ "metricool_id": 406611775,
+ "email_thread_id": null,
+ "media": [
+  "reel_v2.mp4"
+ ],
+ "time": "20:30",
+ "metricool_uuid": "-8359174976857946095",
+ "story_metricool_id": 406611801,
+ "story_metricool_uuid": "-1769181332617214317"
+}

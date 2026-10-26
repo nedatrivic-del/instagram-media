@@ -8,8 +8,8 @@
    "type": "hook",
    "lines": [
     {
-     "text": "Bürstchen",
-     "size": 120
+     "text": "Interdentalbürstchen",
+     "size": 92
     },
     {
      "text": "oder Zahnseide?",
@@ -39,7 +39,7 @@
   },
   {
    "type": "statement",
-   "kicker": "Team Bürstchen",
+   "kicker": "Team Interdentalbürstchen",
    "lines": [
     {
      "text": "Für größere",
@@ -62,8 +62,8 @@
      "size": 110
     },
     {
-     "text": "Bürstchen",
-     "size": 110,
+     "text": "Interdentalbürstchen",
+     "size": 92,
      "bold": true,
      "red": true
     }
@@ -98,7 +98,7 @@
      "red": true
     }
    ],
-   "body": "Wo kein Bürstchen durchpasst, gleitet Zahnseide hinein – besonders bei eng stehenden Zähnen."
+   "body": "Wo kein Interdentalbürstchen durchpasst, gleitet Zahnseide hinein – besonders bei eng stehenden Zähnen."
   },
   {
    "type": "tips",

@@ -47,17 +47,21 @@
    "kicker": "Station 2: Das Zahnfleisch",
    "lines": [
     {
-     "text": "Entzündet",
-     "size": 120
+     "text": "Entzündetes",
+     "size": 110
     },
     {
-     "text": "wie eine offene Tür.",
+     "text": "Zahnfleisch:",
+     "size": 110
+    },
+    {
+     "text": "eine Tür ins Blut.",
      "size": 104,
      "bold": true,
      "red": true
     }
    ],
-   "body": "Blutet das Zahnfleisch, können Bakterien und Entzündungsstoffe ins Blut gelangen."
+   "body": "Im entzündeten Zahnfleisch entstehen winzige Wunden. So können Bakterien ins Blut gelangen."
   },
   {
    "type": "statement",
@@ -117,7 +121,7 @@
      "sub": "Gesundes Zahnfleisch blutet nicht."
     },
     {
-     "title": "Regelmäßig zur Kontrolle",
+     "title": "Regelmäßig zur Kontrolle und Mundhygiene",
      "sub": "So erkennen wir Entzündungen früh."
     }
    ]

@@ -1,1 +1,23 @@
-{"date": "2026-11-25", "slot": "Mi · Mundpflege", "title": "Bürstchen oder Zahnseide? Das Duell", "format": "carousel", "status": "awaiting_approval", "approval_channel": "chat-batch (Neda reviews all November posts on the preview page https://claude.ai/artifact/6ohZKHEbWcnvm3xH4ypxPu; Metricool drafts are created only after her OK)", "metricool_id": null, "email_thread_id": null, "media": ["slide_1.jpg", "slide_2.jpg", "slide_3.jpg", "slide_4.jpg", "slide_5.jpg", "slide_6.jpg", "slide_7.jpg", "story.jpg"]}
+{
+ "date": "2026-11-25",
+ "slot": "Mi · Mundpflege",
+ "title": "Bürstchen oder Zahnseide? Das Duell",
+ "format": "carousel",
+ "status": "scheduled",
+ "approval_channel": "chat-batch (Neda reviews all November posts on the preview page https://claude.ai/artifact/6ohZKHEbWcnvm3xH4ypxPu; Metricool drafts are created only after her OK)",
+ "metricool_id": 406619593,
+ "email_thread_id": null,
+ "media": [
+  "slide_1.jpg",
+  "slide_2.jpg",
+  "slide_3.jpg",
+  "slide_4.jpg",
+  "slide_5.jpg",
+  "slide_6.jpg",
+  "slide_7.jpg",
+  "story.jpg"
+ ],
+ "metricool_uuid": "1708535066937805940",
+ "story_metricool_id": 406619649,
+ "story_metricool_uuid": "-2323393736392159936"
+}

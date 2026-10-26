@@ -1,1 +1,16 @@
-{"date": "2026-11-04", "slot": "Mi · Frauen 40+", "title": "Frauen 40+ (1/3): Hormone im Mund", "format": "reel", "status": "awaiting_approval", "approval_channel": "chat-batch (Neda reviews all November posts on the preview page https://claude.ai/artifact/6ohZKHEbWcnvm3xH4ypxPu; Metricool drafts are created only after her OK)", "metricool_id": null, "email_thread_id": null, "media": ["reel.mp4"]}
+{
+ "date": "2026-11-04",
+ "slot": "Mi · Frauen 40+",
+ "title": "Frauen 40+ (1/3): Hormone im Mund",
+ "format": "reel",
+ "status": "scheduled",
+ "approval_channel": "chat-batch (Neda reviews all November posts on the preview page https://claude.ai/artifact/6ohZKHEbWcnvm3xH4ypxPu; Metricool drafts are created only after her OK)",
+ "metricool_id": 406597656,
+ "email_thread_id": null,
+ "media": [
+  "reel_v3.mp4"
+ ],
+ "metricool_uuid": "-4923331154103088202",
+ "story_metricool_id": 406597683,
+ "story_metricool_uuid": "-509911460515002978"
+}

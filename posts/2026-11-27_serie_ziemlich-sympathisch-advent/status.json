@@ -3,6 +3,10 @@
  "slot": "Fr · Serie",
  "title": "Ziemlich sympathisch – Folge 2 (Advent)",
  "format": "carousel",
- "status": "awaiting_approval",
- "approval_channel": "chat"
+ "status": "scheduled",
+ "approval_channel": "chat",
+ "metricool_id": 406634622,
+ "metricool_uuid": "1275377460869153973",
+ "story_metricool_id": 406634642,
+ "story_metricool_uuid": "615174014077715432"
 }

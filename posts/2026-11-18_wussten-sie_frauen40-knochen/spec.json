@@ -6,15 +6,19 @@
  "scenes": [
   {
    "type": "statement",
-   "kicker": "Frauen 40+ · Teil 3 von 3",
+   "kicker": "Frauen 40+ · Tagebuch, Seite 3",
    "lines": [
     {
-     "text": "„Halten meine Zähne",
-     "size": 110
+     "text": "„Liebes Tagebuch,",
+     "size": 96
+    },
+    {
+     "text": "halten meine Zähne",
+     "size": 96
     },
     {
      "text": "noch gut?“",
-     "size": 110,
+     "size": 104,
      "bold": true,
      "red": true
     }

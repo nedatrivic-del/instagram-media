@@ -6,15 +6,19 @@
  "scenes": [
   {
    "type": "statement",
-   "kicker": "Frauen 40+ · Teil 2 von 3",
+   "kicker": "Frauen 40+ · Tagebuch, Seite 2",
    "lines": [
     {
-     "text": "„Mein Mund ist",
-     "size": 110
+     "text": "„Liebes Tagebuch,",
+     "size": 96
+    },
+    {
+     "text": "mein Mund ist",
+     "size": 96
     },
     {
      "text": "ständig trocken.“",
-     "size": 110,
+     "size": 104,
      "bold": true,
      "red": true
     }
@@ -89,7 +93,7 @@
    "type": "close",
    "lines": [
     {
-     "text": "Teil 3:",
+     "text": "Seite 3:",
      "size": 100
     },
     {

@@ -6,15 +6,19 @@
  "scenes": [
   {
    "type": "statement",
-   "kicker": "Frauen 40+ · Teil 1 von 3",
+   "kicker": "Frauen 40+ · Tagebuch, Seite 1",
    "lines": [
     {
-     "text": "„Seit Kurzem blutet",
-     "size": 110
+     "text": "„Liebes Tagebuch,",
+     "size": 96
     },
     {
-     "text": "mein Zahnfleisch.“",
-     "size": 110,
+     "text": "mein Zahnfleisch ist",
+     "size": 96
+    },
+    {
+     "text": "so empfindlich.“",
+     "size": 104,
      "bold": true,
      "red": true
     }
@@ -82,7 +86,7 @@
      "red": true
     }
    ],
-   "body": "Teil 2: Wenn der Mund plötzlich trocken ist."
+   "body": "Nächste Seite: Wenn der Mund plötzlich trocken ist."
   }
  ]
 }

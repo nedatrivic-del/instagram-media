@@ -40,12 +40,12 @@
      "sub": "Normale Zahnpasta kann sie zerkratzen."
     },
     {
-     "title": "Über einem Waschbecken mit Wasser",
+     "title": "Ein Tuch ins Waschbecken legen",
      "sub": "Fällt sie hinunter, landet sie weich."
     },
     {
-     "title": "Nachts eine Pause?",
-     "sub": "Fragen Sie uns, was für Ihre passt."
+     "title": "Nur zum Reinigen herausnehmen",
+     "sub": "Danach gleich wieder einsetzen."
     }
    ]
   },
@@ -80,7 +80,7 @@
      "red": true
     }
    ],
-   "body": "Zur Kontrolle bringen Sie Ihre Prothese einfach mit."
+   "body": "Lassen Sie sie regelmäßig bei der Kontrolle untersuchen."
   }
  ]
 }

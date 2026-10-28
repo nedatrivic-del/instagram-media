@@ -29,13 +29,13 @@ Google removed the post "Prophylaxe – warum sie sich lohnt" (20.10.2026) and t
 ## Communication with Neda: ONE evening mail (Neda, 26.10.2026)
 Neda gets ONE email per day around 18:00 ("Večernji pregled", separate scheduled task). The marketing agent does NOT email her any more (except the existing old approval threads). Everything you would have emailed – monthly package ready, Google review reply suggestions, broken Google/Instagram connection, monthly report, failures – you APPEND (BKS, short, plain text) to `digest/pending.md` in the repo with a heading line `### <date> – <topic>`, then commit and push. The evening task reads it, includes it in her mail and empties the file. Where this file says "email Neda", read it as "append to digest/pending.md".
 
-## Run schedule – what to do in each run (task fires daily 9:07, 13:07, 19:07 Europe/Vienna)
+## Run schedule – what to do in each run (task fires daily 13:07 and 19:07 Europe/Vienna – NO morning runs: Neda keeps mornings (esp. Monday and Wednesday) free for studying, 28.10.2026)
 **MONTHLY BATCH MODE (Neda, 26.10.2026):** Neda reviews ALL posts of a month ONCE, together in a chat, on the 20th of the previous month at 9:00 (so she has time for her perio master). NO weekly per-post approval emails any more.
 Determine the current local date/time in Europe/Vienna first.
 1. **Every run:** approval check (section "Approval check") – only for older posts that still use email approval; everything with approval_channel containing "chat" is skipped.
 2. **15th of each month, 19:07 run:** build ALL Instagram posts of the NEXT month (Mon + Wed 10:00 per plan/redaktionsplan.md, Friday bonus/series posts, special posts; story twins prepared as files) following every content, strategy and attention rule. Render, check stills, push. status.json: `"status":"awaiting_approval","approval_channel":"chat-batch"`. Do NOT create anything in Metricool. Then send ONE short BKS email: subject `[Insta-Agent] Mjesečni paket <Monat> spreman`, body: number of posts, list (date – title – format), "Pregled zajedno 20. u 9:00 u chatu." Exception: December 2026 is built in the chat session (do nothing on 15.11.2026 except the Advent photo reminder).
 3. **Google posts are paused** (see above) – no Google drafts.
-4. **Monday 9:07 run:** Google reviews (section "Google reviews").
+4. **Monday 13:07 run:** Google reviews (section "Google reviews").
 5. **First Sunday of the month, 19:07:** monthly report (section "Monthly report").
 6. Any other run: only step 1. Do not send any email when there is nothing to report.
 7. Idempotency: before preparing, check posts/*/status.json and Metricool (getScheduledPosts) – never create a second post for a slot that already has one.
@@ -168,7 +168,7 @@ Also per post (IGRE/IGPO metrics: reach, saves, shares, comments, follows; reels
 ## If something fails
 Tell Neda by email (subject starting "[Insta-Agent]") in one or two plain BKS sentences what failed and what she needs to do (e.g. reconnect Instagram in Metricool). Never retry endlessly; never publish without OK.
 
-## Google reviews (Monday 9:07 run)
+## Google reviews (Monday 13:07 run)
 0. **Data check first (Neda, 26.10.2026):** the Metricool Google data stopped syncing on 11.10.2026, so a review from ~22.10. was missed and nobody noticed. Before looking for reviews, query GMEV18/GMEV19 for the last 7 days. If there are no rows for the last 3 days, the connection is broken: email Neda (subject `[Insta-Agent] Google profil nije povezan`) in 2 BKS sentences: Metricool no longer receives Google data, please reconnect the Google Business Profile in Metricool (Settings → Connections). Send this at most once per week. Also: no new reviews → send nothing; never stay silent about a broken connection.
 1. getAnalyticsDataByMetrics(brandId 7264951, last 8 days) with GMRE02 (date), GMRE06 (name), GMRE09 (stars), GMRE04 (replied), GMRE08 (text).
 2. For every review with replied = false write a reply suggestion in the review's language (no text → German): 2–3 sentences, warm, signed "Dr. Neda Trivić & Team". NEVER confirm the person is a patient, never mention treatment, diagnosis, appointment or details (zahnärztliche Schweigepflicht); no superlatives. Negative (1–3 stars): neutral, no argument, offer a conversation in the practice/by phone, and put a warning at the top of the email. Reviews from accounts linked to Neda (e.g. "Zubo Team", "Nada Trivic", "Marica Kicusic"): list only, no suggestion.

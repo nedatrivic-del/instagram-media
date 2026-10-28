@@ -18,7 +18,7 @@ Nothing is ever published without Neda's explicit OK.
 | Instagram Monday "Wissen" | Mon 10:00 | Reel 12–17 s (text on screen, Neda's photo, hook in first frame) | Tuesday 19:07 (for the NEXT Monday) |
 | Instagram Wednesday "Wussten Sie schon?" | Wed 10:00 | Alternating reel / carousel (see plan) | Sunday 19:07 (for the coming Wednesday) |
 | Google Business Profile (**PAUSED** – see below) | Thu 10:00 | Text post (publication) with ONE image, German only | Sunday 19:07, together with the Wednesday post |
-| Google reviews | – | Reply suggestions by email, never posted by the agent | Monday 9:07 |
+| Google reviews | – | Reply suggestions by email, never posted by the agent | Monday 13:07 |
 | Monthly report | – | Instagram + Google figures, one recommendation | First Sunday of the month, 19:07 |
 
 Neda approves on Monday and Wednesday mornings by replying OK to the approval email. One OK in a thread approves everything in that email.
@@ -33,7 +33,7 @@ Neda gets ONE email per day around 18:00 ("Večernji pregled", separate schedule
 **MONTHLY BATCH MODE (Neda, 26.10.2026):** Neda reviews ALL posts of a month ONCE, together in a chat, on the 20th of the previous month at 9:00 (so she has time for her perio master). NO weekly per-post approval emails any more.
 Determine the current local date/time in Europe/Vienna first.
 1. **Every run:** approval check (section "Approval check") – only for older posts that still use email approval; everything with approval_channel containing "chat" is skipped.
-2. **15th of each month, 19:07 run:** build ALL Instagram posts of the NEXT month (Mon + Wed 10:00 per plan/redaktionsplan.md, Friday bonus/series posts, special posts; story twins prepared as files) following every content, strategy and attention rule. Render, check stills, push. status.json: `"status":"awaiting_approval","approval_channel":"chat-batch"`. Do NOT create anything in Metricool. Then send ONE short BKS email: subject `[Insta-Agent] Mjesečni paket <Monat> spreman`, body: number of posts, list (date – title – format), "Pregled zajedno 20. u 9:00 u chatu." Exception: December 2026 is built in the chat session (do nothing on 15.11.2026 except the Advent photo reminder).
+2. **15th of each month, 19:07 run:** build ALL Instagram posts of the NEXT month (Mon + Wed 10:00 per plan/redaktionsplan.md, Friday bonus/series posts, special posts; story twins prepared as files) following every content, strategy and attention rule. Render, check stills, push. status.json: `"status":"awaiting_approval","approval_channel":"chat-batch"`. Do NOT create anything in Metricool. Then send ONE short BKS email: subject `[Insta-Agent] Mjesečni paket <Monat> spreman`, body: number of posts, list (date – title – format), "Pregled zajedno 20. u 17:30 u chatu." Exception: December 2026 is built in the chat session (do nothing on 15.11.2026 except the Advent photo reminder).
 3. **Google posts are paused** (see above) – no Google drafts.
 4. **Monday 13:07 run:** Google reviews (section "Google reviews").
 5. **First Sunday of the month, 19:07:** monthly report (section "Monthly report").

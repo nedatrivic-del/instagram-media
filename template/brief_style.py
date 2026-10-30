@@ -3,9 +3,9 @@ from PIL import Image, ImageDraw, ImageFont, ImageFilter
 import numpy as np
 F='/home/claude/instagram-media/template/fonts/'
 W,H=1080,1350; S=2
-PAPER=(250,246,238); INK=(52,62,74); RED=(176,42,42); SAGE=(168,200,184); SAGE_D=(110,150,130)
+PAPER=(250,246,238); INK=(52,62,74); RED=(176,42,42); SAGE=(168,200,184); MARK=(150,198,172); SAGE_D=(110,150,130)
 def cav(sz,w=500):
-    f=ImageFont.truetype(F+'Caveat%5Bwght%5D.ttf',sz*S)
+    f=ImageFont.truetype(F+'DancingScript%5Bwght%5D.ttf',sz*S)
     try: f.set_variation_by_axes([w])
     except Exception: pass
     return f
@@ -27,11 +27,11 @@ def underline(d,x0,x1,y,seed,col=RED,w=4):
     r=random.Random(seed); n=24
     pts=[(x0+(x1-x0)*i/n, y+math.sin(i/n*math.pi*1.3+r.random())*3+r.uniform(-1,1)) for i in range(n+1)]
     wobble(d,pts,col,w,seed,0.6)
-def highlight(img,x0,y0,x1,y1,seed,col=SAGE):
+def highlight(img,x0,y0,x1,y1,seed,col=(150,198,172),alpha=175):
     lay=Image.new('RGBA',img.size,(0,0,0,0)); dl=ImageDraw.Draw(lay); r=random.Random(seed)
     for k in range(3):
         dy=r.uniform(-6,6)
-        dl.polygon([((x0-10+r.uniform(-6,6))*S,(y0+dy+r.uniform(-4,4))*S),((x1+14+r.uniform(-6,6))*S,(y0+dy-6)*S),((x1+8)*S,(y1+dy+r.uniform(-4,4))*S),((x0-14)*S,(y1+dy+6)*S)],fill=col+(115,))
+        dl.polygon([((x0-10+r.uniform(-6,6))*S,(y0+dy+r.uniform(-4,4))*S),((x1+14+r.uniform(-6,6))*S,(y0+dy-6)*S),((x1+8)*S,(y1+dy+r.uniform(-4,4))*S),((x0-14)*S,(y1+dy+6)*S)],fill=col+(alpha,))
     lay=lay.filter(ImageFilter.GaussianBlur(2*S))
     return Image.alpha_composite(img,lay)
 def write(d,x,y,tokens,size,seed,maxw=900,lh=1.18,rot=0):
@@ -73,13 +73,17 @@ def page(n,total,title,body,seed,out,sign=False,arrow=True):
     hh=(170 if title else 0)+write(dry,95,0,T(body),70,seed+1)[0]+(160 if sign else 0)
     y=max(140,(1200-hh)/2)
     if title:
-        f=cav(92,700); tw=d.textlength(title,font=f)/S
+        f=cav(96,700); tw=d.textlength(title,font=f)/S
         img=highlight(img,90,y+18,90+tw,y+100,seed); d=ImageDraw.Draw(img)
         d.text((95*S,y*S),title,font=f,fill=INK); y+=170
+    _,sp0=write(ImageDraw.Draw(Image.new('RGBA',(W*S,H*S))),95,y,T(body),70,seed+1)
+    for i,(a,b,yy) in enumerate(merge_spans(sp0)):
+        img=highlight(img,a-2,yy-52,b+2,yy-6,seed+30+i,MARK,175)
+    d=ImageDraw.Draw(img)
     y,spans=write(d,95,y,T(body),70,seed+1)
     for i,(a,b,yy) in enumerate(merge_spans(spans)): underline(d,a-4,b+6,yy,seed+10+i)
     if sign:
-        f=cav(70,600); d.text((95*S,(y+40)*S),'Ihre Zahnärztin Altstadt',font=f,fill=INK)
+        f=cav(76,600); d.text((95*S,(y+40)*S),'Ihre Zahnärztin Altstadt',font=f,fill=INK)
         underline(d,95,95+d.textlength('Ihre Zahnärztin Altstadt',font=f)/S,y+125,seed+50,SAGE_D,3)
     # footer
     d.text((95*S,1250*S),'@dentistry.oldtown',font=cav(38,500),fill=SAGE_D)
@@ -87,7 +91,7 @@ def page(n,total,title,body,seed,out,sign=False,arrow=True):
         wobble(d,[(820,1272),(960,1262)],RED,4,seed+60); wobble(d,[(960,1262),(935,1245)],RED,4,seed+61); wobble(d,[(960,1262),(938,1282)],RED,4,seed+62)
     img.resize((W,H),Image.LANCZOS).convert('RGB').save(out,quality=93)
 o=sys.argv[1]
-page(1,4,'MYTHOS ODER FAKT?',"Fast alle sagen:\n„Ein bisschen Zahnfleischbluten beim Putzen ist doch ganz *normal.*“\n\nIch verrate Ihnen etwas …",1,o+'/brief_1.jpg')
+page(1,4,'Mythos oder Fakt?',"Fast alle sagen:\n„Ein bisschen Zahnfleischbluten beim Putzen ist doch ganz *normal.*“\n\nIch verrate Ihnen etwas …",1,o+'/brief_1.jpg')
 page(2,4,None,"… es ist *nicht* normal.\n\n*Gesundes* *Zahnfleisch* *blutet* *nicht.*\n\nMeist steckt eine kleine Entzündung dahinter – ausgelöst durch Belag am Zahnfleischrand. Und die gute Nachricht kommt gleich …",2,o+'/brief_2.jpg')
-page(3,4,'WAS HILFT?',"✓ Weiterputzen – *sanft*, nicht fest.\n\n✓ Die Zwischenräume *jeden* *Abend* reinigen.\n\n✓ Regelmäßig zur Mundhygiene.\n\nUnd wenn es nicht besser wird …",3,o+'/brief_3.jpg')
+page(3,4,'Was hilft?',"✓ Weiterputzen – *sanft*, nicht fest.\n\n✓ Die Zwischenräume *jeden* *Abend* reinigen.\n\n✓ Regelmäßig zur Mundhygiene.\n\nUnd wenn es nicht besser wird …",3,o+'/brief_3.jpg')
 page(4,4,None,"… blutet es länger als *1–2* *Wochen,* schauen wir uns das gemeinsam an.\n\nIn Ruhe, ohne Druck – und mit Zeit für Ihre Fragen.",4,o+'/brief_4.jpg',sign=True,arrow=False)

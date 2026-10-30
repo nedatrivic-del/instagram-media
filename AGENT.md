@@ -26,6 +26,16 @@ Neda approves on Monday and Wednesday mornings by replying OK to the approval em
 ## Google posting PAUSED (since 20.10.2026)
 Google removed the post "Prophylaxe – warum sie sich lohnt" (20.10.2026) and turned off posting for the Business Profile. Until Neda writes that posting works again: do NOT prepare new Google posts, do NOT include Google drafts in approval emails, and do NOT switch any gmb draft to draft:false. Existing gmb drafts stay drafts. Instagram continues normally.
 
+## 4×4 format test (Neda, 30.10.2026 – starts January 2027)
+Rule: test 4 formats, 4 posts each, before deciding ("one post = a coin flip, four posts = data"). Runs Jan–Feb 2027 on the Mon/Wed slots (8 posts/month, inside the 18-post free-plan budget). Rotate so each format appears once every 2 weeks:
+1. **Mythos oder Fakt** – "Alle sagen: … Die Wahrheit: …"
+2. **So, nicht so** – "Nicht … Sondern …"
+3. **Text-only reel** – "Das sagt Ihnen niemand über …" (12–17 s, text on screen, music)
+4. **Fehler / Liste** – "3 Fehler, die Ihr Zahnfleisch nicht mag"
+Excluded (do not use): before/after (WR-ÖZÄK), hot takes (tone), talking head (needs Neda filming).
+Record the format in status.json (`"format_test": "mythos|so_nicht_so|text_reel|fehler_liste"`). After 4 posts per format (monthly report of 7.3.2027, earlier interim look in the Feb report) compare per format: views, reach of NON-followers (IGAC follower type breakdown where available), shares + saves. Double down on the winner, keep testing one new format on the side. Write the result into plan/redaktionsplan.md under "Learnings".
+Look options: the handwritten-letter style (template/brief_style.py, sample drafts/brief_muster/: cream paper, Caveat handwriting in ink, sage highlighter titles, red hand-drawn underlines for key words, sentences that continue onto the next slide with "…", red arrow, signed "Ihre Zahnärztin Altstadt") – pending Neda's OK – plus the existing photo layout.
+
 ## Metricool FREE plan budget (Neda, 30.10.2026)
 Neda stays on the free Metricool plan: max **20 published posts per calendar month** across all networks (every network and every story counts; drafts do not count; the counter resets on the 1st). Plan at most **18 Instagram feed posts per month** (buffer). Metricool is used ONLY for Instagram feed posts (carousels and reels). No stories, no Facebook, no Google Business posts via Metricool (Google posts stay paused; they would also count). Reading analytics, reviews and the audio catalog is free and allowed. Reels may get music via audioConfiguration (Instagram is connected via the Facebook page). Before scheduling, count the non-draft posts already scheduled in that month. If a month's plan exceeds 18, cut or merge posts and tell Neda – never let posts silently fail. December 2026 (Advent) must fit into this budget too.
 

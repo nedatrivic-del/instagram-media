@@ -27,7 +27,7 @@ Neda approves on Monday and Wednesday mornings by replying OK to the approval em
 Google removed the post "Prophylaxe – warum sie sich lohnt" (20.10.2026) and turned off posting for the Business Profile. Until Neda writes that posting works again: do NOT prepare new Google posts, do NOT include Google drafts in approval emails, and do NOT switch any gmb draft to draft:false. Existing gmb drafts stay drafts. Instagram continues normally.
 
 ## 4×4 format test (Neda, 30.10.2026 – starts January 2027)
-Rule: test 4 formats, 4 posts each, before deciding ("one post = a coin flip, four posts = data"). Runs Jan–Feb 2027 on the Mon/Wed slots (2 test posts per week = 16 posts in 8 weeks); Fridays stay free for series/bonus posts (max 3 posts per week in total). Rotate so each format appears once every 2 weeks:
+Rule: test 4 formats, 4 posts each, before deciding ("one post = a coin flip, four posts = data"). Runs from Mon 11.01.2027 (practice reopens; nothing before) on the Mon/Wed slots (2 test posts per week = 16 posts in 8 weeks, until ~03.03.); Fridays Jan/Feb = series „Zahnarzt im Kino“ (Neda 30.10.2026, see plan/redaktionsplan.md; own cinema look) (max 3 posts per week in total). Rotate so each format appears once every 2 weeks:
 1. **Mythos oder Fakt** – "Alle sagen: … Die Wahrheit: …"
 2. **So, nicht so** – "Nicht … Sondern …"
 3. **Text-only reel** – "Das sagt Ihnen niemand über …" (12–17 s, text on screen, music)

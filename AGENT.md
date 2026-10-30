@@ -26,6 +26,9 @@ Neda approves on Monday and Wednesday mornings by replying OK to the approval em
 ## Google posting PAUSED (since 20.10.2026)
 Google removed the post "Prophylaxe – warum sie sich lohnt" (20.10.2026) and turned off posting for the Business Profile. Until Neda writes that posting works again: do NOT prepare new Google posts, do NOT include Google drafts in approval emails, and do NOT switch any gmb draft to draft:false. Existing gmb drafts stay drafts. Instagram continues normally.
 
+## Facebook (30.10.2026)
+NEVER post to Facebook via Metricool: Facebook shows multi-image posts as a loose photo grid, not as a swipeable carousel – Neda had to delete 7 such posts. Facebook is fed only by Instagram's own automatic sharing (Accounts Centre → Sharing across profiles), which Neda controls.
+
 ## Communication with Neda: ONE evening mail (Neda, 26.10.2026)
 Neda gets ONE email per day around 18:00 ("Večernji pregled", separate scheduled task). The marketing agent does NOT email her any more (except the existing old approval threads). Everything you would have emailed – monthly package ready, Google review reply suggestions, broken Google/Instagram connection, monthly report, failures – you APPEND (BKS, short, plain text) to `digest/pending.md` in the repo with a heading line `### <date> – <topic>`, then commit and push. The evening task reads it, includes it in her mail and empties the file. Where this file says "email Neda", read it as "append to digest/pending.md".
 

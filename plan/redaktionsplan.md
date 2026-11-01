@@ -62,3 +62,10 @@ Alle Mo/Mi-Posts 2.–30.11. werden im Chat gesammelt gebaut und von Neda gesamm
 
 
 November-Reihenfolge (Neda 25.10., abwechselnd Parodontitis/Frauen): 2.11. Diabetes · 4.11. Frauen 40+ 1/3 · 9.11. Zahnfleisch & Herz · 11.11. Frauen 40+ 2/3 · 16.11. Abendroutine · 18.11. Frauen 40+ 3/3 · 23.11. Krone/Brücke/Prothese · 25.11. Bürstchen oder Seide · 30.11. Prothese pflegen. (Die Tabelle oben ist für November überholt.)
+
+## Learnings
+### Oktober 2026 (Monatsbericht 01.11.2026 – kleine Zahlen, nur Tendenzen)
+- Baseline Okt.: 7 Posts, ~920 Views, Reichweite/Post 22–56, 0 Saves, 0 Shares, 0 Kommentare, Follower 88 → 88.
+1. Hook als direkte Frage/Kontrast im ersten Frame: Reel „Naschen“ (Frage) 41,9 % View-Rate 3 s / 12,9 s Watch-Time vs. „Versteckter Zucker“ 21,3 % / 7,1 s.
+2. Duell-/Alltagsentscheidung + eigenes Foto funktioniert: „Matcha oder Kaffee“ = bester Post (134 Views, 1 Follow). Mehr Alltagsentscheidungen („A oder B?“) als Storyline.
+3. Saves/Shares = 0 → jeder Post braucht einen klaren „Wem schicken?“-Anlass im Spickzettel/Caption (konkrete Person/Situation, keine Bitte ums Teilen). Mo–Fr 10:00 bleibt laut Metricool bester Slot.

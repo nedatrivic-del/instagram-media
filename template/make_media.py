@@ -19,6 +19,15 @@ MINT = (236, 246, 246); CREAM = (249, 247, 240); BLUSH = (239, 192, 182)
 W, FPS = 1080, 30
 INK = (71, 82, 95); BRAND_RED = (166, 41, 41)
 THEME = "default"
+ACCENT = RED          # colour of the highlighted (formerly red) headline line and kicker
+SCRIPT = None         # (font file, size factor) when the highlighted line is set in handwriting
+
+
+def script_font(size):
+    f = ImageFont.truetype(F + SCRIPT[0], size)
+    if "wght" in SCRIPT[0]:
+        f.set_variation_by_axes([600])
+    return f
 
 
 def oswald(size, wght=300):
@@ -158,7 +167,12 @@ def headline_layers(lines, t0=0.1, step=0.2, last_gap=44):
     out = []
     for i, ln in enumerate(lines):
         f = oswald(ln.get("size", 110), 400 if ln.get("bold") else 300)
-        out.append((Layer(t0 + i * step, "text", text=ln["text"].upper(), font=f, color=RED if ln.get("red") else SLATE,
+        txt, col = ln["text"].upper(), (RED if ln.get("red") else SLATE)
+        if ln.get("red") and SCRIPT:
+            f = script_font(int(ln.get("size", 110) * SCRIPT[1])); txt = ln["text"]; col = ACCENT
+        elif ln.get("red"):
+            col = ACCENT
+        out.append((Layer(t0 + i * step, "text", text=txt, font=f, color=col,
                           maxw=ln.get("maxw", W - 180)), 0))
     out[-1] = (out[-1][0], last_gap)
     return out
@@ -166,8 +180,10 @@ def headline_layers(lines, t0=0.1, step=0.2, last_gap=44):
 
 class Builder:
     def __init__(s, spec, H):
-        global THEME, SLATE, RED, SAGE
+        global THEME, SLATE, RED, SAGE, ACCENT, SCRIPT
         THEME = spec.get("theme", "default")
+        ACCENT = tuple(spec["accent"]) if spec.get("accent") else RED
+        SCRIPT = (spec["script_font"], spec.get("script_scale", 1.0)) if spec.get("script_font") else None
         if THEME == "advent":
             SLATE, RED, SAGE = (247, 239, 222), (236, 112, 96), (214, 178, 110)
         elif THEME == "kino":
@@ -235,7 +251,7 @@ class Builder:
     def statement(s, t, sc):
         img = s.bg.copy(); spec = []
         if sc.get("kicker"):
-            spec.append((Layer(-1.0 if (sc.get("instant") and s.reel) else 0.1, "text", text=sc["kicker"], font=fira(52, "LightItalic"), color=RED), 24))
+            spec.append((Layer(-1.0 if (sc.get("instant") and s.reel) else 0.1, "text", text=sc["kicker"], font=fira(52, "LightItalic"), color=ACCENT), 24))
         inst = sc.get("instant") and s.reel
         spec += headline_layers(sc["lines"], -1.0 if inst else 0.15, 0.0 if inst else 0.12)
         spec += [(Layer(-1.0 if inst else 0.5, "rule"), 44), (Layer(0.4 if inst else 0.7, "text", text=sc["body"], font=fira(56, "Light"), color=SLATE, lh=1.34), 0)]
@@ -280,7 +296,7 @@ class Builder:
             d.text((480, y0 + 262), "Dr. med. dent. Neda Trivić", font=fira(34, "Regular"), fill=INK + (a,))
             d.text((480, y0 + 306), "Alle Kassen & Privat", font=fira(32, "Light"), fill=INK + (a,))
             d.text((130, y0 + 395), "Kapitelgasse 9 · Salzburger Altstadt", font=fira(38, "Light"), fill=INK + (a,))
-            d.text((130, y0 + 445), "Terminvereinbarung online:", font=fira(38, "Medium"), fill=BRAND_RED + (a,))
+            d.text((130, y0 + 445), "Terminvereinbarung online:", font=fira(38, "Medium"), fill=ACCENT + (a,))
             d.rounded_rectangle([130, y0 + 503, W - 130, y0 + 575], radius=36, fill=INK + (a,))
             txt = "termine.softdent.at/zahnaerztin-altstadt"; ff = fira(34, "Regular")
             d.text(((W - d.textlength(txt, font=ff)) / 2, y0 + 517), txt, font=ff, fill=(255, 255, 255, a))

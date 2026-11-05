@@ -194,3 +194,9 @@ Tell Neda by email (subject starting "[Insta-Agent]") in one or two plain BKS se
 
 ## Colour rule for Canva / illustrated posts (Neda, 05.11.2026)
 Always use the practice palette – never the bright pastel yellow/coral/blue of the old "Wie alt ist Ihre Zahnbürste" post: cream #F9F7F0, mint #ECF6F6, sage #A9CABB (light #CEE2D8), blush #EFC0B6, slate text #475260, accent red #A62929 only sparingly. Ready backgrounds with soft blobs + dot grids (decor kept away from the text area): template/bg/bg_cream_a2.png, bg_mint_b2.png, bg_cream_c2.png (Canva assets MAHaFJetLXQ, MAHaFJhWpBQ, MAHaFIkrfGE). Practice logo on every slide (template/logo.png, Canva asset MAHaC263L1A). Reference design: Canva DAHaFLCR1KU (Zahnersatz storytelling, 23.11.).
+
+## Accent mix: red / green (Neda, 05.11.2026)
+Two looks for the standard photo-layout carousels/reels (template/make_media.py):
+- RED (classic): highlighted headline line in Oswald caps, brand red – spec without "accent".
+- GREEN: highlighted line in handwriting + sage – spec keys `"accent": [111,150,131], "script_font": "DancingScript%5Bwght%5D.ttf", "script_scale": 1.08` (first used on 23.11.2026, Zahnersatz storytelling).
+Neda wants the posts MIXED – sometimes red, sometimes green. When building a month, alternate the two looks (never more than 2 in a row of the same look) and note the look in status.json ("look": "red"/"green"). Already scheduled posts stay as they are. Series with their own look (Advent, Kino, handwritten-letter 4×4) are not affected. In the monthly report compare reach/saves of red vs. green posts.

@@ -1,0 +1,25 @@
+name: fetch-media
+on:
+  push:
+    paths: ['fetch/urls.txt']
+permissions:
+  contents: write
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download listed files
+        run: |
+          mkdir -p fetch/out
+          while read -r name url; do
+            [ -z "$name" ] && continue
+            curl -sSL --fail -o "fetch/out/$name" "$url" || echo "FAILED $name"
+          done < fetch/urls.txt
+          ls -la fetch/out
+      - name: Commit
+        run: |
+          git config user.name "fetch-bot"; git config user.email "fetch-bot@users.noreply.github.com"
+          git add fetch/out
+          git commit -m "fetch: downloaded media [skip ci]" || echo nothing
+          git push

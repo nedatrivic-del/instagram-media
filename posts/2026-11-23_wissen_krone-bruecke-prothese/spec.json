@@ -145,17 +145,17 @@
    "type": "close",
    "lines": [
     {
-     "text": "Welcher Weg",
-     "size": 110
+     "text": "Am Ende steht",
+     "size": 104
     },
     {
-     "text": "passt zu Ihnen?",
-     "size": 110,
+     "text": "wieder ein Lächeln.",
+     "size": 104,
      "bold": true,
      "red": true
     }
    ],
-   "body": "Das klären wir gemeinsam – in Ruhe. Damit Sie wieder offen lachen."
+   "body": "Welcher Weg zu Ihnen passt, klären wir gemeinsam – in Ruhe."
   }
  ]
 }

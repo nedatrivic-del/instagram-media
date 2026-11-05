@@ -8,19 +8,20 @@
  "metricool_id": 418241013,
  "email_thread_id": null,
  "media": [
-  "v5_slide_1.jpg",
-  "v5_slide_2.jpg",
-  "v5_slide_3.jpg",
-  "v5_slide_4.jpg",
-  "v5_slide_5.jpg",
-  "v5_slide_6.jpg",
-  "v5_slide_7.jpg",
-  "v5_slide_8.jpg",
+  "v6_slide_1.jpg",
+  "v6_slide_2.jpg",
+  "v6_slide_3.jpg",
+  "v6_slide_4.jpg",
+  "v6_slide_5.jpg",
+  "v6_slide_6.jpg",
+  "v6_slide_7.jpg",
+  "v6_slide_8.jpg",
   "story.jpg"
  ],
  "canva_design_id": "DAHaFLCR1KU",
  "canva_note": "v3 (05.11.): rendered in house style with template/make_media.py (Neda: no Canva layout). Photos generated in Canva, exported via the fetch-media GitHub workflow; cards in fotos/. Awaiting Neda OK.",
  "metricool_uuid": "184477289736916767",
  "scheduled_for": "2026-11-23T20:30 Europe/Vienna",
- "approved": "Neda in chat 05.11.2026 22:09 (\"passt\")"
+ "approved": "Neda in chat 05.11.2026 22:09 (\"passt\")",
+ "look": "TEST: sage accent #6F9683 + Dancing Script for highlighted line (Neda OK 05.11.2026 22:22). Compare reach/saves with red posts before rolling out."
 }

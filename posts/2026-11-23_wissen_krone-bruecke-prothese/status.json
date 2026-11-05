@@ -1,20 +1,23 @@
 {
  "date": "2026-11-23",
  "slot": "Mo · Zahnersatz",
- "title": "Eine Lücke sucht eine Lösung: Krone, Brücke oder Prothese?",
+ "title": "Eine Lücke sucht eine Lösung – eine kleine Geschichte aus meiner Praxis",
  "format": "carousel",
  "status": "awaiting_approval",
  "approval_channel": "chat-batch (Neda reviews all November posts on the preview page https://claude.ai/artifact/6ohZKHEbWcnvm3xH4ypxPu; Metricool drafts are created only after her OK)",
  "metricool_id": null,
  "email_thread_id": null,
  "media": [
-  "slide_1.jpg",
-  "slide_2.jpg",
-  "slide_3.jpg",
-  "slide_4.jpg",
-  "slide_5.jpg",
+  "v3_slide_1.jpg",
+  "v3_slide_2.jpg",
+  "v3_slide_3.jpg",
+  "v3_slide_4.jpg",
+  "v3_slide_5.jpg",
+  "v3_slide_6.jpg",
+  "v3_slide_7.jpg",
+  "v3_slide_8.jpg",
   "story.jpg"
  ],
  "canva_design_id": "DAHaFLCR1KU",
- "canva_note": "Storytelling version in Zahnbürsten style (Neda 05.11.): 8 slides, Neda tells a story from the practice (no patient details), realistic photos (crown prep, bridge, implant, partial, full denture, gap) + logo. Awaiting her OK. Old DAHaCpeBous draft is obsolete."
+ "canva_note": "v3 (05.11.): rendered in house style with template/make_media.py (Neda: no Canva layout). Photos generated in Canva, exported via the fetch-media GitHub workflow; cards in fotos/. Awaiting Neda OK."
 }

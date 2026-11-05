@@ -204,6 +204,11 @@ class Builder:
     def handle(s, img):
         s.door(img)
         ImageDraw.Draw(img).text((90, s.handle_y), "@dentistry.oldtown", font=fira(34, "Regular"), fill=SLATE + (178,))
+        if s.spec.get("logo"):
+            if not hasattr(s, "_logo"):
+                lg = Image.open(os.path.join(HERE, "logo.png")).convert("RGBA"); lw = 300
+                s._logo = lg.resize((lw, int(lg.height * lw / lg.width)), Image.LANCZOS)
+            img.alpha_composite(s._logo, (W - 90 - s._logo.width, s.handle_y + 22 - s._logo.height // 2))
 
     def hook(s, t, sc):
         img = s.bg.copy(); H = s.H
@@ -237,8 +242,8 @@ class Builder:
         zone = s.zone
         if sc.get("image"):
             fig = Image.open(os.path.join(HERE, sc["image"])).convert("RGBA")
-            fw = 860; fig = fig.resize((fw, int(fig.height * fw / fig.width)), Image.LANCZOS)
-            fy = s.H - fig.height - (200 if s.reel else 110)
+            fw = sc.get("image_w", 860); fig = fig.resize((fw, int(fig.height * fw / fig.width)), Image.LANCZOS)
+            fy = s.H - fig.height - (200 if s.reel else sc.get("image_bottom", 110))
             img.alpha_composite(fig, ((W - fw) // 2, fy))
             zone = (zone[0] - (0 if s.reel else 40), fy - 30)
         for L in stack(spec, *zone): draw_layer(img, t, L)

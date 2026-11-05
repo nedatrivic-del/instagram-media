@@ -2,7 +2,8 @@
  "date": "2026-11-23",
  "slot": "Mo · Zahnersatz",
  "format": "carousel",
- "title": "Eine Lücke sucht eine Lösung: Krone, Brücke oder Prothese?",
+ "logo": true,
+ "title": "Eine Lücke sucht eine Lösung – eine kleine Geschichte aus meiner Praxis",
  "scenes": [
   {
    "type": "hook",
@@ -13,83 +14,148 @@
     },
     {
      "text": "sucht eine Lösung.",
-     "size": 110,
+     "size": 104,
      "bold": true,
      "red": true
     }
    ],
-   "sub": "Krone, Brücke oder Prothese?"
+   "sub": "Eine kleine Geschichte aus meiner Praxis."
   },
   {
    "type": "statement",
-   "kicker": "Die Krone",
+   "kicker": "Neulich in meiner Praxis",
    "lines": [
     {
-     "text": "Ein Helm",
-     "size": 120
+     "text": "„Ich lächle nur noch",
+     "size": 84
     },
     {
-     "text": "für den Zahn.",
-     "size": 120,
+     "text": "mit geschlossenem Mund.“",
+     "size": 76,
      "bold": true,
      "red": true
     }
    ],
-   "body": "Ist ein Zahn stark beschädigt, schützt und stärkt sie ihn – er bleibt erhalten.",
-   "image": "illus/krone.png"
+   "body": "Seit ein Zahn fehlt. Meine Antwort: Das muss nicht so bleiben.",
+   "image": "../posts/2026-11-23_wissen_krone-bruecke-prothese/fotos/luecke.png",
+   "image_w": 900,
+   "image_bottom": 120
   },
   {
    "type": "statement",
-   "kicker": "Die Brücke",
+   "kicker": "Weg 1 · Die Krone",
    "lines": [
     {
-     "text": "Überbrückt",
-     "size": 120
+     "text": "Zahn noch da,",
+     "size": 92
     },
     {
-     "text": "die Lücke.",
-     "size": 120,
+     "text": "aber beschädigt?",
+     "size": 92,
      "bold": true,
      "red": true
     }
    ],
-   "body": "Sie wird an den Nachbarzähnen befestigt und sitzt fest im Mund.",
-   "image": "illus/bruecke.png"
+   "body": "Die Krone schützt ihn wie ein Helm.",
+   "image": "../posts/2026-11-23_wissen_krone-bruecke-prothese/fotos/krone.png",
+   "image_w": 820,
+   "image_bottom": 120
   },
   {
    "type": "statement",
-   "kicker": "Die Prothese",
+   "kicker": "Weg 2 · Die Brücke",
    "lines": [
     {
-     "text": "Herausnehmbar",
-     "size": 116
+     "text": "Ein Zahn fehlt?",
+     "size": 92
     },
     {
-     "text": "und flexibel.",
-     "size": 116,
+     "text": "Die Nachbarn helfen.",
+     "size": 92,
      "bold": true,
      "red": true
     }
    ],
-   "body": "Sie ersetzt mehrere oder alle Zähne und lässt sich zum Reinigen herausnehmen.",
-   "image": "illus/prothese.png"
+   "body": "Die Brücke stützt sich auf sie und schließt die Lücke.",
+   "image": "../posts/2026-11-23_wissen_krone-bruecke-prothese/fotos/bruecke.png",
+   "image_w": 860,
+   "image_bottom": 120
+  },
+  {
+   "type": "statement",
+   "kicker": "Weg 3 · Das Implantat",
+   "lines": [
+    {
+     "text": "Eine neue",
+     "size": 92
+    },
+    {
+     "text": "Wurzel.",
+     "size": 92,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "body": "Darauf sitzt die Krone. Die Nachbarzähne bleiben unberührt.",
+   "image": "../posts/2026-11-23_wissen_krone-bruecke-prothese/fotos/implantat.png",
+   "image_w": 860,
+   "image_bottom": 120
+  },
+  {
+   "type": "statement",
+   "kicker": "Weg 4 · Die Teilprothese",
+   "lines": [
+    {
+     "text": "Mehrere Zähne",
+     "size": 92
+    },
+    {
+     "text": "fehlen?",
+     "size": 92,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "body": "Sie hält an den eigenen Zähnen – zum Reinigen herausnehmbar.",
+   "image": "../posts/2026-11-23_wissen_krone-bruecke-prothese/fotos/teilprothese.png",
+   "image_w": 860,
+   "image_bottom": 120
+  },
+  {
+   "type": "statement",
+   "kicker": "Weg 5 · Die Totalprothese",
+   "lines": [
+    {
+     "text": "Kein Zahn",
+     "size": 92
+    },
+    {
+     "text": "mehr da?",
+     "size": 92,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "body": "Sie ersetzt alle Zähne eines Kiefers – für ein neues Lächeln.",
+   "image": "../posts/2026-11-23_wissen_krone-bruecke-prothese/fotos/totalprothese.png",
+   "image_w": 860,
+   "image_bottom": 120
   },
   {
    "type": "close",
    "lines": [
     {
-     "text": "Welche passt zu Ihnen?",
-     "size": 96
+     "text": "Welcher Weg",
+     "size": 110
     },
     {
-     "text": "Das klären wir gemeinsam.",
-     "size": 92,
+     "text": "passt zu Ihnen?",
+     "size": 110,
      "bold": true,
-     "red": true,
-     "maxw": 900
+     "red": true
     }
    ],
-   "body": "In Ruhe erklärt, Schritt für Schritt."
+   "body": "Das klären wir gemeinsam – in Ruhe. Damit Sie wieder offen lachen."
   }
  ]
 }

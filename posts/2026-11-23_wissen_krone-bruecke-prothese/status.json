@@ -3,9 +3,9 @@
  "slot": "Mo · Zahnersatz",
  "title": "Eine Lücke sucht eine Lösung – eine kleine Geschichte aus meiner Praxis",
  "format": "carousel",
- "status": "awaiting_approval",
+ "status": "scheduled",
  "approval_channel": "chat-batch (Neda reviews all November posts on the preview page https://claude.ai/artifact/6ohZKHEbWcnvm3xH4ypxPu; Metricool drafts are created only after her OK)",
- "metricool_id": null,
+ "metricool_id": 418241013,
  "email_thread_id": null,
  "media": [
   "v5_slide_1.jpg",
@@ -19,5 +19,8 @@
   "story.jpg"
  ],
  "canva_design_id": "DAHaFLCR1KU",
- "canva_note": "v3 (05.11.): rendered in house style with template/make_media.py (Neda: no Canva layout). Photos generated in Canva, exported via the fetch-media GitHub workflow; cards in fotos/. Awaiting Neda OK."
+ "canva_note": "v3 (05.11.): rendered in house style with template/make_media.py (Neda: no Canva layout). Photos generated in Canva, exported via the fetch-media GitHub workflow; cards in fotos/. Awaiting Neda OK.",
+ "metricool_uuid": "184477289736916767",
+ "scheduled_for": "2026-11-23T20:30 Europe/Vienna",
+ "approved": "Neda in chat 05.11.2026 22:09 (\"passt\")"
 }

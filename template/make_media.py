@@ -266,10 +266,12 @@ class Builder:
         s.handle(img); return img
 
     def tips(s, t, sc):
-        img = s.bg.copy()
-        spec = headline_layers(sc["lines"], 0.1, 0.15, 40) + [(Layer(0.5, "rule"), 56)]
+        img = s.bg.copy(); spec = []
+        if sc.get("kicker"):
+            spec.append((Layer(0.05, "text", text=sc["kicker"], font=fira(52, "LightItalic"), color=ACCENT), 24))
+        spec += headline_layers(sc["lines"], 0.1, 0.15, 40) + [(Layer(0.5, "rule"), 56)]
         for i, it in enumerate(sc["items"]):
-            spec.append((Layer(0.5 + 0.9 * i, "item", n=str(i + 1), title=it["title"], sub=it["sub"]), 54 if i < len(sc["items"]) - 1 else 0))
+            spec.append((Layer(0.5 + 0.9 * i, "item", n=it.get("n", str(i + 1)), title=it["title"], sub=it.get("sub", "")), 54 if i < len(sc["items"]) - 1 else 0))
         for L in stack(spec, *s.zone): draw_layer(img, t, L)
         s.handle(img); return img
 

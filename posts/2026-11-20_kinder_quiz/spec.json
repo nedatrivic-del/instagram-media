@@ -1,0 +1,182 @@
+{
+ "date": "2026-11-20",
+ "slot": "Fr · Bonus · Kinder",
+ "format": "carousel",
+ "logo": true,
+ "look": "red",
+ "title": "Kinderzähne-Quiz: Schwer oder noch schwerer?",
+ "scenes": [
+  {
+   "type": "hook",
+   "lines": [
+    {
+     "text": "Kinderzähne-Quiz",
+     "size": 118
+    },
+    {
+     "text": "Schwer oder noch schwerer?",
+     "size": 92,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "sub": "3 Fragen für Eltern – die Antwort steht immer auf der nächsten Seite."
+  },
+  {
+   "type": "tips",
+   "kicker": "Frage 1 · Schwer",
+   "lines": [
+    {
+     "text": "Ab wann putzen",
+     "size": 96
+    },
+    {
+     "text": "wir Zähne?",
+     "size": 96,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "items": [
+    {
+     "n": "A",
+     "title": "Ab dem ersten Zahn"
+    },
+    {
+     "n": "B",
+     "title": "Ab 2 Jahren"
+    },
+    {
+     "n": "C",
+     "title": "Wenn alle Milchzähne da sind"
+    }
+   ]
+  },
+  {
+   "type": "statement",
+   "kicker": "Antwort 1",
+   "lines": [
+    {
+     "text": "A – ab dem",
+     "size": 100
+    },
+    {
+     "text": "ersten Zahn.",
+     "size": 100,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "body": "Zweimal täglich, mit einer reiskorngroßen Menge Kinderzahnpasta mit Fluorid. Ab 2 Jahren: erbsengroß."
+  },
+  {
+   "type": "tips",
+   "kicker": "Frage 2 · Noch schwerer",
+   "lines": [
+    {
+     "text": "Bis wann sollen",
+     "size": 92
+    },
+    {
+     "text": "Eltern nachputzen?",
+     "size": 92,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "items": [
+    {
+     "n": "A",
+     "title": "Bis 3 Jahre"
+    },
+    {
+     "n": "B",
+     "title": "Bis zum Kindergartenende"
+    },
+    {
+     "n": "C",
+     "title": "Bis das Kind flüssig schreibt"
+    }
+   ]
+  },
+  {
+   "type": "statement",
+   "kicker": "Antwort 2",
+   "lines": [
+    {
+     "text": "C – bis das Kind",
+     "size": 92
+    },
+    {
+     "text": "flüssig schreibt.",
+     "size": 92,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "body": "Meist mit 8 bis 10 Jahren. Bis dahin fehlt den Händen noch die Feinmotorik.",
+   "image": "../posts/2026-11-20_kinder_quiz/fotos/nachputzen.png",
+   "image_w": 700,
+   "image_bottom": 120
+  },
+  {
+   "type": "tips",
+   "kicker": "Frage 3 · Am schwersten",
+   "lines": [
+    {
+     "text": "Was ist schwerer",
+     "size": 92
+    },
+    {
+     "text": "für Milchzähne?",
+     "size": 92,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "items": [
+    {
+     "n": "A",
+     "title": "Ein Stück Kuchen nach dem Essen"
+    },
+    {
+     "n": "B",
+     "title": "Saft aus der Flasche, über den Tag verteilt"
+    }
+   ]
+  },
+  {
+   "type": "statement",
+   "kicker": "Antwort 3",
+   "lines": [
+    {
+     "text": "B – der Saft",
+     "size": 100
+    },
+    {
+     "text": "über den Tag.",
+     "size": 100,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "body": "Nicht die Menge zählt, sondern wie oft. Ständiges Nippen lässt den Zähnen keine Pause. Wasser ist der beste Durstlöscher."
+  },
+  {
+   "type": "close",
+   "lines": [
+    {
+     "text": "Und die leichteste",
+     "size": 104
+    },
+    {
+     "text": "Frage?",
+     "size": 104,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "body": "Regelmäßige Kontrolle gehört einfach dazu – ganz entspannt, zum Kennenlernen."
+  }
+ ]
+}

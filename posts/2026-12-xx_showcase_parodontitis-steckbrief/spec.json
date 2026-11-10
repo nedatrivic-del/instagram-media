@@ -10,7 +10,7 @@
     {"title": "Zahnfleisch blutet beim Putzen", "sub": "Gesundes Zahnfleisch blutet nicht."},
     {"title": "Mundgeruch, der bleibt", "sub": "Auch bei guter Pflege."},
     {"title": "Zähne wirken länger oder wandern", "sub": "Das Zahnfleisch zieht sich zurück."}]},
-  {"type": "statement", "kicker": "Steckbrief · Ihre Schwäche", "lines": [{"text": "Wer sie früh entdeckt,", "size": 88}, {"text": "kann sie aufhalten.", "size": 96, "bold": true, "red": true}], "body": "Eine kurze Messung am Zahnfleisch zeigt in wenigen Minuten, wie es um Ihren Zahnhalt steht."},
+  {"type": "statement", "kicker": "Steckbrief · Ihre Schwäche", "lines": [{"text": "Wer sie früh entdeckt,", "size": 88}, {"text": "kann sie aufhalten.", "size": 96, "bold": true, "red": true}], "body": "Eine kurze Messung der Zahnfleischtaschen zeigt in wenigen Minuten, wie es um Ihren Zahnhalt steht."},
   {"type": "tips", "kicker": "Zum Merken", "lines": [{"text": "Ihr", "size": 100}, {"text": "Spickzettel", "size": 100, "bold": true, "red": true}], "items": [
     {"title": "Abends: erst putzen, dann die Zwischenräume", "sub": "Die wichtigste Pflege des Tages."},
     {"title": "Es blutet? Sanft weiterputzen", "sub": "Und beim nächsten Besuch ansprechen."},

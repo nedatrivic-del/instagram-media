@@ -1,0 +1,19 @@
+{"date": "offen", "slot": "Showcase · Parodontitis", "format": "carousel", "logo": true,
+ "title": "Sie tut nicht weh. Genau das ist ihr Trick. – Steckbrief einer leisen Krankheit",
+ "accent": [111, 150, 131], "script_font": "DancingScript%5Bwght%5D.ttf", "script_scale": 1.08,
+ "scenes": [
+  {"type": "hook", "lines": [{"text": "Sie tut nicht weh.", "size": 112}, {"text": "Genau das ist ihr Trick.", "size": 92, "bold": true, "red": true}], "sub": "Steckbrief einer leisen Krankheit."},
+  {"type": "statement", "kicker": "Steckbrief · Ihr Name", "lines": [{"text": "Parodontitis.", "size": 120}, {"text": "Die Leise.", "size": 120, "bold": true, "red": true}], "body": "Eine Entzündung tief unter dem Zahnfleisch. Bakterien im Zahnbelag lösen sie aus."},
+  {"type": "statement", "kicker": "Steckbrief · Was sie tut", "lines": [{"text": "Sie baut ab,", "size": 104}, {"text": "was Ihre Zähne hält.", "size": 96, "bold": true, "red": true}], "body": "Ganz langsam, über Jahre: erst das Zahnfleisch, dann den Knochen."},
+  {"type": "statement", "kicker": "Steckbrief · Ihre Größe", "lines": [{"text": "Eine Wunde, so groß wie", "size": 76}, {"text": "eine Streichholzschachtel.", "size": 76, "bold": true, "red": true}], "body": "So viel Entzündung kann sich bei schwerer Form verstecken.", "image": "../posts/2026-12-xx_showcase_parodontitis-steckbrief/fotos/hand.png", "image_w": 800, "image_bottom": 120},
+  {"type": "tips", "kicker": "Steckbrief · Ihre Spuren", "lines": [{"text": "Daran zeigt", "size": 100}, {"text": "sie sich.", "size": 100, "bold": true, "red": true}], "items": [
+    {"title": "Zahnfleisch blutet beim Putzen", "sub": "Gesundes Zahnfleisch blutet nicht."},
+    {"title": "Mundgeruch, der bleibt", "sub": "Auch bei guter Pflege."},
+    {"title": "Zähne wirken länger oder wandern", "sub": "Das Zahnfleisch zieht sich zurück."}]},
+  {"type": "statement", "kicker": "Steckbrief · Ihre Schwäche", "lines": [{"text": "Wer sie früh entdeckt,", "size": 88}, {"text": "kann sie aufhalten.", "size": 96, "bold": true, "red": true}], "body": "Eine kurze Messung am Zahnfleisch zeigt in wenigen Minuten, wie es um Ihren Zahnhalt steht."},
+  {"type": "tips", "kicker": "Zum Merken", "lines": [{"text": "Ihr", "size": 100}, {"text": "Spickzettel", "size": 100, "bold": true, "red": true}], "items": [
+    {"title": "Abends: erst putzen, dann die Zwischenräume", "sub": "Die wichtigste Pflege des Tages."},
+    {"title": "Es blutet? Sanft weiterputzen", "sub": "Und beim nächsten Besuch ansprechen."},
+    {"title": "Zahnfleisch regelmäßig messen lassen", "sub": "Dauert nur wenige Minuten."}]},
+  {"type": "close", "lines": [{"text": "Wer hinschaut,", "size": 104}, {"text": "ist ihr voraus.", "size": 104, "bold": true, "red": true}], "body": "Speichern Sie sich den Spickzettel – für sich oder für jemanden, dessen Zahnfleisch öfter blutet."}
+ ]}

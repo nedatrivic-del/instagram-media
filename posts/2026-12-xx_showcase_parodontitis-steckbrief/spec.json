@@ -14,6 +14,6 @@
   {"type": "tips", "kicker": "Zum Merken", "lines": [{"text": "Ihr", "size": 100}, {"text": "Spickzettel", "size": 100, "bold": true, "red": true}], "items": [
     {"title": "Abends: erst putzen, dann die Zwischenräume", "sub": "Die wichtigste Pflege des Tages."},
     {"title": "Es blutet? Sanft weiterputzen", "sub": "Und beim nächsten Besuch ansprechen."},
-    {"title": "Zahnfleisch regelmäßig messen lassen", "sub": "Dauert nur wenige Minuten."}]},
+    {"title": "Zahnfleischtaschen regelmäßig messen lassen", "sub": "Dauert nur wenige Minuten."}]},
   {"type": "close", "lines": [{"text": "Wer hinschaut,", "size": 104}, {"text": "ist ihr voraus.", "size": 104, "bold": true, "red": true}], "body": "Speichern Sie sich den Spickzettel – für sich oder für jemanden, dessen Zahnfleisch öfter blutet."}
  ]}

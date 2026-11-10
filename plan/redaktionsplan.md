@@ -69,3 +69,6 @@ November-Reihenfolge (Neda 25.10., abwechselnd Parodontitis/Frauen): 2.11. Diabe
 1. Hook als direkte Frage/Kontrast im ersten Frame: Reel „Naschen“ (Frage) 41,9 % View-Rate 3 s / 12,9 s Watch-Time vs. „Versteckter Zucker“ 21,3 % / 7,1 s.
 2. Duell-/Alltagsentscheidung + eigenes Foto funktioniert: „Matcha oder Kaffee“ = bester Post (134 Views, 1 Follow). Mehr Alltagsentscheidungen („A oder B?“) als Storyline.
 3. Saves/Shares = 0 → jeder Post braucht einen klaren „Wem schicken?“-Anlass im Spickzettel/Caption (konkrete Person/Situation, keine Bitte ums Teilen). Mo–Fr 10:00 bleibt laut Metricool bester Slot.
+
+
+Zusätzlich: **Do 19.11.2026 10:00 – Parodontitis-Steckbrief „Sie tut nicht weh. Genau das ist ihr Trick.“** (posts/2026-12-xx_showcase_parodontitis-steckbrief, grüner Look, von Neda am 10.11. freigegeben, in Metricool eingeplant). November damit 20/20 – nichts Weiteres einplanen.

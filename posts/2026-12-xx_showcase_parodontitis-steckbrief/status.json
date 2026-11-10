@@ -1,14 +1,33 @@
 {
- "date": null,
- "slot": "Showcase · Parodontitis (no date yet)",
+ "date": "2026-11-19",
+ "slot": "Do 10:00 · Showcase Parodontitis",
  "title": "Sie tut nicht weh. Genau das ist ihr Trick. – Steckbrief einer leisen Krankheit",
  "format": "carousel",
- "status": "draft_shown_to_neda",
- "note": "Built 10.11.2026 on Neda's request as a showcase. NOT scheduled: November budget is 20/20, December is planned at 19. Needs Neda's OK and a date.",
+ "status": "scheduled",
+ "note": "Scheduled as feed carousel, Instagram only, isAiGenerated true. No story twin (budget). Folder name keeps 2026-12-xx because the media URLs are live.",
  "look": "green (sage accent + Dancing Script)",
  "alt_hook": "Eine Wunde, die Sie nicht spüren?",
- "test": {"hypothesis": "Concrete size comparison (matchbox) + Spickzettel gets saves/shares", "metric": "saves"},
- "sources": ["DMS 6 (zm-online 2025-06): 35-44 J. Stadium III+IV = 17,5 %", "Leira et al. 2018 Acta Odontol Scand: PISA severe periodontitis 2309 ± 588 mm²"],
+ "test": {
+  "hypothesis": "Concrete size comparison (matchbox) + Spickzettel gets saves/shares",
+  "metric": "saves"
+ },
+ "sources": [
+  "DMS 6 (zm-online 2025-06): 35-44 J. Stadium III+IV = 17,5 %",
+  "Leira et al. 2018 Acta Odontol Scand: PISA severe periodontitis 2309 ± 588 mm²"
+ ],
  "canva_asset": "MAHah_OuJy4",
- "media": ["v1_slide_1.jpg","v1_slide_2.jpg","v1_slide_3.jpg","v1_slide_4.jpg","v1_slide_5.jpg","v1_slide_6.jpg","v1_slide_7.jpg","v1_slide_8.jpg"]
+ "media": [
+  "v1_slide_1.jpg",
+  "v1_slide_2.jpg",
+  "v1_slide_3.jpg",
+  "v1_slide_4.jpg",
+  "v1_slide_5.jpg",
+  "v1_slide_6.jpg",
+  "v1_slide_7.jpg",
+  "v1_slide_8.jpg"
+ ],
+ "metricool_id": 423393702,
+ "metricool_uuid": "7628422338336409369",
+ "scheduled_for": "2026-11-19T10:00 Europe/Vienna",
+ "approved": "Neda in chat 10.11.2026 17:40 (\"izaberi najudarniji termin i pusti post - ok od mene\")"
 }

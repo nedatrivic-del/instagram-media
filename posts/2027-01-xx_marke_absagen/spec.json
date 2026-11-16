@@ -10,12 +10,16 @@
    "type": "hook",
    "lines": [
     {
-     "text": "„Es ist doch nur",
-     "size": 112
+     "text": "„Eine Rechnung –",
+     "size": 88
     },
     {
-     "text": "ein Termin.“",
-     "size": 112,
+     "text": "nur weil ich den",
+     "size": 88
+    },
+    {
+     "text": "Termin vergessen habe?“",
+     "size": 76,
      "bold": true,
      "red": true
     }
@@ -96,7 +100,7 @@
      "red": true
     }
    ],
-   "body": "Eine Stunde, die nur für Sie reserviert war – und die jemand mit Zahnschmerzen gut gebraucht hätte."
+   "body": "Diese Stunde war ausschließlich für Sie reserviert – vorbereitet, mit Team und Behandlungsraum."
   },
   {
    "type": "tips",

@@ -1,7 +1,7 @@
 {
  "date": null,
  "slot": "Januar 2027 (Neda 16.11.: 'u januaru odgovara') – genauer Tag beim Januar-Bau, Vorschlag erste Woche nach Urlaub (ab 11.01.)",
- "title": "Es ist doch nur ein Termin – Absagen ist ganz einfach",
+ "title": "Eine Rechnung – nur weil ich den Termin vergessen habe?",
  "format": "carousel",
  "status": "draft_shown_to_neda",
  "idea": "Neda 16.11.2026: viraler Karussell-Post von houseofbeauty.yeg (Cancellation policy, gleiches Foto auf jeder Slide, Alltagsvergleiche) – 'isti fazon za ordinaciju', Ausfallhonorar existiert, ohne Teamfoto",
@@ -9,14 +9,14 @@
  "photo": "fotos/leerer_stuhl.png (Canva KI-Bild MAHbGTLogIw) – isAiGenerated true",
  "render": "cd template && python3 make_media.py ../posts/2027-01-xx_marke_absagen/spec.json carousel ../posts/2027-01-xx_marke_absagen/",
  "media": [
-  "v2_slide_1.jpg",
-  "v2_slide_2.jpg",
-  "v2_slide_3.jpg",
-  "v2_slide_4.jpg",
-  "v2_slide_5.jpg",
-  "v2_slide_6.jpg",
-  "v2_slide_7.jpg"
+  "v3_slide_1.jpg",
+  "v3_slide_2.jpg",
+  "v3_slide_3.jpg",
+  "v3_slide_4.jpg",
+  "v3_slide_5.jpg",
+  "v3_slide_6.jpg",
+  "v3_slide_7.jpg"
  ],
  "look": "red (Hausstil make_media.py, Hook mit eigenem Foto statt Porträt)",
- "change_log": "v1 = Foto-Look wie Vorbild; v2 = Hausstil (Neda: 'u skladu sa našim dosadašnjim postovima')"
+ "change_log": "v1 = Foto-Look wie Vorbild; v2 = Hausstil (Neda: 'u skladu sa našim dosadašnjim postovima'); v3 = Hook als Staunen über die Rechnung, Slide 5 'ausschließlich für Sie reserviert' (Neda 16.11.)"
 }

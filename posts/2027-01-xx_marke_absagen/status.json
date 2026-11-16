@@ -1,9 +1,9 @@
 {
- "date": null,
- "slot": "Januar 2027 (Neda 16.11.: 'u januaru odgovara') – genauer Tag beim Januar-Bau, Vorschlag erste Woche nach Urlaub (ab 11.01.)",
+ "date": "2026-11-20",
+ "slot": "Fr 20.11.2026 10:00 (statt Kinder-Quiz; Neda 16.11.: 'što prije' – heute ~10 kurzfristige Absagen)",
  "title": "Eine Rechnung – nur weil ich den Termin vergessen habe?",
  "format": "carousel",
- "status": "draft_shown_to_neda",
+ "status": "scheduled",
  "idea": "Neda 16.11.2026: viraler Karussell-Post von houseofbeauty.yeg (Cancellation policy, gleiches Foto auf jeder Slide, Alltagsvergleiche) – 'isti fazon za ordinaciju', Ausfallhonorar existiert, ohne Teamfoto",
  "policy_source": "Praxisregel: kostenlos absagen bis 24h vorher, SMS-Erinnerung 48h vorher, Absage telefonisch zu Ordinationszeiten oder online (Softdent); sonst Ausfallhonorar",
  "photo": "fotos/leerer_stuhl.png (Canva KI-Bild MAHbGTLogIw) – isAiGenerated true",
@@ -18,5 +18,9 @@
   "v4_slide_7.jpg"
  ],
  "look": "red (Hausstil make_media.py, Hook mit eigenem Foto statt Porträt)",
- "change_log": "v1 = Foto-Look wie Vorbild; v2 = Hausstil (Neda: 'u skladu sa našim dosadašnjim postovima'); v3 = Hook als Staunen über die Rechnung, Slide 5 'ausschließlich für Sie reserviert' (Neda 16.11.); v4 = 'telefonisch während der Ordinationszeiten oder online' (Neda)"
+ "change_log": "v1 = Foto-Look wie Vorbild; v2 = Hausstil (Neda: 'u skladu sa našim dosadašnjim postovima'); v3 = Hook als Staunen über die Rechnung, Slide 5 'ausschließlich für Sie reserviert' (Neda 16.11.); v4 = 'telefonisch während der Ordinationszeiten oder online' (Neda)",
+ "metricool_id": 430427661,
+ "metricool_uuid": "3284841671855655029",
+ "approved": "Neda im Chat 16.11.2026 18:45",
+ "note": "Ordnername bleibt 2027-01-xx, weil die Media-URLs live sind. Instagram-Feed only, isAiGenerated true, keine Story (Budget)."
 }

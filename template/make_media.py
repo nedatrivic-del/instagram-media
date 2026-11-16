@@ -230,11 +230,17 @@ class Builder:
         img = s.bg.copy(); H = s.H
         ph_h = 1080 if s.reel else 760
         z = (1.0 + 0.12 * min(t / 3.0, 1)) if s.reel else 1.0
-        pw, phh = s.portrait.size
+        src = s.portrait
+        if sc.get("photo"):  # optional own hook photo instead of Neda's portrait
+            if not hasattr(s, "_hookph"):
+                _im = Image.open(os.path.join(HERE, "..", sc["photo"])).convert("RGB")
+                s._hookph = _im.crop(tuple(sc["photo_crop"])) if sc.get("photo_crop") else _im
+            src = s._hookph
+        pw, phh = src.size
         cw, ch = pw / z, pw / z * ph_h / W
         if ch > phh: ch = phh / z; cw = ch * W / ph_h
-        cx0 = pw - cw - 10 * (1 - min(t, 4.5) / 4.5); cy0 = max(0, (phh - ch) * 0.25)
-        crop = s.portrait.crop((int(cx0), int(cy0), int(cx0 + cw), int(cy0 + ch))).resize((W, ph_h), Image.LANCZOS).convert("RGBA")
+        cx0 = pw - cw - 10 * (1 - min(t, 4.5) / 4.5); cy0 = max(0, (phh - ch) * sc.get("photo_y", 0.25))
+        crop = src.crop((int(cx0), int(cy0), int(cx0 + cw), int(cy0 + ch))).resize((W, ph_h), Image.LANCZOS).convert("RGBA")
         mask = Image.new("L", (W, ph_h), 255); md = ImageDraw.Draw(mask)
         for i in range(260):
             md.line([(0, ph_h - 260 + i), (W, ph_h - 260 + i)], fill=int(255 * (1 - i / 260)))

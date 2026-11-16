@@ -72,3 +72,5 @@ November-Reihenfolge (Neda 25.10., abwechselnd Parodontitis/Frauen): 2.11. Diabe
 
 
 Zusätzlich: **Do 19.11.2026 10:00 – Parodontitis-Steckbrief „Sie tut nicht weh. Genau das ist ihr Trick.“** (posts/2026-12-xx_showcase_parodontitis-steckbrief, grüner Look, von Neda am 10.11. freigegeben, in Metricool eingeplant). November damit 20/20 – nichts Weiteres einplanen.
+
+- **Januar 2027 – Absage-Karussell „Es ist doch nur ein Termin“** (posts/2027-01-xx_marke_absagen, roter Hausstil, 7 Slides; von Neda am 16.11. für Januar bestätigt; Datum beim Januar-Bau festlegen, Vorschlag erste Woche ab 11.01.). Inhaltlich fertig – im Januar-Paket nur noch einplanen.

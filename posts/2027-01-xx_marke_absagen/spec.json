@@ -1,0 +1,148 @@
+{
+ "date": "2027-01",
+ "slot": "Marke · Absagen",
+ "format": "carousel",
+ "logo": true,
+ "look": "red",
+ "title": "Es ist doch nur ein Termin",
+ "scenes": [
+  {
+   "type": "hook",
+   "lines": [
+    {
+     "text": "„Es ist doch nur",
+     "size": 112
+    },
+    {
+     "text": "ein Termin.“",
+     "size": 112,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "sub": "Eine kleine Geschichte über einen leeren Stuhl.",
+   "photo": "posts/2027-01-xx_marke_absagen/fotos/leerer_stuhl.png",
+   "photo_crop": [
+    0,
+    0,
+    1080,
+    1350
+   ],
+   "photo_y": 0.72
+  },
+  {
+   "type": "statement",
+   "kicker": "Kennen Sie das?",
+   "lines": [
+    {
+     "text": "„Ich habe den",
+     "size": 96
+    },
+    {
+     "text": "Zug verpasst.“",
+     "size": 96,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "body": "Das Ticket ist trotzdem weg."
+  },
+  {
+   "type": "statement",
+   "kicker": "Oder das?",
+   "lines": [
+    {
+     "text": "„Ich habe das",
+     "size": 96
+    },
+    {
+     "text": "Konzert vergessen.“",
+     "size": 92,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "body": "Die Karte bekommt man nicht zurück."
+  },
+  {
+   "type": "statement",
+   "kicker": "Und das?",
+   "lines": [
+    {
+     "text": "„Ich habe vergessen,",
+     "size": 88
+    },
+    {
+     "text": "das Abo zu kündigen.“",
+     "size": 84,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "body": "Abgebucht wird trotzdem."
+  },
+  {
+   "type": "statement",
+   "kicker": "Und bei uns?",
+   "lines": [
+    {
+     "text": "Ein leerer",
+     "size": 96
+    },
+    {
+     "text": "Stuhl.",
+     "size": 96,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "body": "Eine Stunde, die nur für Sie reserviert war – und die jemand mit Zahnschmerzen gut gebraucht hätte."
+  },
+  {
+   "type": "tips",
+   "kicker": "So einfach geht’s",
+   "lines": [
+    {
+     "text": "Absagen –",
+     "size": 100
+    },
+    {
+     "text": "ganz einfach.",
+     "size": 100,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "items": [
+    {
+     "title": "Bis 24 Stunden vorher",
+     "sub": "kostenlos absagen oder verschieben"
+    },
+    {
+     "title": "Telefonisch oder online",
+     "sub": "zu den Ordinationszeiten oder jederzeit online"
+    },
+    {
+     "title": "SMS 48 Stunden vorher",
+     "sub": "wir erinnern Sie, damit nichts vergessen wird"
+    }
+   ]
+  },
+  {
+   "type": "close",
+   "lines": [
+    {
+     "text": "Danke, dass jeder Termin",
+     "size": 84
+    },
+    {
+     "text": "jemandem hilft.",
+     "size": 104,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "body": "Und wenn etwas dazwischenkommt: Sagen Sie einfach rechtzeitig Bescheid."
+  }
+ ]
+}

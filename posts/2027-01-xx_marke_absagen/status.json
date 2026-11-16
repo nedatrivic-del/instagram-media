@@ -1,12 +1,22 @@
 {
  "date": null,
- "slot": "offen (Vorschlag Januar 2027 – November 20/20, Dezember 19/20 voll)",
+ "slot": "Januar 2027 (Neda 16.11.: 'u januaru odgovara') – genauer Tag beim Januar-Bau, Vorschlag erste Woche nach Urlaub (ab 11.01.)",
  "title": "Es ist doch nur ein Termin – Absagen ist ganz einfach",
  "format": "carousel",
  "status": "draft_shown_to_neda",
  "idea": "Neda 16.11.2026: viraler Karussell-Post von houseofbeauty.yeg (Cancellation policy, gleiches Foto auf jeder Slide, Alltagsvergleiche) – 'isti fazon za ordinaciju', Ausfallhonorar existiert, ohne Teamfoto",
  "policy_source": "Praxisregel: kostenlos absagen bis 24h vorher, SMS-Erinnerung 48h vorher, Absage telefonisch zu Ordinationszeiten oder online (Softdent); sonst Ausfallhonorar",
  "photo": "fotos/leerer_stuhl.png (Canva KI-Bild MAHbGTLogIw) – isAiGenerated true",
- "render": "python3 posts/2027-01-xx_marke_absagen/render.py posts/2027-01-xx_marke_absagen/fotos/leerer_stuhl.png posts/2027-01-xx_marke_absagen",
- "media": ["v1_slide_1.jpg","v1_slide_2.jpg","v1_slide_3.jpg","v1_slide_4.jpg","v1_slide_5.jpg","v1_slide_6.jpg"]
+ "render": "cd template && python3 make_media.py ../posts/2027-01-xx_marke_absagen/spec.json carousel ../posts/2027-01-xx_marke_absagen/",
+ "media": [
+  "v2_slide_1.jpg",
+  "v2_slide_2.jpg",
+  "v2_slide_3.jpg",
+  "v2_slide_4.jpg",
+  "v2_slide_5.jpg",
+  "v2_slide_6.jpg",
+  "v2_slide_7.jpg"
+ ],
+ "look": "red (Hausstil make_media.py, Hook mit eigenem Foto statt Porträt)",
+ "change_log": "v1 = Foto-Look wie Vorbild; v2 = Hausstil (Neda: 'u skladu sa našim dosadašnjim postovima')"
 }

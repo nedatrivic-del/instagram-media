@@ -9,14 +9,14 @@
  "photo": "fotos/leerer_stuhl.png (Canva KI-Bild MAHbGTLogIw) – isAiGenerated true",
  "render": "cd template && python3 make_media.py ../posts/2027-01-xx_marke_absagen/spec.json carousel ../posts/2027-01-xx_marke_absagen/",
  "media": [
-  "v3_slide_1.jpg",
-  "v3_slide_2.jpg",
-  "v3_slide_3.jpg",
-  "v3_slide_4.jpg",
-  "v3_slide_5.jpg",
-  "v3_slide_6.jpg",
-  "v3_slide_7.jpg"
+  "v4_slide_1.jpg",
+  "v4_slide_2.jpg",
+  "v4_slide_3.jpg",
+  "v4_slide_4.jpg",
+  "v4_slide_5.jpg",
+  "v4_slide_6.jpg",
+  "v4_slide_7.jpg"
  ],
  "look": "red (Hausstil make_media.py, Hook mit eigenem Foto statt Porträt)",
- "change_log": "v1 = Foto-Look wie Vorbild; v2 = Hausstil (Neda: 'u skladu sa našim dosadašnjim postovima'); v3 = Hook als Staunen über die Rechnung, Slide 5 'ausschließlich für Sie reserviert' (Neda 16.11.)"
+ "change_log": "v1 = Foto-Look wie Vorbild; v2 = Hausstil (Neda: 'u skladu sa našim dosadašnjim postovima'); v3 = Hook als Staunen über die Rechnung, Slide 5 'ausschließlich für Sie reserviert' (Neda 16.11.); v4 = 'telefonisch während der Ordinationszeiten oder online' (Neda)"
 }

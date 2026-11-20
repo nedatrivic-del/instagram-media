@@ -43,7 +43,7 @@
    "kicker": "Unser Tipp",
    "lines": [
     {
-     "text": "Morgens sanft",
+     "text": "Abends sanft",
      "size": 100
     },
     {
@@ -53,7 +53,7 @@
      "red": true
     }
    ],
-   "body": "Ein paar Züge genügen."
+   "body": "Nach dem Zähneputzen – ein paar Züge genügen."
   },
   {
    "type": "close",

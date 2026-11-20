@@ -1,0 +1,76 @@
+{
+ "date": "2026-12-23",
+ "slot": "Mi · 18:00 · Advent",
+ "format": "reel",
+ "theme": "advent",
+ "title": "Türchen 17 – Warum Käse am Ende des Menüs Sinn macht",
+ "scenes": [
+  {
+   "type": "hook",
+   "lines": [
+    {
+     "text": "Warum Käse am Ende",
+     "size": 100
+    },
+    {
+     "text": "des Menüs Sinn macht.",
+     "size": 96,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "sub": "Ein kleines Festtags-Geheimnis."
+  },
+  {
+   "type": "statement",
+   "kicker": "Das AHA",
+   "lines": [
+    {
+     "text": "Käse hebt",
+     "size": 110
+    },
+    {
+     "text": "den pH-Wert im Mund.",
+     "size": 100,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "body": "So wird es nach dem Essen schneller wieder weniger sauer."
+  },
+  {
+   "type": "statement",
+   "kicker": "Unser Tipp",
+   "lines": [
+    {
+     "text": "Wasser, ein Stück Käse –",
+     "size": 88
+    },
+    {
+     "text": "und später putzen.",
+     "size": 90,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "body": "So schließen Sie das Festessen zahnfreundlich ab."
+  },
+  {
+   "type": "close",
+   "lines": [
+    {
+     "text": "Schönen",
+     "size": 104
+    },
+    {
+     "text": "23. Dezember!",
+     "size": 104,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "body": "Morgen: unser letztes Türchen."
+  }
+ ],
+ "door": 17
+}

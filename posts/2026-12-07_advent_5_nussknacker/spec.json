@@ -1,0 +1,76 @@
+{
+ "date": "2026-12-07",
+ "slot": "Mo · 18:00 · Advent",
+ "format": "reel",
+ "theme": "advent",
+ "title": "Türchen 5 – Der Nussknacker hat einen Grund",
+ "scenes": [
+  {
+   "type": "hook",
+   "lines": [
+    {
+     "text": "Der Nussknacker",
+     "size": 110
+    },
+    {
+     "text": "hat einen Grund.",
+     "size": 104,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "sub": "Schöne Deko – und kluger Helfer."
+  },
+  {
+   "type": "statement",
+   "kicker": "Das AHA",
+   "lines": [
+    {
+     "text": "Ein Zahn kann einen",
+     "size": 96
+    },
+    {
+     "text": "unsichtbaren Riss bekommen.",
+     "size": 84,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "body": "Typisch: ein kurzer Schmerz beim Loslassen nach dem Zubeißen."
+  },
+  {
+   "type": "statement",
+   "kicker": "Unser Tipp",
+   "lines": [
+    {
+     "text": "Nüsse genießen –",
+     "size": 100
+    },
+    {
+     "text": "knacken lassen.",
+     "size": 100,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "body": "Und wenn ein Zahn beim Kauen zwickt: bitte beim nächsten Termin ansprechen."
+  },
+  {
+   "type": "close",
+   "lines": [
+    {
+     "text": "Schönen",
+     "size": 104
+    },
+    {
+     "text": "7. Dezember!",
+     "size": 104,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "body": "Morgen öffnen wir Türchen Nummer 6."
+  }
+ ],
+ "door": 5
+}

@@ -1,0 +1,102 @@
+{
+ "date": "2026-12-02",
+ "slot": "Mi · 18:00 · Advent",
+ "format": "carousel",
+ "theme": "advent",
+ "title": "Türchen 2 – Härter als Knochen",
+ "scenes": [
+  {
+   "type": "hook",
+   "lines": [
+    {
+     "text": "Härter als Knochen –",
+     "size": 96
+    },
+    {
+     "text": "und trotzdem empfindlich.",
+     "size": 92,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "sub": "Ein Rätsel aus Ihrem Mund."
+  },
+  {
+   "type": "statement",
+   "kicker": "Das Rätsel",
+   "lines": [
+    {
+     "text": "Zahnschmelz ist das",
+     "size": 90
+    },
+    {
+     "text": "härteste Material im Körper.",
+     "size": 80,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "body": "Härter als jeder Knochen."
+  },
+  {
+   "type": "statement",
+   "kicker": "Der Haken",
+   "lines": [
+    {
+     "text": "Er hat keine",
+     "size": 100
+    },
+    {
+     "text": "lebenden Zellen.",
+     "size": 100,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "body": "Deshalb kann er sich nicht selbst heilen oder nachwachsen wie ein Knochen."
+  },
+  {
+   "type": "tips",
+   "kicker": "Was ihn trotzdem stärkt",
+   "lines": [
+    {
+     "text": "Zwei",
+     "size": 100
+    },
+    {
+     "text": "Helfer",
+     "size": 100,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "items": [
+    {
+     "title": "Fluorid in der Zahnpasta",
+     "sub": "macht die Oberfläche widerstandsfähiger"
+    },
+    {
+     "title": "Ihr Speichel",
+     "sub": "bringt Mineralien zurück an den Zahn"
+    }
+   ]
+  },
+  {
+   "type": "close",
+   "lines": [
+    {
+     "text": "Schönen",
+     "size": 104
+    },
+    {
+     "text": "2. Dezember!",
+     "size": 104,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "body": "Morgen öffnen wir Türchen Nummer 3."
+  }
+ ],
+ "door": 2
+}

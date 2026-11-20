@@ -1,0 +1,76 @@
+{
+ "date": "2026-12-21",
+ "slot": "Mo · 18:00 · Advent",
+ "format": "reel",
+ "theme": "advent",
+ "title": "Türchen 15 – Krone in der Hand? Bitte kein Sekundenkleber",
+ "scenes": [
+  {
+   "type": "hook",
+   "lines": [
+    {
+     "text": "Krone in der Hand?",
+     "size": 100
+    },
+    {
+     "text": "Bitte kein Sekundenkleber.",
+     "size": 80,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "sub": "Ärgerlich – gerade vor den Feiertagen."
+  },
+  {
+   "type": "statement",
+   "kicker": "Das AHA",
+   "lines": [
+    {
+     "text": "Kleber kann",
+     "size": 110
+    },
+    {
+     "text": "Zahn und Krone schädigen.",
+     "size": 90,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "body": "Danach passt die Krone oft nicht mehr – und muss neu gemacht werden."
+  },
+  {
+   "type": "statement",
+   "kicker": "Unser Tipp",
+   "lines": [
+    {
+     "text": "Krone aufheben,",
+     "size": 100
+    },
+    {
+     "text": "nicht selbst einkleben.",
+     "size": 88,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "body": "Rufen Sie an – an Feiertagen hilft das Notdienstzentrum Salzburg (ndz.at)."
+  },
+  {
+   "type": "close",
+   "lines": [
+    {
+     "text": "Schönen",
+     "size": 104
+    },
+    {
+     "text": "21. Dezember!",
+     "size": 104,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "body": "Morgen öffnen wir Türchen Nummer 16."
+  }
+ ],
+ "door": 15
+}

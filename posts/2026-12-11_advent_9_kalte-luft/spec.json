@@ -1,0 +1,76 @@
+{
+ "date": "2026-12-11",
+ "slot": "Fr · 18:00 · Advent",
+ "format": "reel",
+ "theme": "advent",
+ "title": "Türchen 9 – Kalte Luft, ziehender Zahn?",
+ "scenes": [
+  {
+   "type": "hook",
+   "lines": [
+    {
+     "text": "Kalte Luft,",
+     "size": 120
+    },
+    {
+     "text": "ziehender Zahn?",
+     "size": 110,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "sub": "Ein Wintergefühl."
+  },
+  {
+   "type": "statement",
+   "kicker": "Das AHA",
+   "lines": [
+    {
+     "text": "Winzige Kanälchen",
+     "size": 100
+    },
+    {
+     "text": "liegen frei.",
+     "size": 110,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "body": "Geht das Zahnfleisch etwas zurück, leiten sie die Kälte direkt zum Nerv."
+  },
+  {
+   "type": "statement",
+   "kicker": "Unser Tipp",
+   "lines": [
+    {
+     "text": "Zahnpasta für",
+     "size": 100
+    },
+    {
+     "text": "empfindliche Zähne.",
+     "size": 96,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "body": "Hält es länger als zwei Wochen an, schauen wir es uns gerne an."
+  },
+  {
+   "type": "close",
+   "lines": [
+    {
+     "text": "Schönen",
+     "size": 104
+    },
+    {
+     "text": "11. Dezember!",
+     "size": 104,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "body": "Am Montag öffnen wir Türchen Nummer 10."
+  }
+ ],
+ "door": 9
+}

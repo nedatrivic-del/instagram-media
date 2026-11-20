@@ -1,0 +1,76 @@
+{
+ "date": "2026-12-17",
+ "slot": "Do · 18:00 · Advent",
+ "format": "reel",
+ "theme": "advent",
+ "title": "Türchen 13 – Kein Zahnfleischbluten – trotzdem Entzündung?",
+ "scenes": [
+  {
+   "type": "hook",
+   "lines": [
+    {
+     "text": "Kein Zahnfleischbluten?",
+     "size": 92
+    },
+    {
+     "text": "Bei Rauchern kein Entwarnungszeichen.",
+     "size": 70,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "sub": "Ein stiller Irrtum."
+  },
+  {
+   "type": "statement",
+   "kicker": "Das AHA",
+   "lines": [
+    {
+     "text": "Rauchen verengt",
+     "size": 100
+    },
+    {
+     "text": "die Gefäße.",
+     "size": 100,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "body": "Das Zahnfleisch blutet weniger – obwohl eine Entzündung da sein kann."
+  },
+  {
+   "type": "statement",
+   "kicker": "Unser Tipp",
+   "lines": [
+    {
+     "text": "Regelmäßig",
+     "size": 110
+    },
+    {
+     "text": "kontrollieren lassen.",
+     "size": 96,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "body": "Und ein Rauchstopp lohnt sich für Ihr Zahnfleisch in jedem Alter."
+  },
+  {
+   "type": "close",
+   "lines": [
+    {
+     "text": "Schönen",
+     "size": 104
+    },
+    {
+     "text": "17. Dezember!",
+     "size": 104,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "body": "Morgen öffnen wir Türchen Nummer 14."
+  }
+ ],
+ "door": 13
+}

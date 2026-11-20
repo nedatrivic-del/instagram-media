@@ -1,0 +1,76 @@
+{
+ "date": "2026-12-09",
+ "slot": "Mi · 18:00 · Advent",
+ "format": "reel",
+ "theme": "advent",
+ "title": "Türchen 7 – Ihr bester Zahnschutz ist kostenlos",
+ "scenes": [
+  {
+   "type": "hook",
+   "lines": [
+    {
+     "text": "Ihr bester Zahnschutz",
+     "size": 96
+    },
+    {
+     "text": "ist kostenlos.",
+     "size": 110,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "sub": "Und Sie haben ihn immer dabei."
+  },
+  {
+   "type": "statement",
+   "kicker": "Das AHA",
+   "lines": [
+    {
+     "text": "Ihr",
+     "size": 110
+    },
+    {
+     "text": "Speichel.",
+     "size": 120,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "body": "Er spült, neutralisiert Säure und bringt Mineralien zurück an den Zahn."
+  },
+  {
+   "type": "statement",
+   "kicker": "Unser Tipp",
+   "lines": [
+    {
+     "text": "Zwischendurch",
+     "size": 100
+    },
+    {
+     "text": "ein Glas Wasser.",
+     "size": 96,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "body": "Besonders bei Punsch und Glühwein – Alkohol trocknet den Mund aus."
+  },
+  {
+   "type": "close",
+   "lines": [
+    {
+     "text": "Schönen",
+     "size": 104
+    },
+    {
+     "text": "9. Dezember!",
+     "size": 104,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "body": "Morgen öffnen wir Türchen Nummer 8."
+  }
+ ],
+ "door": 7
+}

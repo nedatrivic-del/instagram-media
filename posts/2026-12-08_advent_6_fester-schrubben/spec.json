@@ -1,0 +1,106 @@
+{
+ "date": "2026-12-08",
+ "slot": "Di · 18:00 · Advent",
+ "format": "carousel",
+ "theme": "advent",
+ "title": "Türchen 6 – Fester schrubben = sauberer?",
+ "scenes": [
+  {
+   "type": "hook",
+   "lines": [
+    {
+     "text": "Fester schrubben",
+     "size": 110
+    },
+    {
+     "text": "= sauberer?",
+     "size": 120,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "sub": "Ein beliebter Mythos."
+  },
+  {
+   "type": "statement",
+   "kicker": "Das AHA",
+   "lines": [
+    {
+     "text": "Im Gegenteil:",
+     "size": 100
+    },
+    {
+     "text": "Druck schadet.",
+     "size": 100,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "body": "Harte Borsten und viel Kraft können Zahnfleisch und Zahnhälse abtragen."
+  },
+  {
+   "type": "statement",
+   "kicker": "Woran Sie es merken",
+   "lines": [
+    {
+     "text": "Borsten nach",
+     "size": 100
+    },
+    {
+     "text": "wenigen Wochen platt?",
+     "size": 90,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "body": "Dann ist der Druck meist zu stark."
+  },
+  {
+   "type": "tips",
+   "kicker": "Unser Tipp",
+   "lines": [
+    {
+     "text": "Sanft",
+     "size": 100
+    },
+    {
+     "text": "ist gründlich",
+     "size": 100,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "items": [
+    {
+     "title": "Weiche Bürste",
+     "sub": "schont Zahnfleisch und Zahnhälse"
+    },
+    {
+     "title": "Wenig Druck",
+     "sub": "halten wie einen Stift"
+    },
+    {
+     "title": "Kleine Kreise",
+     "sub": "Zahn für Zahn, ohne Schrubben"
+    }
+   ]
+  },
+  {
+   "type": "close",
+   "lines": [
+    {
+     "text": "Schönen",
+     "size": 104
+    },
+    {
+     "text": "8. Dezember!",
+     "size": 104,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "body": "Morgen öffnen wir Türchen Nummer 7."
+  }
+ ],
+ "door": 6
+}

@@ -1,0 +1,76 @@
+{
+ "date": "2026-12-15",
+ "slot": "Di · 18:00 · Advent",
+ "format": "reel",
+ "theme": "advent",
+ "title": "Türchen 11 – Zunge putzen? Ja, bitte!",
+ "scenes": [
+  {
+   "type": "hook",
+   "lines": [
+    {
+     "text": "Zunge putzen?",
+     "size": 120
+    },
+    {
+     "text": "Ja, bitte!",
+     "size": 120,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "sub": "Der vergessene Teil der Routine."
+  },
+  {
+   "type": "statement",
+   "kicker": "Das AHA",
+   "lines": [
+    {
+     "text": "Auf der Zunge sitzen",
+     "size": 96
+    },
+    {
+     "text": "viele Bakterien.",
+     "size": 110,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "body": "Sie sind oft der Grund für Mundgeruch."
+  },
+  {
+   "type": "statement",
+   "kicker": "Unser Tipp",
+   "lines": [
+    {
+     "text": "Morgens sanft",
+     "size": 100
+    },
+    {
+     "text": "von hinten nach vorne.",
+     "size": 90,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "body": "Mit einem Zungenreiniger oder der Zahnbürste – ein paar Züge genügen."
+  },
+  {
+   "type": "close",
+   "lines": [
+    {
+     "text": "Schönen",
+     "size": 104
+    },
+    {
+     "text": "15. Dezember!",
+     "size": 104,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "body": "Morgen öffnen wir Türchen Nummer 12."
+  }
+ ],
+ "door": 11
+}

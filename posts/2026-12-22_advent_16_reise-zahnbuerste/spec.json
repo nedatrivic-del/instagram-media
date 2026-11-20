@@ -1,0 +1,106 @@
+{
+ "date": "2026-12-22",
+ "slot": "Di · 18:00 · Advent",
+ "format": "carousel",
+ "theme": "advent",
+ "title": "Türchen 16 – Ihre Zahnbürste braucht Luft – auch auf Reisen",
+ "scenes": [
+  {
+   "type": "hook",
+   "lines": [
+    {
+     "text": "Ihre Zahnbürste",
+     "size": 110
+    },
+    {
+     "text": "braucht Luft.",
+     "size": 110,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "sub": "Auch auf Reisen zu den Liebsten."
+  },
+  {
+   "type": "statement",
+   "kicker": "Das AHA",
+   "lines": [
+    {
+     "text": "Im nassen, geschlossenen",
+     "size": 90
+    },
+    {
+     "text": "Etui wachsen Keime.",
+     "size": 92,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "body": "Feuchtigkeit und keine Luft – das mögen Bakterien."
+  },
+  {
+   "type": "tips",
+   "kicker": "Checkliste fürs Reisegepäck",
+   "lines": [
+    {
+     "text": "Gut",
+     "size": 100
+    },
+    {
+     "text": "eingepackt",
+     "size": 100,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "items": [
+    {
+     "title": "Bürste trocknen lassen",
+     "sub": "erst dann in die Hülle"
+    },
+    {
+     "title": "Zahnseide oder Bürstchen",
+     "sub": "auch im Urlaub abends"
+    },
+    {
+     "title": "Prothesendose",
+     "sub": "falls Sie eine Prothese tragen"
+    }
+   ]
+  },
+  {
+   "type": "statement",
+   "kicker": "Unser Tipp",
+   "lines": [
+    {
+     "text": "Am Ziel:",
+     "size": 100
+    },
+    {
+     "text": "auspacken & lüften.",
+     "size": 100,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "body": "Aufrecht in ein Glas stellen – so trocknet sie gut."
+  },
+  {
+   "type": "close",
+   "lines": [
+    {
+     "text": "Schönen",
+     "size": 104
+    },
+    {
+     "text": "22. Dezember!",
+     "size": 104,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "body": "Morgen öffnen wir Türchen Nummer 17."
+  }
+ ],
+ "door": 16
+}

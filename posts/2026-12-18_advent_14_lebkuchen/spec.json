@@ -1,0 +1,93 @@
+{
+ "date": "2026-12-18",
+ "slot": "Fr · 18:00 · Advent",
+ "format": "carousel",
+ "theme": "advent",
+ "title": "Türchen 14 – Ein Lebkuchen ist zahnfreundlicher als ein Bonbon",
+ "scenes": [
+  {
+   "type": "hook",
+   "lines": [
+    {
+     "text": "Ein Lebkuchen ist",
+     "size": 100
+    },
+    {
+     "text": "zahnfreundlicher als ein Bonbon.",
+     "size": 80,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "sub": "Klingt überraschend?"
+  },
+  {
+   "type": "statement",
+   "kicker": "Das AHA",
+   "lines": [
+    {
+     "text": "Es zählt die Dauer,",
+     "size": 96
+    },
+    {
+     "text": "nicht nur die Menge.",
+     "size": 92,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "body": "Ein Bonbon lutscht man minutenlang – so lange ist Säure im Mund."
+  },
+  {
+   "type": "statement",
+   "kicker": "Der Lebkuchen",
+   "lines": [
+    {
+     "text": "Gegessen –",
+     "size": 100
+    },
+    {
+     "text": "und vorbei.",
+     "size": 100,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "body": "Danach hat der Speichel Zeit, alles wieder ins Gleichgewicht zu bringen."
+  },
+  {
+   "type": "statement",
+   "kicker": "Unser Tipp",
+   "lines": [
+    {
+     "text": "Süßes lieber einmal",
+     "size": 92
+    },
+    {
+     "text": "genießen als lange lutschen.",
+     "size": 80,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "body": "Am besten zum Kaffee oder nach dem Essen."
+  },
+  {
+   "type": "close",
+   "lines": [
+    {
+     "text": "Schönen",
+     "size": 104
+    },
+    {
+     "text": "18. Dezember!",
+     "size": 104,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "body": "Am Montag öffnen wir Türchen Nummer 15."
+  }
+ ],
+ "door": 14
+}

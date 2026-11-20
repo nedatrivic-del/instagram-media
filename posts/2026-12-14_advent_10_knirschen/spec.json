@@ -1,0 +1,106 @@
+{
+ "date": "2026-12-14",
+ "slot": "Mo · 18:00 · Advent",
+ "format": "carousel",
+ "theme": "advent",
+ "title": "Türchen 10 – Ihr Partner hört es – Sie nicht",
+ "scenes": [
+  {
+   "type": "hook",
+   "lines": [
+    {
+     "text": "Ihr Partner hört es –",
+     "size": 96
+    },
+    {
+     "text": "Sie nicht.",
+     "size": 120,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "sub": "Ein nächtliches Geräusch."
+  },
+  {
+   "type": "statement",
+   "kicker": "Das AHA",
+   "lines": [
+    {
+     "text": "Zähneknirschen",
+     "size": 100
+    },
+    {
+     "text": "passiert meist im Schlaf.",
+     "size": 100,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "body": "Viele merken es selbst gar nicht."
+  },
+  {
+   "type": "tips",
+   "kicker": "Mögliche Zeichen",
+   "lines": [
+    {
+     "text": "Woran Sie es",
+     "size": 100
+    },
+    {
+     "text": "erkennen",
+     "size": 100,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "items": [
+    {
+     "title": "Kiefer morgens müde",
+     "sub": "oder verspannt"
+    },
+    {
+     "title": "Abgeflachte Zahnkanten",
+     "sub": "die Zähne wirken kürzer"
+    },
+    {
+     "title": "Kopfschmerzen am Morgen",
+     "sub": "manchmal ohne klaren Grund"
+    }
+   ]
+  },
+  {
+   "type": "statement",
+   "kicker": "Unser Tipp",
+   "lines": [
+    {
+     "text": "Beim nächsten Termin",
+     "size": 96
+    },
+    {
+     "text": "ansprechen.",
+     "size": 110,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "body": "Gemeinsam schauen wir, ob ein Schutz für die Nacht sinnvoll ist."
+  },
+  {
+   "type": "close",
+   "lines": [
+    {
+     "text": "Schönen",
+     "size": 104
+    },
+    {
+     "text": "14. Dezember!",
+     "size": 104,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "body": "Morgen öffnen wir Türchen Nummer 11."
+  }
+ ],
+ "door": 10
+}

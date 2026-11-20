@@ -1,0 +1,93 @@
+{
+ "date": "2026-12-16",
+ "slot": "Mi · 18:00 · Advent",
+ "format": "carousel",
+ "theme": "advent",
+ "title": "Türchen 12 – Was Nelken in der Zahnarztpraxis suchen",
+ "scenes": [
+  {
+   "type": "hook",
+   "lines": [
+    {
+     "text": "Was Nelken in der",
+     "size": 96
+    },
+    {
+     "text": "Zahnarztpraxis suchen?",
+     "size": 92,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "sub": "Der Duft der Weihnachtskekse."
+  },
+  {
+   "type": "statement",
+   "kicker": "Das AHA",
+   "lines": [
+    {
+     "text": "Ein Stoff aus Nelkenöl",
+     "size": 92
+    },
+    {
+     "text": "steckt in Zahnmaterial.",
+     "size": 92,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "body": "Zum Beispiel in manchen provisorischen Füllungen – er beruhigt den Zahn."
+  },
+  {
+   "type": "statement",
+   "kicker": "Aber",
+   "lines": [
+    {
+     "text": "Nelken ersetzen",
+     "size": 100
+    },
+    {
+     "text": "keine Behandlung.",
+     "size": 100,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "body": "Bei Zahnschmerzen hilft ein Termin mehr als jedes Hausmittel."
+  },
+  {
+   "type": "statement",
+   "kicker": "Unser Tipp",
+   "lines": [
+    {
+     "text": "Gewürzkekse",
+     "size": 100
+    },
+    {
+     "text": "dürfen sein.",
+     "size": 100,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "body": "Genießen Sie sie zum Kaffee – und danach ein Schluck Wasser."
+  },
+  {
+   "type": "close",
+   "lines": [
+    {
+     "text": "Schönen",
+     "size": 104
+    },
+    {
+     "text": "16. Dezember!",
+     "size": 104,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "body": "Morgen öffnen wir Türchen Nummer 13."
+  }
+ ],
+ "door": 12
+}

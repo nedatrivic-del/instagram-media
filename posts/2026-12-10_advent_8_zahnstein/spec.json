@@ -1,0 +1,106 @@
+{
+ "date": "2026-12-10",
+ "slot": "Do · 18:00 · Advent",
+ "format": "carousel",
+ "theme": "advent",
+ "title": "Türchen 8 – Was Ihre Zahnbürste nicht schafft",
+ "scenes": [
+  {
+   "type": "hook",
+   "lines": [
+    {
+     "text": "Was Ihre Zahnbürste",
+     "size": 100
+    },
+    {
+     "text": "nicht schafft.",
+     "size": 110,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "sub": "Ein Blick hinter die Kulissen."
+  },
+  {
+   "type": "statement",
+   "kicker": "Das AHA",
+   "lines": [
+    {
+     "text": "Zahnstein ist",
+     "size": 100
+    },
+    {
+     "text": "versteinerter Belag.",
+     "size": 100,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "body": "Einmal hart geworden, lässt er sich nicht mehr wegputzen."
+  },
+  {
+   "type": "tips",
+   "kicker": "So läuft unsere Mundhygiene",
+   "lines": [
+    {
+     "text": "Schritt",
+     "size": 100
+    },
+    {
+     "text": "für Schritt",
+     "size": 100,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "items": [
+    {
+     "title": "Zahnstein & Beläge",
+     "sub": "sanft entfernen, auch zwischen den Zähnen"
+    },
+    {
+     "title": "Polieren",
+     "sub": "glatte Flächen, auf denen weniger haftet"
+    },
+    {
+     "title": "Tipps für zu Hause",
+     "sub": "passend zu Ihren Zähnen"
+    }
+   ]
+  },
+  {
+   "type": "statement",
+   "kicker": "Unser Tipp",
+   "lines": [
+    {
+     "text": "Regelmäßig",
+     "size": 100
+    },
+    {
+     "text": "statt selten.",
+     "size": 100,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "body": "Wie oft die Mundhygiene sinnvoll ist, besprechen wir gemeinsam."
+  },
+  {
+   "type": "close",
+   "lines": [
+    {
+     "text": "Schönen",
+     "size": 104
+    },
+    {
+     "text": "10. Dezember!",
+     "size": 104,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "body": "Morgen öffnen wir Türchen Nummer 9."
+  }
+ ],
+ "door": 8
+}

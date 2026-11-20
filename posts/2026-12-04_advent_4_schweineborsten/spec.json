@@ -1,0 +1,93 @@
+{
+ "date": "2026-12-04",
+ "slot": "Fr · 18:00 · Advent",
+ "format": "carousel",
+ "theme": "advent",
+ "title": "Türchen 4 – Früher putzte man mit Schweineborsten",
+ "scenes": [
+  {
+   "type": "hook",
+   "lines": [
+    {
+     "text": "Früher putzte man",
+     "size": 96
+    },
+    {
+     "text": "mit Schweineborsten.",
+     "size": 96,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "sub": "Eine kleine Zeitreise zum Nikolo."
+  },
+  {
+   "type": "statement",
+   "kicker": "Wirklich?",
+   "lines": [
+    {
+     "text": "Jahrhundertelang:",
+     "size": 100
+    },
+    {
+     "text": "Borsten aus Tierhaar.",
+     "size": 100,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "body": "Erst 1938 kam die erste Zahnbürste mit Nylonborsten auf den Markt."
+  },
+  {
+   "type": "statement",
+   "kicker": "Und heute?",
+   "lines": [
+    {
+     "text": "Weiche Borsten,",
+     "size": 100
+    },
+    {
+     "text": "kleiner Kopf.",
+     "size": 100,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "body": "Damit kommen Sie gut in jede Ecke – ganz ohne Druck."
+  },
+  {
+   "type": "statement",
+   "kicker": "Unser Tipp",
+   "lines": [
+    {
+     "text": "Alle 3 Monate",
+     "size": 96
+    },
+    {
+     "text": "eine neue Bürste.",
+     "size": 90,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "body": "Wenn die Borsten auseinanderstehen, putzt sie nicht mehr gut. Vielleicht passt ja eine in den Nikolo-Sack?"
+  },
+  {
+   "type": "close",
+   "lines": [
+    {
+     "text": "Schönen",
+     "size": 104
+    },
+    {
+     "text": "Nikolo-Wochenende!",
+     "size": 104,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "body": "Am Montag öffnen wir Türchen Nummer 5."
+  }
+ ],
+ "door": 4
+}

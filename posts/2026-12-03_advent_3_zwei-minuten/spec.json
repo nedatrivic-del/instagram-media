@@ -1,0 +1,76 @@
+{
+ "date": "2026-12-03",
+ "slot": "Do · 18:00 · Advent",
+ "format": "reel",
+ "theme": "advent",
+ "title": "Türchen 3 – Putzen Sie wirklich 2 Minuten?",
+ "scenes": [
+  {
+   "type": "hook",
+   "lines": [
+    {
+     "text": "Putzen Sie wirklich",
+     "size": 100
+    },
+    {
+     "text": "2 Minuten?",
+     "size": 130,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "sub": "Gefühlt: ja."
+  },
+  {
+   "type": "statement",
+   "kicker": "Gemessen",
+   "lines": [
+    {
+     "text": "Mit der Handzahnbürste",
+     "size": 88
+    },
+    {
+     "text": "eher 1,5 Minuten.",
+     "size": 96,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "body": "Das zeigt eine Auswertung von Studien mit über 1.200 Erwachsenen."
+  },
+  {
+   "type": "statement",
+   "kicker": "Unser Tipp",
+   "lines": [
+    {
+     "text": "Heute Abend:",
+     "size": 100
+    },
+    {
+     "text": "Lied oder Timer an.",
+     "size": 100,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "body": "Zwei Minuten fühlen sich länger an, als man denkt – ein Lied hilft beim Durchhalten."
+  },
+  {
+   "type": "close",
+   "lines": [
+    {
+     "text": "Schönen",
+     "size": 104
+    },
+    {
+     "text": "3. Dezember!",
+     "size": 104,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "body": "Morgen öffnen wir Türchen Nummer 4."
+  }
+ ],
+ "door": 3
+}

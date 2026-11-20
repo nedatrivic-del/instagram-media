@@ -1,0 +1,58 @@
+{
+ "date": "2026-12-31",
+ "slot": "Do · 18:00 · Advent",
+ "format": "carousel",
+ "theme": "advent",
+ "title": "Ein gutes neues Jahr 2027",
+ "scenes": [
+  {
+   "type": "hook",
+   "lines": [
+    {
+     "text": "Ein gutes",
+     "size": 120
+    },
+    {
+     "text": "neues Jahr 2027!",
+     "size": 110,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "sub": "Von Herzen – Ihr Team der Zahnärztin Altstadt."
+  },
+  {
+   "type": "statement",
+   "kicker": "Unser Wunsch für Sie",
+   "lines": [
+    {
+     "text": "Viele Gründe",
+     "size": 110
+    },
+    {
+     "text": "zum Lächeln.",
+     "size": 110,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "body": "Gesundheit, Zeit für das, was Ihnen wichtig ist – und ein Lächeln, das Sie gerne zeigen."
+  },
+  {
+   "type": "close",
+   "lines": [
+    {
+     "text": "Ab 11. Jänner",
+     "size": 104
+    },
+    {
+     "text": "wieder für Sie da.",
+     "size": 104,
+     "bold": true,
+     "red": true
+    }
+   ],
+   "body": "Termine jederzeit online buchen – wir freuen uns auf Sie."
+  }
+ ]
+}

@@ -3,8 +3,11 @@
  "time": "18:00",
  "title": "Türchen 10 – Ihr Partner hört es – Sie nicht",
  "format": "carousel",
- "status": "awaiting_approval",
+ "status": "scheduled",
  "approval_channel": "chat-batch",
  "look": "advent",
- "budget_note": "Dezember 19/20"
+ "budget_note": "Dezember 19/20",
+ "metricool_id": 435685236,
+ "metricool_uuid": "6081528475789443384",
+ "approved": "Neda im Chat 20.11.2026 16:00 ('zakaži decembar')"
 }

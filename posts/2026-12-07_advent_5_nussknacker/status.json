@@ -3,8 +3,11 @@
  "time": "18:00",
  "title": "Türchen 5 – Der Nussknacker hat einen Grund",
  "format": "reel",
- "status": "awaiting_approval",
+ "status": "scheduled",
  "approval_channel": "chat-batch",
  "look": "advent",
- "budget_note": "Dezember 19/20"
+ "budget_note": "Dezember 19/20",
+ "metricool_id": 435684261,
+ "metricool_uuid": "3260063963460814965",
+ "approved": "Neda im Chat 20.11.2026 16:00 ('zakaži decembar')"
 }

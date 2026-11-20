@@ -3,8 +3,11 @@
  "time": "18:00",
  "title": "Frohe Weihnachten – Danke, Pause, Notdienst",
  "format": "carousel",
- "status": "awaiting_approval",
+ "status": "scheduled",
  "approval_channel": "chat-batch",
  "look": "advent",
- "budget_note": "Dezember 19/20"
+ "budget_note": "Dezember 19/20",
+ "metricool_id": 435686482,
+ "metricool_uuid": "-5446097849697677832",
+ "approved": "Neda im Chat 20.11.2026 16:00 ('zakaži decembar')"
 }

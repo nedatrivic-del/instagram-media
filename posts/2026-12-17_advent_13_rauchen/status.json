@@ -3,8 +3,11 @@
  "time": "18:00",
  "title": "Türchen 13 – Kein Zahnfleischbluten – trotzdem Entzündung?",
  "format": "reel",
- "status": "awaiting_approval",
+ "status": "scheduled",
  "approval_channel": "chat-batch",
  "look": "advent",
- "budget_note": "Dezember 19/20"
+ "budget_note": "Dezember 19/20",
+ "metricool_id": 435685525,
+ "metricool_uuid": "-1242450363710813304",
+ "approved": "Neda im Chat 20.11.2026 16:00 ('zakaži decembar')"
 }

@@ -5,8 +5,20 @@
  "format": "carousel",
  "status": "scheduled",
  "approval_channel": "chat",
- "metricool_id": 406634622,
+ "metricool_id": 443509031,
  "metricool_uuid": "1275377460869153973",
  "story_metricool_id": 406634642,
- "story_metricool_uuid": "615174014077715432"
+ "story_metricool_uuid": "615174014077715432",
+ "media": [
+  "v8_slide_1.jpg",
+  "v8_slide_2.jpg",
+  "v8_slide_3.jpg",
+  "v8_slide_4.jpg",
+  "v8_slide_5.jpg",
+  "v8_slide_6.jpg",
+  "v8_slide_7.jpg",
+  "v8_slide_8.jpg"
+ ],
+ "approved": "Neda im Chat 26.11.2026 19:42 ('Ok, može ići sutra')",
+ "note": "v8: Neda's own photos + team, sepia, story flow. Story (421609148) unchanged."
 }

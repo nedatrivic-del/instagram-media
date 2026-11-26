@@ -34,6 +34,17 @@
   },
   {
    "type": "photo",
+   "photo": "photos/praxis/advent_fenster_schnee.jpg",
+   "text": "wenn der Schnee leise vor dem Praxisfenster rieselt.",
+   "focus": [
+    0.7,
+    0.5
+   ],
+   "dy": -120,
+   "size": 74
+  },
+  {
+   "type": "photo",
    "photo": "photos/praxis/advent_kekse.jpg",
    "text": "wenn auch die Zahnärztin Kekse bäckt.",
    "focus": [

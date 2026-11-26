@@ -285,7 +285,12 @@ class Builder:
         img = s.bg.copy()
         if s.circ is None:
             sz = 300; pw, _ = s.portrait.size
-            c = s.portrait.crop((int(pw * 0.50), 40, int(pw * 0.50) + 430, 470)).resize((sz, sz), Image.LANCZOS)
+            if sc.get("card_photo"):  # optional own card photo (e.g. team) instead of Neda's portrait
+                from PIL import ImageOps
+                cp = ImageOps.exif_transpose(Image.open(os.path.join(HERE, "..", sc["card_photo"]))).convert("RGB")
+                c = cp.crop(tuple(sc["card_crop"])).resize((sz, sz), Image.LANCZOS)
+            else:
+                c = s.portrait.crop((int(pw * 0.50), 40, int(pw * 0.50) + 430, 470)).resize((sz, sz), Image.LANCZOS)
             m = Image.new("L", (sz * 4, sz * 4), 0); ImageDraw.Draw(m).ellipse([0, 0, sz * 4, sz * 4], fill=255)
             s.circ = (c.convert("RGBA"), m.resize((sz, sz), Image.LANCZOS))
         spec = headline_layers(sc["lines"], 0.1, 0.15, 50) + [(Layer(0.5, "text", text=sc["body"], font=fira(52, "Light"), color=SLATE, lh=1.32), 0)]

@@ -7,10 +7,11 @@
    "text": "wenn am Sonntag die erste Kerze brennt.",
    "focus": [
     0.5,
-    0.55
+    0.7
    ],
-   "dy": 360,
-   "shade": 90
+   "dy": 330,
+   "shade": 90,
+   "zoom": 1.5
   },
   {
    "type": "photo",
@@ -67,15 +68,6 @@
   },
   {
    "type": "photo",
-   "photo": "photos/praxis/advent_kekse.jpg",
-   "text": "wenn auch die Zahnärztin Kekse bäckt.",
-   "focus": [
-    0.5,
-    0.55
-   ]
-  },
-  {
-   "type": "photo",
    "photo": "photos/team/modell_zahnbuerste_sw.jpg",
    "text": "wenn wir Ihnen zeigen, wie es ganz einfach geht.",
    "focus": [
@@ -106,5 +98,6 @@
  "frame_ink": "gold",
  "date": "2026-11-27",
  "slot": "Fr · Serie",
- "format": "carousel"
+ "format": "carousel",
+ "sepia": true
 }

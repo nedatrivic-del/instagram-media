@@ -332,6 +332,9 @@ class Builder:
         fx, fy = sc.get("focus", [0.5, 0.5]); x0 = int((im2.width - pw) * fx); y0 = int((im2.height - ph) * fy)
         p_ = im2.crop((x0, y0, x0 + pw, y0 + ph))
         # analog look: faded contrast, warm tone, lifted blacks, grain, vignette
+        if s.spec.get("sepia"):  # uniform sepia look for all photos of a post
+            g0 = ImageOps.autocontrast(p_.convert("L"), cutoff=1)
+            p_ = ImageOps.colorize(g0, black=(38, 28, 18), mid=(150, 120, 88), white=(250, 238, 214))
         p_ = ImageEnhance.Contrast(p_).enhance(0.9); p_ = ImageEnhance.Color(p_).enhance(0.85)
         r_, g_, b_ = p_.split()
         p_ = Image.merge("RGB", [r_.point(lambda v: int(16 + v * 0.94)), g_.point(lambda v: int(10 + v * 0.91)), b_.point(lambda v: int(4 + v * 0.84))])

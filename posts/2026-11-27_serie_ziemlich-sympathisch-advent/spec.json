@@ -3,22 +3,25 @@
  "scenes": [
   {
    "type": "photo",
-   "photo": "photos/praxis/advent_kranz_v2.jpg",
+   "photo": "photos/praxis/advent_kranz_kerze.jpg",
    "text": "wenn man im Advent kurz durchatmen darf.",
    "focus": [
     0.5,
-    0.5
-   ]
+    0.55
+   ],
+   "dy": 360,
+   "shade": 90
   },
   {
    "type": "photo",
-   "photo": "photos/praxis/advent_fenster_schnee.jpg",
+   "photo": "photos/praxis/advent_fenster_griff.jpg",
    "text": "wenn draußen der Schnee fällt und drinnen jemand Zeit für Sie hat.",
    "focus": [
-    0.85,
-    0.5
+    0.5,
+    0.4
    ],
-   "size": 72
+   "size": 72,
+   "dy": -180
   },
   {
    "type": "photo",

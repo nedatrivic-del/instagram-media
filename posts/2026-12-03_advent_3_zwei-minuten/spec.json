@@ -19,7 +19,9 @@
      "red": true
     }
    ],
-   "sub": "Gefühlt: ja."
+   "sub": "Gefühlt: ja.",
+   "photo": "photos/team/team_bewegung_sw.jpg",
+   "photo_y": 0.45
   },
   {
    "type": "statement",

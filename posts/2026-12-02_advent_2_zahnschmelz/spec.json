@@ -19,7 +19,9 @@
      "red": true
     }
    ],
-   "sub": "Ein Rätsel aus Ihrem Mund."
+   "sub": "Ein Rätsel aus Ihrem Mund.",
+   "photo": "photos/team/assistentin_lampe_sw.jpg",
+   "photo_y": 0.3
   },
   {
    "type": "statement",

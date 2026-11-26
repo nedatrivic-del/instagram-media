@@ -19,7 +19,9 @@
      "red": true
     }
    ],
-   "sub": "Der vergessene Teil der Routine."
+   "sub": "Der vergessene Teil der Routine.",
+   "photo": "photos/team/team_bewegung_sw.jpg",
+   "photo_y": 0.45
   },
   {
    "type": "statement",

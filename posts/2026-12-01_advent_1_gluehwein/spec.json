@@ -19,7 +19,9 @@
      "red": true
     }
    ],
-   "sub": "Drei Dinge treffen sich."
+   "sub": "Drei Dinge treffen sich.",
+   "photo": "photos/team/neda_patientin_warm.jpg",
+   "photo_y": 0.35
   },
   {
    "type": "tips",

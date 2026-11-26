@@ -19,7 +19,9 @@
      "red": true
     }
    ],
-   "sub": "Schöne Deko – und kluger Helfer."
+   "sub": "Schöne Deko – und kluger Helfer.",
+   "photo": "photos/team/neda_patientin_warm.jpg",
+   "photo_y": 0.35
   },
   {
    "type": "statement",

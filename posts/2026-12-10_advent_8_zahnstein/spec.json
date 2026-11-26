@@ -19,7 +19,9 @@
      "red": true
     }
    ],
-   "sub": "Ein Blick hinter die Kulissen."
+   "sub": "Ein Blick hinter die Kulissen.",
+   "photo": "photos/team/modell_zahnbuerste_sw.jpg",
+   "photo_y": 0.42
   },
   {
    "type": "statement",

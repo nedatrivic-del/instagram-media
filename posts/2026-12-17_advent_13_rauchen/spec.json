@@ -19,7 +19,9 @@
      "red": true
     }
    ],
-   "sub": "Ein stiller Irrtum."
+   "sub": "Ein stiller Irrtum.",
+   "photo": "photos/team/neda_patientin_warm.jpg",
+   "photo_y": 0.35
   },
   {
    "type": "statement",

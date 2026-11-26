@@ -19,7 +19,9 @@
      "red": true
     }
    ],
-   "sub": "Ein kleines Festtags-Geheimnis."
+   "sub": "Ein kleines Festtags-Geheimnis.",
+   "photo": "photos/team/neda_patientin_warm.jpg",
+   "photo_y": 0.35
   },
   {
    "type": "statement",

@@ -19,7 +19,9 @@
      "red": true
     }
    ],
-   "sub": "Und Sie haben ihn immer dabei."
+   "sub": "Und Sie haben ihn immer dabei.",
+   "photo": "photos/team/team_bewegung_sw.jpg",
+   "photo_y": 0.45
   },
   {
    "type": "statement",

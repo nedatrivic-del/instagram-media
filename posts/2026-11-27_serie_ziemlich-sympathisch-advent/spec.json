@@ -14,46 +14,6 @@
   },
   {
    "type": "photo",
-   "photo": "photos/praxis/advent_fenster_griff.jpg",
-   "text": "wenn draußen der Schnee fällt und drinnen jemand Zeit für Sie hat.",
-   "focus": [
-    0.5,
-    0.4
-   ],
-   "dy": -180,
-   "size": 72
-  },
-  {
-   "type": "photo",
-   "photo": "photos/praxis/advent_schnee_ausblick.jpg",
-   "text": "wenn es draußen ganz still wird.",
-   "focus": [
-    0.5,
-    0.4
-   ]
-  },
-  {
-   "type": "photo",
-   "photo": "photos/praxis/advent_fenster_schnee.jpg",
-   "text": "wenn der Schnee leise vor dem Praxisfenster rieselt.",
-   "focus": [
-    0.7,
-    0.5
-   ],
-   "dy": -120,
-   "size": 74
-  },
-  {
-   "type": "photo",
-   "photo": "photos/praxis/advent_kekse.jpg",
-   "text": "wenn auch die Zahnärztin Kekse bäckt.",
-   "focus": [
-    0.5,
-    0.55
-   ]
-  },
-  {
-   "type": "photo",
    "photo": "photos/team/team_bewegung_sw.jpg",
    "text": "wenn im Advent alle Hände voll zu tun haben – und trotzdem jeder lächelt.",
    "focus": [
@@ -61,6 +21,17 @@
     0.5
    ],
    "size": 70
+  },
+  {
+   "type": "photo",
+   "photo": "photos/praxis/advent_fenster_griff.jpg",
+   "text": "wenn draußen leise der Schnee fällt.",
+   "focus": [
+    0.5,
+    0.4
+   ],
+   "dy": -180,
+   "size": 76
   },
   {
    "type": "photo",
@@ -74,6 +45,17 @@
   },
   {
    "type": "photo",
+   "photo": "photos/praxis/advent_fenster.jpg",
+   "text": "wenn draußen die Altstadt leuchtet und drinnen jemand Zeit für Sie hat.",
+   "focus": [
+    0.5,
+    0.5
+   ],
+   "dy": -60,
+   "size": 70
+  },
+  {
+   "type": "photo",
    "photo": "photos/team/neda_patientin_warm.jpg",
    "text": "wenn beim Zähneputzen-Üben gelacht wird.",
    "focus": [
@@ -82,6 +64,15 @@
    ],
    "dy": 430,
    "size": 70
+  },
+  {
+   "type": "photo",
+   "photo": "photos/praxis/advent_kekse.jpg",
+   "text": "wenn auch die Zahnärztin Kekse bäckt.",
+   "focus": [
+    0.5,
+    0.55
+   ]
   },
   {
    "type": "photo",

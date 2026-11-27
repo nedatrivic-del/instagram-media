@@ -200,3 +200,5 @@ Two looks for the standard photo-layout carousels/reels (template/make_media.py)
 - RED (classic): highlighted headline line in Oswald caps, brand red – spec without "accent".
 - GREEN: highlighted line in handwriting + sage – spec keys `"accent": [111,150,131], "script_font": "DancingScript%5Bwght%5D.ttf", "script_scale": 1.08` (first used on 23.11.2026, Zahnersatz storytelling).
 Neda wants the posts MIXED – sometimes red, sometimes green. When building a month, alternate the two looks (never more than 2 in a row of the same look) and note the look in status.json ("look": "red"/"green"). Already scheduled posts stay as they are. Series with their own look (Advent, Kino, handwritten-letter 4×4) are not affected. In the monthly report compare reach/saves of red vs. green posts.
+
+- Lesson 27.11.2026: When a feed post is reworked, always rework/replace its accompanying story too (or ask) – otherwise the old story goes out alongside the new post.
